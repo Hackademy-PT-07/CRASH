@@ -14,6 +14,7 @@
                     <div class="col-12 mt-3">
                         <label for="password">Password</label>
                         <input class="form-control" type="password" name="password" id="password">
+                        @error('password')<span class="small text-danger">{{ $message }}</span> @enderror
                     </div>
                    <div class="col-12 mt-3">
                     <button type="submit">Accedi</button>
