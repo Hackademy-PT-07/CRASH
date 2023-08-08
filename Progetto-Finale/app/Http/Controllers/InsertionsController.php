@@ -20,7 +20,7 @@ class InsertionsController extends Controller
      */
     public function create()
     {
-        //
+        return view('insertions.create');
     }
 
     /**
@@ -36,7 +36,7 @@ class InsertionsController extends Controller
      */
     public function show(insertions $insertions)
     {
-        //
+        return view('insertions.show');
     }
 
     /**
@@ -44,7 +44,7 @@ class InsertionsController extends Controller
      */
     public function edit(insertions $insertions)
     {
-        //
+        return view('insertions.edit');
     }
 
     /**

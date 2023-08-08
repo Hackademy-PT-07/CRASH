@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', [\App\Http\Controllers\PageController::class, 'home'])->name('home');
+
+Route::resource('insertions', \App\Http\Controllers\InsertionsController::class);
