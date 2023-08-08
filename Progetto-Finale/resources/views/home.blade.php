@@ -1,13 +1,34 @@
 <x-main>
+    <x-slot:title>Home</x-slot:title>
+    
+    <header><h1>Presto.it</h1></header>
 
-    <h1>Presto.it</h1>
+     <div class="authBtns d-flex">
+        @auth
+        <a href="" class="newAddBtn">Inserisci annuncio</a>
+        @else
+        <a href="/login" class="loginLinkBtn">Accedi</a>
+        <a href="/register" class="registerLinkBtn">Registrati</a>
+        @endauth
+    </div>
 
-    @auth
-    <a href="">Inserisce annuncio</a>
-    @else
-    <a href="/login">Accedi</a>
-    <a href="/register">Registrati</a>
-    @endauth
+    <section class="container">
+        <div class="mt-4">
+            <h2>Tutti gli annunci</h2>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-4">
+                Annuncio 1 
+            </div>
+            <div class="col-12 col-md-4">
+                Annuncio 2
+            </div><div class="col-12 col-md-4">
+                Annuncio 3
+            </div>
+        </div>    
+    </section>
+   
+   
     
 
 </x-main>

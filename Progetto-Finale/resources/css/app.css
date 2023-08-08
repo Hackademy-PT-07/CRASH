@@ -1,1 +1,20 @@
 @import 'bootstrap';
+
+header {
+    padding: 30px;
+    width: auto;
+    height: 20vw;
+    text-align: center;
+    border-bottom: solid grey 1px;
+}
+
+
+
+.newAddBtn, .loginLinkBtn, .registerLinkBtn {
+    padding: 5px;
+    margin: 5px;
+    border: solid black 1px ;
+    background-color: azure;
+    text-decoration: none;
+    color:black;
+}

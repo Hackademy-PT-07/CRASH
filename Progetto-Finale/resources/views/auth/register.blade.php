@@ -1,4 +1,5 @@
 <x-main>
+<x-slot:title>Registrati</x-slot:title>
     <div class="container mt-4">
         <div class="row">
             <div class="col-6 mx-auto">
