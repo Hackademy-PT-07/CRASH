@@ -17,18 +17,17 @@
             <h2>Tutti gli annunci</h2>
         </div>
         <div class="row mt-5">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 mb-3">
+                <x-card/>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
                 Annuncio 1 
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 mb-3">
                 Annuncio 2
-            </div><div class="col-12 col-md-4">
+            </div><div class="col-12 col-md-4 mb-3">
                 Annuncio 3
             </div>
         </div>    
     </section>
-   
-   
-    
-
 </x-main>
