@@ -12,7 +12,7 @@ class InsertionsController extends Controller
      */
     public function index()
     {
-        //
+        return view('insertions.index');
     }
 
     /**

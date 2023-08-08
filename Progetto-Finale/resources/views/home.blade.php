@@ -5,7 +5,7 @@
 
      <div class="authBtns d-flex">
         @auth
-        <a href="/insertions/create" class="newAddBtn">Inserisci annuncio</a>
+        <a href="{{ route('insertions.index') }}" class="newAddBtn">Inserisci annuncio</a>
         @else
         <a href="/login" class="loginLinkBtn">Accedi</a>
         <a href="/register" class="registerLinkBtn">Registrati</a>
