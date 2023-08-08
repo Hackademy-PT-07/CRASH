@@ -9,6 +9,7 @@
                     <div class="col-12 mt-3">
                         <label for="email">Email</label>
                         <input class="form-control" type="email" name="email" id="email">
+                        @error('email')<span class="small text-danger">{{ $message }}</span> @enderror
                     </div>
                     <div class="col-12 mt-3">
                         <label for="password">Password</label>
