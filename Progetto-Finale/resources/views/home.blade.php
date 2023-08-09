@@ -48,17 +48,16 @@
             <h2>Tutti gli annunci</h2>
         </div>
         <div class="row mt-5">
-            <div class="col-12 col-md-4 mb-3">
-                <x-card/>
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-                Annuncio 1 
-            </div>
-            <div class="col-12 col-md-4 mb-3">
-                Annuncio 2
-            </div><div class="col-12 col-md-4 mb-3">
-                Annuncio 3
-            </div>
+            
+                @foreach($insertions as $insertion)
+                <div class="col-12 col-md-3 mb-3">
+                    <x-card :title="$insertion->title"
+                    :category="$insertion->category_id"
+                    :price="$insertion->price"
+                    :description="$insertion->description"
+                    :body="$insertion->body"/>
+                </div>
+                @endforeach
         </div>    
     </section>
 </x-main>

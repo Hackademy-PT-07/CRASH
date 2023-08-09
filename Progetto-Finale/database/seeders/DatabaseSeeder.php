@@ -19,4 +19,13 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
     }
-}
+    private function categories()
+    {
+
+        \App\Models\Category::create(['name' => 'Auto e Moto']);
+        \App\Models\Category::create(['name' => 'Elettronica e Informatica']);
+        \App\Models\Category::create(['name' => 'Elettrodomestici']);
+        \App\Models\Category::create(['name' => 'Sport']);
+
+    }
+};
