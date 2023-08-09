@@ -22,7 +22,18 @@
         </li>
       </ul>
       @auth
-        <a href="{{ route('insertions.index') }}" class="newAddBtn">Inserisci annuncio</a>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ auth()->user()->email }}
+              </a>
+              <li>
+                  <form action="/logout" method="POST">
+                    @csrf
+                    <button type="submit" class="btn">Esci</button>
+                  </form>
+                </li>
+              </ul>
         @else
         <a href="/login" class="loginLinkBtn">Accedi</a>
         <a href="/register" class="registerLinkBtn">Registrati</a>
