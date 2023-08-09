@@ -20,6 +20,7 @@ class InsertionsController extends Controller
      */
     public function create()
     {
+    
         return view('insertions.create');
     }
 
@@ -34,9 +35,10 @@ class InsertionsController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(insertions $insertions)
+    public function show(Insertions $insertion)
     {
-        return view('insertions.show');
+        
+        return view('insertions.show', compact('insertion'));
     }
 
     /**
