@@ -3,14 +3,7 @@
     
     <header><h1>Presto.it</h1></header>
 
-     <div class="authBtns d-flex">
-        @auth
-        <a href="{{ route('insertions.index') }}" class="newAddBtn">Inserisci annuncio</a>
-        @else
-        <a href="/login" class="loginLinkBtn">Accedi</a>
-        <a href="/register" class="registerLinkBtn">Registrati</a>
-        @endauth
-    </div>
+    
      <div class="container mt-4">
         <div class="my-5 text-center">
             <h2>Categorie</h2>
