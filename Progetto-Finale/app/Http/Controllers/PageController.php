@@ -14,6 +14,7 @@ class PageController extends Controller
 
     public function categoryShow(Category $category)
     {
-        return view('insertions.index', compact('category'));
+        $insertions = \App\Models\Insertions::all();
+        return view('categoryShow', compact('category'));
     }
 }
