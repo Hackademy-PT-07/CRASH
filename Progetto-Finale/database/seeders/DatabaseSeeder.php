@@ -12,9 +12,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $this->insertions();
-        $this->categories();
         $this->users();
+        $this->categories();
+        $this->insertions();
+   
     }
 
     private function users()

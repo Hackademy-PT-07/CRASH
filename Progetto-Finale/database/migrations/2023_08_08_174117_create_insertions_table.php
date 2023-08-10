@@ -14,12 +14,17 @@ return new class extends Migration
         Schema::create('insertions', function (Blueprint $table) {
             $table->id();
             $table->string('title', 150);
-            $table->string('category_id', 20);
+            $table->unsignedBigInteger('category_id');
             $table->string('description', 150);
-            $table->string('user_id', 20);
+            $table->unsignedBigInteger('user_id');
             $table->text('body');
             $table->timestamps();
+
+            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('user_id')->references('id')->on('users');
+
         });
+
     }
 
     /**
@@ -28,5 +33,6 @@ return new class extends Migration
     public function down(): void
     {
         Schema::dropIfExists('insertions');
+    
     }
 };
