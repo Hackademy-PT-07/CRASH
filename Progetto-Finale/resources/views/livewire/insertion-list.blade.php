@@ -8,7 +8,8 @@
                 :category="$insertion->category_id"
                 :price="$insertion->price"
                 :description="$insertion->description"
-                :body="$insertion->body"/>
+                :body="$insertion->body"
+                :link="route('insertions.show', $insertion)"/>
        </div>
 
         @endforeach

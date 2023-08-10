@@ -6,7 +6,7 @@
         <p class="card-text">{{ $description }}</p>
         <div class="d-flex justify-content-between ">
             <a href="">{{ $category }}</a>
-            <a href="" class="btn btn-secondary">Vai all'annuncio</a>
+            <a href="{{ $link }}" class="btn btn-secondary">Vai all'annuncio</a>
         </div>
     </div>
 </div>
