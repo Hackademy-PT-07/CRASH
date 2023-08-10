@@ -1,5 +1,5 @@
-@import 'bootstrap';
-@import 'bootstrap-icons';
+@import "bootstrap";
+@import "bootstrap-icons";
 
 header {
     padding: 30px;
@@ -9,13 +9,21 @@ header {
     border-bottom: solid grey 1px;
 }
 
-
-
-.newAddBtn, .loginLinkBtn, .registerLinkBtn {
+.newAddBtn,
+.loginLinkBtn,
+.registerLinkBtn {
     padding: 5px;
     margin: 5px;
-    border: solid black 1px ;
+    border: solid black 1px;
     background-color: azure;
     text-decoration: none;
-    color:black;
+    color: black;
+}
+.backgroundMain {
+    background-image: url(https://image.lexica.art/full_jpg/5d363f6c-33d7-4555-ba97-f18fb88a508c);
+}
+
+.cardBackGround > div:not(:nth-child) {
+    background-color: black;
+    filter: blur(10px);
 }
