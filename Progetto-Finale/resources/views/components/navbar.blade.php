@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="{{ 'insertions' }}">Inserisci annuncio</a>
+          <a class="nav-link active" aria-current="page" href="{{ route('insertions.index') }}">Inserisci annuncio</a>
         </li>
         
         <li class="nav-item dropdown">
@@ -16,7 +16,7 @@
           </a>
           <ul class="dropdown-menu">
             @foreach(App\Models\Category::all() as $category)
-            <li><a class="dropdown-item" href="#">{{ $category->name }}</a></li>
+            <li><a class="dropdown-item" href="{{route('categoryShow', compact('category'))}}">{{ $category->name }}</a></li>
             @endforeach  
           </ul>
         </li>

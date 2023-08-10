@@ -13,6 +13,6 @@ class Category extends Model
 
     public function insertions()
     {
-        return $this->belongsToMany(Insertion::class);
+        return $this->hasMany(Insertions::class);
     }
 }

@@ -1,11 +1,12 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', [\App\Http\Controllers\PageController::class, 'home'])->name('home');
-
+Route::get('/', [PageController::class, 'home'])->name('home');
+Route::get('categories/{category}', [PageController::class, 'categoryShow'])->name('categoryShow');
 
 Route::middleware('auth')->group(function (){
 
