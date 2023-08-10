@@ -1,57 +1,24 @@
 <x-main>
-    <x-slot:title>Home</x-slot:title>
+    <x-slot:title>Presto.it</x-slot:title>
     
-    <header><h1>Presto.it</h1></header>
+    <header>
+        <div class="row">
+            <div class="col-12">
+                <h1>Presto.it</h1>
+            </div>
+        </div></header>
 
     
      <div class="container mt-4">
         <div class="my-5 text-center">
-            <h2>Categorie</h2>
-        </div>
-        <div class="row">
-            <div class="col-6 col-md-3 text-center mb-5">
-                <a href="">categoria 1</a>
-            </div>
-            <div class="col-6 col-md-3 text-center mb-5">
-                <a href="">categoria 2</a>
-            </div> 
-            <div class="col-6 col-md-3 text-center mb-5">
-                <a href="">categoria 3</a>
-            </div> 
-            <div class="col-6 col-md-3 text-center mb-5">
-                <a href="">categoria 4</a>
-            </div>
-            <div class="col-6 col-md-3 text-center mb-5">
-                <a href="">categoria 5</a>
-            </div> 
-            <div class="col-6 col-md-3 text-center mb-5">
-                <a href="">categoria 6</a>
-            </div>
-            <div class="col-6 col-md-3 text-center mb-5">
-                <a href="">categoria 7</a>
-            </div> 
-            <div class="col-6 col-md-3 text-center mb-5">
-                <a href="">categoria 8</a>
-            </div>
-        </div>
-     </div>
+
 
     <section class="container mt-5">
         <div class="my-5">
             <h2>Tutti gli annunci</h2>
         </div>
-        <div class="row mt-5">
-            
-                @foreach($insertions as $insertion)
-                <div class="col-12 col-md-3 mb-3">
-                    <x-card :title="$insertion->title"
-                    :category="$insertion->category_id"
-                    :price="$insertion->price"
-                    :description="$insertion->description"
-                    :body="$insertion->body"
-                    :link="route('insertions.show', $insertion)"/>
-                </div>
-                @endforeach
+        <div class="row mt-5">    
+            <livewire:insertion-list/>
         </div>    
     </section>
 </x-main>
