@@ -11,7 +11,7 @@ class Insertions extends Model
 
     protected $fillable = ['title', 'category_id', 'description', 'body'];
 
-    public function categories()
+    public function category()
     {
         return $this->belongsTo(Category::class);
     }

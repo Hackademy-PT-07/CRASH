@@ -14,7 +14,7 @@
                         <select name="categories[]" id="category_id" class="form-control" wire:model="insertion.category_id" value=" ">
                         <option value="" >Scegli una categoria</option>
                                 @foreach(App\Models\Category::all() as $category) 
-                                    <option value="{{ $category->name }}">{{ $category->name }}</option>
+                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
                                 @endforeach
                         </select>
                         @error('insertion.category_id') <span class="small text-danger">{{ $message }}</span> @enderror
