@@ -13,7 +13,7 @@
 
 <body class="backgroundMain img-fluid  ">
     <div class="sticky-top">
-        <x-navbar />
+
     </div>
     <div>
         <div>

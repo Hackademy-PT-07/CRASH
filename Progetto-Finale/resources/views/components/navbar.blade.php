@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg w-100 border-bottom border-body blurBackGround" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg w-100 border-top border-bottom border-body blurBackGround sticky-top"
+    data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ route('home') }}">Presto.it</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

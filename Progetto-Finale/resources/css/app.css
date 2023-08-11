@@ -1,6 +1,10 @@
 @import "bootstrap";
 @import "bootstrap-icons";
 
+body {
+    background-color: #f4f2de;
+}
+
 header {
     padding: 30px;
     width: auto;
@@ -19,12 +23,14 @@ header {
     text-decoration: none;
     color: black;
 }
-.backgroundMain {
-    background-image: url(https://image.lexica.art/full_jpg/5d363f6c-33d7-4555-ba97-f18fb88a508c);
-}
+/* .backgroundMain {
+    background-image: url(https://cdn.discordapp.com/attachments/1139637535828607086/1139638157416071260/header.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+} */
 
 .blurBackGround {
-    background-color: rgba(255, 255, 255, 0.1); /* Opacità del 70% */
+    background-color: #a1ccd1; /* Opacità del 70% */
     backdrop-filter: blur(20px);
 }
 
