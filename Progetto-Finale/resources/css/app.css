@@ -23,7 +23,22 @@ header {
     background-image: url(https://image.lexica.art/full_jpg/5d363f6c-33d7-4555-ba97-f18fb88a508c);
 }
 
-.cardBackGround > div:not(:nth-child) {
-    background-color: black;
-    filter: blur(10px);
+.blurBackGround {
+    background-color: rgba(255, 255, 255, 0.1); /* Opacità del 70% */
+    backdrop-filter: blur(20px);
+}
+
+.buttonColor {
+    background-color: rgba(255, 255, 255, 0.5); /* Opacità del 70% */
+    backdrop-filter: blur(100px);
+}
+
+.dropDownMenuBg {
+    background-color: rgba(51, 50, 50, 0.9); /* Opacità del 70% */
+    backdrop-filter: blur(100px);
+}
+
+.errorBackground {
+    background-color: rgba(0, 0, 0, 0.6); /* Opacità del 70% */
+    backdrop-filter: blur(100px);
 }

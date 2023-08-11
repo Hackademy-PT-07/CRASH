@@ -1,15 +1,16 @@
 <x-main>
     <x-slot:title>Presto.it</x-slot:title>
-    
-    <header>
-        <div class="row">
+
+    <header class=" text-white">
+        <div class="row ">
             <div class="col-12">
                 <h1>Presto.it</h1>
             </div>
-        </div></header>
+        </div>
+    </header>
 
-    
-     <div class="container mt-4">
+
+    <div class="container mt-4 text-white">
         <div class="my-5 text-center">
 
 

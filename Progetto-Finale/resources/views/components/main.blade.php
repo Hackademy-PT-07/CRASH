@@ -16,7 +16,7 @@
         <x-navbar />
     </div>
     <div>
-        <div class=" ">
+        <div>
             {{ $slot }}
         </div>
     </div>
