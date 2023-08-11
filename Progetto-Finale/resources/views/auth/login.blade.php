@@ -2,7 +2,7 @@
     <x-slot:title>Login</x-slot:title>
     <div class="container my-5 ">
         <div class="row">
-            <div class="col-12 mx-auto">
+            <div class="col-8 mx-auto">
                 <div class="card p-3 blurBackGround text-white w-100">
                     <form action="/login" method="POST">
                         @csrf

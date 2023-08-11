@@ -3,7 +3,7 @@
 
     <header class="p-0">
         <img class="img-fluid"
-            src="https://cdn.discordapp.com/attachments/1139637535828607086/1139642025701023755/header.jpg" alt="">
+            src="/Progetto-Finale/public/images/header_panna_presto.jpg" alt="">
         <div class="container">
             <div class="row ">
                 <div class="col-12">
