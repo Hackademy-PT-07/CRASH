@@ -17,8 +17,15 @@
         <div class="my-5">
             <h2>Tutti gli annunci</h2>
         </div>
-        <div class="row mt-5">    
-            <livewire:insertion-list/>
+        <div class="row mt-5">
+        @foreach($insertions as $insertion)    
+            <x-card :title="$insertion->title"
+                :category="$insertion->category->name"
+                :price="$insertion->price"
+                :description="$insertion->description"
+                :body="$insertion->body"
+                :link="route('insertions.show', $insertion)"/>
+                @endforeach
         </div>    
     </section>
 </x-main>
