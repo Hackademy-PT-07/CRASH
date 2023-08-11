@@ -5,7 +5,7 @@
         <div class="col-12 col-md-3">
             <x-card :title="$insertion->title" :category="$insertion->category->name" :price="$insertion->price"
                 :description="$insertion->description" :body="$insertion->body"
-                :link="route('insertions.show', $insertion)" />
+                :link="route('insertions.show', $insertion)" :date="$insertion->created_at->diffForHumans()" />
         </div>
 
         @endforeach

@@ -19,10 +19,13 @@ class InsertionList extends Component
 
     public function loadInsertions()
     {
-        $this->insertions = \App\Models\Insertions::orderBy('created_at', 'DESC')->get();
+        $this->insertions = auth()->user()->insertions;
     }
     public function render()
-    {
+    { 
+
         return view('livewire.insertion-list');
     }
+
+
 }

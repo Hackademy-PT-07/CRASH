@@ -9,12 +9,12 @@ class PageController extends Controller
 {
     public function home()
     {
-        return view('home');
+        $insertions = \App\Models\Insertions::all();
+        return view('home', compact('insertions'));
     }
 
     public function categoryShow(Category $category)
     {
-        $insertions = \App\Models\Insertions::all();
         return view('categoryShow', compact('category'));
     }
 }

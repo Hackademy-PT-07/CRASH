@@ -38,7 +38,7 @@
             <div class="card-body w-100 rounded blurBackGround">
                 <h3 class="card-title ">{{$insertion->title}} <p class="fs-6 mt-1">({{$insertion->category->name}})</p>
                 </h3>
-                <h4>{{$insertion->price}}$</h4>
+                <h4>{{ \App\Custom\Currency::formatEuro($insertion->price)}}</h4>
                 <p class="card-text">{{$insertion->description}}</p>
 
             </div>
