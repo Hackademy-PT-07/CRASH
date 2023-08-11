@@ -1,4 +1,4 @@
-<div class="card h-100 mb-5 bg-transparent">
+<div class="card h-100 mb-5 ">
     <img src="https://picsum.photos/200/100" class="card-img-top " alt="...">
     <div class="card-body   blurBackGround  text-white ">
         <h4 class="card-title">{{ $title }}</h4>
