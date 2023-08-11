@@ -5,8 +5,7 @@
             @forelse($category->insertions as $insertion)
             <div class="col-12 col-md-3">
                 <x-card :title="$insertion->title" :category="$insertion->category->name" :price="$insertion->price"
-                    :description="$insertion->description" :body="$insertion->body" :date="$insertion->created_at->diffForHumans()"
-                    :link="route('insertions.show', $insertion)" />
+                    :description="$insertion->description" :body="$insertion->body" :date="$insertion->created_at->diffForHumans()" :link="route('insertions.show', $insertion)" />
             </div>
             @empty
             <div class="col-8 mx-auto">
