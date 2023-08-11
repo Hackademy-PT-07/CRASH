@@ -3,7 +3,7 @@
     <div class="container  mt-5">
         <div class="row">
             <div class="col-12 mx-auto  ">
-                <div class="card p-3 text-white dropDownMenuBg ">
+                <div class="card p-3 text-white blurBackGround ">
                     <form action="/register" method="POST">
                         @csrf
                         <h3>Registrati</h3>

@@ -36,10 +36,10 @@
         <div class="card w-50 bg-transparent  text-white ">
 
             <div class="card-body w-100 rounded blurBackGround">
-                <h5 class="card-title">{{$insertion->title}}</h5>
-                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta veritatis,
-                    voluptatibus similique odio iste minus cumque. Molestiae aut, alias consequuntur autem eos unde
-                    numquam at quibusdam ullam qui dignissimos cupiditate?</p>
+                <h3 class="card-title ">{{$insertion->title}} <p class="fs-6 mt-1">({{$insertion->category->name}})</p>
+                </h3>
+                <h4>{{$insertion->price}}$</h4>
+                <p class="card-text">{{$insertion->description}}</p>
 
             </div>
         </div>

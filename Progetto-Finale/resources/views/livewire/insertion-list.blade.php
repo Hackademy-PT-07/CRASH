@@ -1,5 +1,5 @@
 <div class="container text-white my-5">
-    <h4 class="blurBackGround w-100 rounded d-flex justify-content-center">Annunci più recenti</h4>
+    <h4 class="blurBackGround my-5 w-100 rounded d-flex justify-content-center">Annunci più recenti</h4>
     <div class="row">
         @foreach($insertions as $insertion)
         <div class="col-12 col-md-3">

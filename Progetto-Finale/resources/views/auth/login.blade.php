@@ -3,7 +3,7 @@
     <div class="container my-5 ">
         <div class="row">
             <div class="col-12 mx-auto">
-                <div class="card p-3 dropDownMenuBg text-white w-100">
+                <div class="card p-3 blurBackGround text-white w-100">
                     <form action="/login" method="POST">
                         @csrf
                         <h3>Accedi</h3>
@@ -12,14 +12,14 @@
                             <input class="form-control focus-ring focus-ring-danger" type="email" name="email"
                                 id="email">
                             @error('email')<p class="small rounded my-2 errorBackground text-danger">{{ $message }}
-                    </p> @enderror
+                            </p> @enderror
                         </div>
                         <div class="col-12 mt-3">
                             <label for="password">Password</label>
                             <input class="form-control focus-ring focus-ring-danger" type="password" name="password"
                                 id="password">
                             @error('password')<p class="small rounded my-2 errorBackground text-danger">{{ $message }}
-                    </p> @enderror
+                            </p> @enderror
                         </div>
                         <div class="col-12 mt-3">
                             <button type="submit" class="btn buttonColor">Accedi</button>
