@@ -2,8 +2,7 @@
     <x-slot:title>Presto.it</x-slot:title>
 
     <header class="p-0">
-        <img class="img-fluid"
-            src="/Progetto-Finale/public/images/header_panna_presto.jpg" alt="">
+        <img class="img-fluid" src="\images\header.jpg" alt="">
         <div class="container">
             <div class="row ">
                 <div class="col-12">
