@@ -23,28 +23,26 @@ header {
     text-decoration: none;
     color: black;
 }
-/* .backgroundMain {
-    background-image: url(https://cdn.discordapp.com/attachments/1139637535828607086/1139638157416071260/header.jpg);
-    background-repeat: no-repeat;
-    max-width: 100%;
-} */
 
-.blurBackGround {
+.colorNavbar {
     background-color: #a1ccd1; /* Opacità del 70% */
-    backdrop-filter: blur(20px);
+}
+
+.BackGroundcolor {
+    background-color: #7c9d96; /* Opacità del 70% */
 }
 
 .buttonColor {
-    background-color: rgba(255, 255, 255, 0.5); /* Opacità del 70% */
-    backdrop-filter: blur(100px);
+    background-color: #e9b384; /* Opacità del 70% */
 }
 
-.dropDownMenuBg {
-    background-color: rgba(51, 50, 50, 0.9); /* Opacità del 70% */
-    backdrop-filter: blur(100px);
+.shadow {
+    box-shadow: rgba(156, 95, 134, 0.4) -5px 5px;
 }
 
-.errorBackground {
-    background-color: rgba(0, 0, 0, 0.6); /* Opacità del 70% */
-    backdrop-filter: blur(100px);
+.imgSize {
+    height: 300px;
+}
+
+.BackGroundIllustration {
 }
