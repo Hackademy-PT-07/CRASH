@@ -17,6 +17,8 @@
                         aria-expanded="false">
                         Categorie
                     </a>
+                    
+
                     <ul class="dropdown-menu dropDownMenuBg">
                         @foreach(App\Models\Category::all() as $category)
                         <li><a class="dropdown-item"
@@ -24,12 +26,18 @@
                         @endforeach
                     </ul>
                 </li>
+                <li>
+                
+                        <button type="submit" class="btn buttonColor text-white">Revisione annunci</button>
+                    </form>
+                </li>
             </ul>
+
             @auth
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        {{ auth()->user()->email }}
+                        {{ auth()->user()->name }}
                     </a>
                 <li>
                     <form action="/logout" method="POST">
