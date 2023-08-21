@@ -3,7 +3,7 @@
     <div class="card-body BackGroundcolor  text-white ">
         <h4 class="card-title">{{ $title }}</h4>
         <h6 class="card-subtitle mb-2  text-white ">{{ \App\Custom\Currency::formatEuro($price) }}</h6>
-        <p class="card-text">{{ $description }}</p>
+        <p class="card-text inline ">{{ $description }}</p>
         <div class="d-flex justify-content-center ">
             <a href="" class="text-white mb-3">{{ $category }}</a>
 

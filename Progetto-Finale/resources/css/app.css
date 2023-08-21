@@ -1,7 +1,6 @@
 @import "bootstrap";
 @import "bootstrap-icons";
 
-
 body {
     background-color: #f4f2de;
 }
@@ -26,7 +25,7 @@ header {
 }
 
 .colorNavbar {
-    background-color: #a1ccd1; /* Opacità del 70% */
+    background-color: #7c9d96; /* Opacità del 70% */
 }
 
 .BackGroundcolor {
