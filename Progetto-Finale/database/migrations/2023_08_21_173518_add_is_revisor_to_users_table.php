@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('insertions', function (Blueprint $table) {
-            $table->unsignedInteger('price')->after('category_id');
+        Schema::table('users', function (Blueprint $table) {
+            $table->boolean('is_revisor')->default(false);
         });
     }
 
@@ -21,8 +21,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('insertions', function (Blueprint $table) {
-            $table->dropColumn('price');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('is_revisor');
         });
     }
 };

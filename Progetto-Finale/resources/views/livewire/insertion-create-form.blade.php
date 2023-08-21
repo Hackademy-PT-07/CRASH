@@ -31,18 +31,13 @@
                     @enderror
                 </div>
                 <div class="mt-2 col-12">
-                    <label for="description">Descrizione breve</label>
-                    <input type="text" wire:model="insertion.description" class="form-control">
+                    <label for="description">Descrizione</label>
+                    <textarea wire:model="insertion.description" class="form-control" rows="5"></textarea>
                     @error('insertion.description') <p class="small rounded my-2 errorBackground text-danger">
                         {{ $message }}
                     </p> @enderror
                 </div>
-                <div class="mt-2 col-12">
-                    <label for="body">Dettaglio</label>
-                    <textarea wire:model="insertion.body" rows="4" class="form-control"></textarea>
-                    @error('insertion.body') <p class="small rounded my-2 errorBackground text-danger">{{ $message }}
-                    </p> @enderror
-                </div>
+    
                 <div class="mt-2 col-12">
                     <button type="submit" class="btn buttonColor w-100">Salva annuncio</button>
                 </div>

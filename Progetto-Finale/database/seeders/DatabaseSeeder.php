@@ -30,9 +30,15 @@ class DatabaseSeeder extends Seeder
             'email' => 'linda@email.com',
             'password' => '12345678',
 
-        ]);  \App\Models\User::create([
+        ]); 
+         \App\Models\User::create([
             'name' => 'Pino',
             'email' => 'pino@email.com',
+            'password' => '12345678',
+        ]); 
+        \App\Models\User::create([
+            'name' => 'Pablo',
+            'email' => 'pablo@email.com',
             'password' => '12345678',
         ]); 
     }
@@ -42,58 +48,53 @@ class DatabaseSeeder extends Seeder
             'title' => 'Iphone X',
             'category_id' => 6,
             'price' => 500,
-            'description' => 'Iphone X come nuovo',
+            'description' => 'Iphone X come nuovo del 2021',
             'user_id' => 2,
-            'body' => 'iphone del 2021'
         ]); 
         \App\Models\Insertions::create([
             'title' => 'TV Samsung',
             'category_id' => 2,
             'price' => 300,
-            'description' => 'TV del 2018 ',
+            'description' => 'TV del 2018 con telecomando',
             'user_id' => 3,
-            'body' => 'TV Samsung con telecomando'
         ]); 
 
         \App\Models\Insertions::create([
             'title' => 'Fumetto Spiderman',
             'category_id' => 8,
             'price' => 10,
-            'description' => 'Fumetto della Marvel',
+            'description' => 'Fumetto della Marvel del 2002',
             'user_id' => 2,
-            'body' => 'Fumetto del 2002'
         ]); 
         \App\Models\Insertions::create([
             'title' => 'Divano',
             'category_id' => 5,
             'price' => 100,
-            'description' => 'Divano tre posti',
+            'description' => 'Divano blu in tessuto tre posti',
             'user_id' => 3,
-            'body' => 'Divano blu in tessuto'
+    
         ]); 
         \App\Models\Insertions::create([
             'title' => 'Fiat 500',
             'category_id' => 1,
             'price' => 3000,
-            'description' => 'Fiat 500 benzina',
+            'description' => 'Fiat 500 benzina Rossa del 2014',
             'user_id' => 2,
-            'body' => 'Fiat 500 Rossa del 2014'
         ]); 
         \App\Models\Insertions::create([
             'title' => 'Borsa Louis Vuitton',
             'category_id' => 7,
             'price' => 30,
-            'description' => 'Borsa marrone',
+            'description' => 'Borsa marrone come nuova',
             'user_id' => 3,
-            'body' => 'Borsa come nuova'
         ]); 
         \App\Models\Insertions::create([
             'title' => 'Computer MSI',
             'category_id' => 2,
             'price' => 900,
-            'description' => 'Nero con tastiera led rossa',
+            'description' => 'Computer portatile da gamming usato come nuovo, nero con tastiera led rossa',
             'user_id' => 2,
-            'body' => 'Computer portatile da gamming usato come nuovo'
+
         ]); 
         \App\Models\Insertions::create([
             'title' => 'Lavatrice',
@@ -101,7 +102,7 @@ class DatabaseSeeder extends Seeder
             'price' => 150,
             'description' => '8kg di capacità',
             'user_id' => 2,
-            'body' => 'bianca'
+    
         ]); 
     }
 
