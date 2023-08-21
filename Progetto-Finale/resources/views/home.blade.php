@@ -85,6 +85,6 @@
                     @endforeach
                 </div>
             </section>
-            
+
 </x-main>
 <x-footer />

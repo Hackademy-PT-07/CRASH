@@ -3,7 +3,7 @@
     <div class="container my-5 ">
         <div class="row">
             <div class="col-8 mx-auto">
-                <div class="card p-3 blurBackGround text-white w-100">
+                <div class="card p-3 BackGroundcolor text-white w-100">
                     <form action="/login" method="POST">
                         @csrf
                         <h3>Accedi</h3>
