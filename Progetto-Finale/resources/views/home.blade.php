@@ -17,7 +17,7 @@
 
     <div>
         <div class="container my-5">
-            <div class="row d-flex BackGroundIllustration ">
+            <div class="row d-flex BackGroundIllustration  ">
                 <div class="col-12 col-md-6  ">
                     <img class="img-fluid imgSize" src="https://hbswk.hbs.edu/PublishingImages/norton-shake.jpg" alt="">
                 </div>
@@ -30,7 +30,7 @@
                         fuga animi? Rerum, dicta eaque!</p>
                 </div>
             </div>
-            <div class="row  my-5 ">
+            <div class="row  my-5  BackGroundIllustrationReverse">
                 <div class="col-12 col-md-6 my-5  r fs-3 ">
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Illo perspiciatis
@@ -40,14 +40,16 @@
                         fuga animi? Rerum, dicta eaque!</p>
                 </div>
                 <div class="col-12 col-md-6 d-flex justify-content-end ">
-                    <img class="img-fluid  imgSize" src="https://hbswk.hbs.edu/PublishingImages/norton-shake.jpg"
+                    <img class="img-fluid  imgSize"
+                        src="https://economiacircolare.com/wp-content/uploads/2021/01/vestiti-abiti-clothes-1068x712.jpg"
                         alt="">
                 </div>
             </div>
 
-            <div class="row d-flex ">
+            <div class="row d-flex BackGroundIllustration">
                 <div class="col-12 col-md-6  ">
-                    <img class="img-fluid imgSize" src="https://hbswk.hbs.edu/PublishingImages/norton-shake.jpg" alt="">
+                    <img class="img-fluid imgSize" src="https://www.gemius.com/files/GL/content/online%20shopping.JPG"
+                        alt="">
                 </div>
                 <div class="col-12 col-md-6 my-5  r fs-3 ">
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing

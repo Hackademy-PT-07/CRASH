@@ -1,16 +1,16 @@
-<div class="container mt-5 text-white blurBackGround rounded">
+<div class="container mt-5  text-white BackGroundcolor rounded">
     <h4>Inserisci annuncio</h4>
     <x-success />
     <div class="row">
         <form wire:submit.prevent="store">
             <div class="row text-white ">
-                <div class="mt-2 col-12 col-md-5">
+                <div class="mt-1 col-12 col-md-5">
                     <label for="title">Nome del prodotto</label>
                     <input type="text" class="form-control" wire:model="insertion.title">
                     @error('insertion.title') <p class="small rounded my-2 errorBackground text-danger">{{ $message }}
                     </p> @enderror
                 </div>
-                <div class="mt-2 col-12 col-md-4">
+                <div class="mt-1 col-12 col-md-4">
                     <label for="category_id">Categoria</label>
                     <select name="categories[]" id="category_id" class="form-control" wire:model="insertion.category_id"
                         value=" ">
@@ -37,9 +37,9 @@
                         {{ $message }}
                     </p> @enderror
                 </div>
-    
+
                 <div class="mt-2 col-12">
-                    <button type="submit" class="btn buttonColor w-100">Salva annuncio</button>
+                    <button type="submit" class="btn buttonColor  w-100">Salva annuncio</button>
                 </div>
             </div>
         </form>
