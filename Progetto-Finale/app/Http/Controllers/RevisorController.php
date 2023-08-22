@@ -17,5 +17,9 @@ class RevisorController extends Controller
         $insertion->setAccepted(true);
         return redirect()->back()->with('message', "L'annuncio è stato accettato");
     }
-
+    public function rejectInsertion(Insertions $insertion)
+    {
+        $insertion->setAccepted(false);
+        return redirect()->back()->with('message', "L'annuncio è stato rifiutato");
+    }
 };

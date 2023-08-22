@@ -36,14 +36,31 @@
                 </div>
             </div>
         </div class="row">
-    <div class="col-12 my-5 d-flex justify-content-center   ">
-        <div class="card w-50 bg-transparent  text-white ">
-            <div class="card-body w-100 rounded blurBackGround">
+    <div class="col-12  d-flex justify-content-center">
+        <div class="mb-4 w-50">
+            <div class="card-body w-100">
                 <h3 class="card-title ">{{$insertionToCheck->title}} 
                     <p class="fs-6 mt-1">({{$insertionToCheck->category->name}})</p>
                 </h3>
                 <h4>{{ \App\Custom\Currency::formatEuro($insertionToCheck->price)}}</h4>
-                <p class="card-text">{{$insertionToCheck->description}}</p>
+                <p class="card-text">{{$insertionToCheck->description}}</p>             
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                    <form action="{{route('revisor.accept_insertion', ['insertion'=>$insertionToCheck])}}" method="POST">
+                        @csrf
+                        @method('PATCH')
+                            <button type="submit" class="btn btn-success">Accetta</button>
+                    </form>
+                    
+                </div>
+                <div class="col-12 col-md-6 text-end">
+                <form action="{{route('revisor.reject_insertion', ['insertion'=>$insertionToCheck])}}" method="POST">
+                        @csrf
+                        @method('PATCH')
+                            <button type="submit" class="btn btn-danger">Rifiuta</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
