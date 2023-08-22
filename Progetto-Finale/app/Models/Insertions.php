@@ -25,6 +25,11 @@ class Insertions extends Model
         $this->save();
         return true;
     }
+
+    public static function toBeRevisionedCount()
+    {
+        return Insertions::where('is_accepted', null)->count();
+    }
     
 
 }
