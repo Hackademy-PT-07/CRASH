@@ -26,15 +26,18 @@
                         @endforeach
                     </ul>
                 </li>
+               @auth
+               @if (Auth::user()->is_revisor)
                 <li>
-                <form action="\revisor/home">
+                <form action="\revisor\home">
                 <button type="submit" class="btn buttonColor text-white">Revisione annunci</button>
                         <span class="position absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"> {{App\Models\Insertions::toBeRevisionedCount()}}</span>
                 </form>   
                 
             
                 </li>
-                
+                @endif
+                @endauth
             </ul>
 
             @auth
