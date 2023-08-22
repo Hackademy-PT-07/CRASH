@@ -12,8 +12,7 @@ class InsertionCreateForm extends Component
         'insertion.title.required' => 'Il campo nome del prodotto non può essere vuoto.',
         'insertion.category_id.required' => 'Il campo categoria del prodotto non può essere vuoto.',
         'insertion.price.required' => 'Il campo prezzo del prodotto non può essere vuoto.',
-        'insertion.description.required' => 'Il campo descrizione del prodotto non può essere vuoto.',
-        'insertion.body.required' => 'Il campo dettaglio del prodotto non può essere vuoto.',
+        'insertion.description.required' => 'Il campo descrizione del prodotto non può essere vuoto.'
     ];
 
     protected function rules()
@@ -23,7 +22,7 @@ class InsertionCreateForm extends Component
             'insertion.category_id' => 'required',
             'insertion.price' => 'required',
             'insertion.description' => 'required',
-            'insertion.body' => 'required',
+    
         ];
     }
 
