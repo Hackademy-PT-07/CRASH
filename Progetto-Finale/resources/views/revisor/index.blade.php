@@ -9,7 +9,7 @@
     @if($insertionToCheck)
     <div class="container ">
         <div class="row">
-            <div class="col-12 my-5 d-flex justify-content-center">
+            <div class="col-12 mt-5 d-flex justify-content-center">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -35,8 +35,8 @@
                     </div>
                 </div>
             </div>
-        </div class="row">
-    <div class="col-12  d-flex justify-content-center">
+        </div>
+    <div class=" mt-2 col-12 d-flex justify-content-center">
         <div class="mb-4 w-50">
             <div class="card-body w-100">
                 <h3 class="card-title ">{{$insertionToCheck->title}} 

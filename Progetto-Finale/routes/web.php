@@ -14,8 +14,9 @@ Route::middleware('auth')->group(function (){
     Route::resource('insertions', \App\Http\Controllers\InsertionsController::class);
 });
 
-Route::get('revisor/home', [RevisorController::class, 'index'])->name('revisor.index');
+Route::middleware('isRevisor')->group(function(){
+    Route::get('revisor/home', [RevisorController::class, 'index'])->name('revisor.index');
+    Route::patch('accept/insertion/{insertion}', [RevisorController::class, 'acceptInsertion'])->name('revisor.accept_insertion');
+    Route::patch('reject/insertion/{insertion}',[RevisorController::class, 'rejectInsertion'])->name('revisor.reject_insertion');
+});
 
-Route::patch('accept/insertion/{insertion}', [RevisorController::class, 'acceptInsertion'])->name('revisor.accept_insertion');
-
-Route::patch('reject/insertion/{insertion}',[RevisorController::class, 'rejectInsertion'])->name('revisor.reject_insertion');
