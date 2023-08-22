@@ -1,8 +1,8 @@
 <div class="container mt-5  text-white BackGroundcolor rounded">
-    <h4>Inserisci annuncio</h4>
+    <h4 class="pt-3">Inserisci annuncio</h4>
     <x-success />
     <div class="row">
-        <form wire:submit.prevent="store">
+        <form wire:submit.prevent="store" class="py-3">
             <div class="row text-white ">
                 <div class="mt-1 col-12 col-md-5">
                     <label for="title">Nome del prodotto</label>

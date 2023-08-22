@@ -12,7 +12,8 @@ class InsertionsController extends Controller
      */
     public function index()
     {
-        return view('insertions.index');
+        $insertions = \App\Models\Insertions::where('is_accepted', true);
+        return view('insertions.index',compact('insertions'));
     }
 
     /**
