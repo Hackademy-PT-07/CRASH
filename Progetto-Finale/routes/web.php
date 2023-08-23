@@ -15,7 +15,10 @@ Route::middleware('auth')->group(function (){
     Route::resource('insertions', InsertionsController::class);
 
     Route::get('request/revisor',[RevisorController::class, 'becomeRevisor'])->name('become.revisor');
+    Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 });
+
+
 
 Route::middleware('isRevisor')->group(function(){
     Route::get('revisor/home', [RevisorController::class, 'index'])->name('revisor.index');
