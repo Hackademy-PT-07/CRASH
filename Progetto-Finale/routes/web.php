@@ -12,6 +12,8 @@ Route::get('categories/{category}', [PageController::class, 'categoryShow'])->na
 
 Route::middleware('auth')->group(function (){
     Route::resource('insertions', \App\Http\Controllers\InsertionsController::class);
+
+    Route::get('request/revisor',[RevisorController::class, 'becomeRevisor'])->name('become.revisor');
 });
 
 Route::middleware('isRevisor')->group(function(){

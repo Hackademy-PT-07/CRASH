@@ -37,9 +37,8 @@
                     <!--Grid column-->
                     <div class="col-auto">
                         <!-- Submit button -->
-                        <button type="submit" class="btn btn-outline-light mb-4">
-                            Diventa revisore
-                        </button>
+                        <a href="{{ route('become.revisor')}}" class="btn btn-outline-light mb-4">Diventa revisore</a>
+        
                     </div>
                     <!--Grid column-->
                 </div>

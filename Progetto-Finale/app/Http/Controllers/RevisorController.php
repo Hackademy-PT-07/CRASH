@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\BecomeRevisor;
 use App\Models\Insertions;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class RevisorController extends Controller
 {
@@ -22,4 +25,11 @@ class RevisorController extends Controller
         $insertion->setAccepted(false);
         return redirect()->back()->with('message', "L'annuncio è stato rifiutato");
     }
+
+    public function becomeRevisor()
+    {
+        Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));
+        return redirect()->back()->with('message', 'Complimenti hai richiesto di diventare revisore con successo');
+    }
+
 };
