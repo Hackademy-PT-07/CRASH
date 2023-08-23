@@ -115,6 +115,22 @@ header {
         rgba(233, 179, 132, 0.05) -25px 25px;
 }
 
-.imgSize {
-    height: 300px;
+.icon-size-color > a {
+    color: #f4f2de;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    font-size: 100px;
+    background-color: #7c9d96;
+    border-radius: 5%;
+    margin: 3%;
+    box-shadow: rgba(233, 179, 132, 0.4) 0px 5px,
+        rgba(233, 179, 132, 0.3) 0px 10px, rgba(233, 179, 132, 0.2) 0px 15px,
+        rgba(233, 179, 132, 0.1) 0px 20px, rgba(233, 179, 132, 0.05) 0px 25px;
+    transition: transform 1s ease;
+    transition: color 0.5s ease;
+    &:hover {
+        color: #e9b384;
+        transform: scale(1.05);
+    }
 }
