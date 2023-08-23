@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\insertions;
+use App\Models\Insertions;
 use Illuminate\Http\Request;
 
 class InsertionsController extends Controller
@@ -12,7 +12,7 @@ class InsertionsController extends Controller
      */
     public function index()
     {
-        $insertions = \App\Models\Insertions::where('is_accepted', true)->get()->sortByDesc('created_at');
+        $insertions = Insertions::where('is_accepted', true)->get()->sortByDesc('created_at');
         return view('insertions.index', compact('insertions'));
     }
 
@@ -28,7 +28,7 @@ class InsertionsController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function searchInsertions(Request $request)
     {
         $insertions = Insertions::search($request->searched)->where('is_accepted', true)->paginate(16);
         return view('insertions.index', compact('insertions'));
