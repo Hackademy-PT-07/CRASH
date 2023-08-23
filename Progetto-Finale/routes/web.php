@@ -23,4 +23,4 @@ Route::middleware('isRevisor')->group(function(){
     Route::patch('reject/insertion/{insertion}',[RevisorController::class, 'rejectInsertion'])->name('revisor.reject_insertion');
 });
 
-Route::get('/search/insertion', [InsertionsController::class, 'searchInsertions'])->name('insertions.search');
+Route::get('/search/insertion', [InsertionsController::class, 'store'])->name('insertions.search');

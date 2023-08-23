@@ -30,7 +30,9 @@ class InsertionsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $insertions = Insertions::search($request->searched)->where('is_accepted', true)->paginate(16);
+        return view('insertions.index', compact('insertions'));
+
     }
 
     /**
