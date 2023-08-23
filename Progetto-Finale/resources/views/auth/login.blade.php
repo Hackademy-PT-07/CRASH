@@ -2,11 +2,11 @@
     <x-slot:title>Login</x-slot:title>
     <div class="container my-5 ">
         <div class="row">
-            <div class="col-8 mx-auto">
+            <div class="col-6 mx-auto mt-5">
                 <div class="card p-3 BackGroundcolor text-white w-100">
                     <form action="/login" method="POST">
                         @csrf
-                        <h3>Accedi</h3>
+                        <h3 class="mt-3">Accedi</h3>
                         <div class="col-12 mt-3">
                             <label for="email">Email</label>
                             <input class="form-control focus-ring focus-ring-danger" type="email" name="email"
@@ -22,6 +22,9 @@
                             </p> @enderror
                         </div>
                         <div class="col-12 mt-3">
+                            <a href="/register" class="text-white">Non sei ancora registrato? Registrati</a>
+                        </div>
+                        <div class="col-12 my-3">
                             <button type="submit" class="btn buttonColor">Accedi</button>
                         </div>
                     </form>
