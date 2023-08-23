@@ -12,8 +12,8 @@ class InsertionsController extends Controller
      */
     public function index()
     {
-        $insertions = \App\Models\Insertions::where('is_accepted', true);
-        return view('insertions.index',compact('insertions'));
+        $insertions = \App\Models\Insertions::where('is_accepted', true)->get()->sortByDesc('created_at');
+        return view('insertions.index', compact('insertions'));
     }
 
     /**
