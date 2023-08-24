@@ -1,9 +1,9 @@
 <div class="card my-3 border border-dark">
     <div class="position-relative">
         @if($isAccepted === 0)
-        <span class="position-absolute top-0 end-0 rejected">rifiutato</span>
+        <span class="position-absolute top-0 end-0 rejected rejected-color ">rifiutato</span>
         @elseif($isAccepted === null)
-        <span class="position-absolute top-0 end-0 toRevisioned">da revisionare</span>
+        <span class="position-absolute top-0 end-0 toRevisioned review">da revisionare</span>
         @else
         <div class="hide"></div>
         @endif
@@ -21,7 +21,8 @@
             <a href="" class="text-white mb-3">{{ $category }}</a>
 
         </div>
-        <div> <a href="{{ $link }}" class="btn d-flex justify-content-centertext-white buttonColor">Vai all'annuncio</a>
+        <div> <a href="{{ $link }}" class="btn d-flex justify-content-center text-white buttonColor">Vai
+                all'annuncio</a>
         </div>
         <div class="text-center my-3">
             <p>{{$date}}</p>

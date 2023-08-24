@@ -20,7 +20,7 @@
                         <a href=""><i class="bi bi-pc-display " data-aos="fade-down"></i></a>
                         <a href=""><i class="bi bi-gear-fill" data-aos="fade-down"></i></a>
                         <a href=""><i class="bi bi-bicycle" data-aos="fade-down"></i></a>
-                        <a href=""><i class="bi bi-house" data-aos="fade-left"></i></a>
+                        <a href=""><i class="bi bi-house" data-aos="fade-right"></i></a>
 
 
                     </div>
@@ -31,7 +31,7 @@
                         <a href=""><i class="bi bi-bag" data-aos="fade-up"></i></a>
                         <a href=""><i class="bi bi-book" data-aos="fade-up"></i></a>
                         <a href=""><i class="bi bi-github" data-aos="fade-up"></i></a>
-                        <a href=""><i class="bi bi-coin" data-aos="fade-left"></i></a>
+                        <a href=""><i class="bi bi-coin" data-aos="fade-right"></i></a>
 
 
 
@@ -59,7 +59,7 @@
                         fuga animi? Rerum, dicta eaque!</p>
                 </div>
             </div>
-            <div class="row  my-5  BackGroundIllustrationReverse" data-aos="fade-left" data-aos-duration="3000">
+            <div class="row  my-5  BackGroundIllustrationReverse" data-aos="fade-right" data-aos-duration="3000">
                 <div class="col-12 col-md-6 my-5  r fs-3 ">
                     <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Illo perspiciatis

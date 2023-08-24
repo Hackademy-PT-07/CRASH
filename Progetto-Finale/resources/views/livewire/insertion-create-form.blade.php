@@ -1,4 +1,5 @@
 
+
 <div class="container mt-5  text-white background-green rounded">
     <h4 class="pt-3">Inserisci annuncio</h4>
     <x-success />
@@ -38,12 +39,12 @@
                         {{ $message }}
                     </p> @enderror
                 </div>
-
-                <div class="mt-2 col-12">
-                    <button type="submit" class="btn buttonColor  w-100">Salva annuncio</button>
+                    <div class="mt-2 col-12">
+                        <button type="submit" class="btn buttonColor  w-100">Salva annuncio</button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
 
+        </div>
     </div>
 </div>
