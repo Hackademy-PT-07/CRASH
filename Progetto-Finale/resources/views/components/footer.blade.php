@@ -1,11 +1,11 @@
 <!-- Footer -->
-<footer class="BackGroundcolor text-center text-white">
+<footer class="background-green text-center text-white">
     <!-- Grid container -->
     <div class="container p-4">
         <!-- Section: Social media -->
         <section class="mb-4">
             <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-facebook"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="" role="button"><i class="bi bi-facebook"></i></a>
 
             <!-- Instagram -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
@@ -38,7 +38,7 @@
                     <div class="col-auto">
                         <!-- Submit button -->
                         <a href="{{ route('become.revisor')}}" class="btn btn-outline-light mb-4">Diventa revisore</a>
-        
+
                     </div>
                     <!--Grid column-->
                 </div>

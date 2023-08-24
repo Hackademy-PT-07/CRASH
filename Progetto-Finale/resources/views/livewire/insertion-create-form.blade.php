@@ -1,4 +1,5 @@
-<div class="container mt-5  text-white BackGroundcolor rounded">
+<x-navbar />
+<div class="container mt-5  text-white background-green rounded">
     <h4 class="pt-3">Inserisci annuncio</h4>
     <x-success />
     <div class="row">

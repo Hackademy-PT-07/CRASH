@@ -4,7 +4,7 @@
     <div class="container  mt-5">
         <div class="row">
             <div class="col-6 mx-auto mt-5 ">
-                <div class="card p-3 text-white background-lite-blue ">
+                <div class="card p-3 text-white background-green ">
                     <form action="/register" method="POST">
                         @csrf
                         <h3 class="mt-3">Registrati</h3>

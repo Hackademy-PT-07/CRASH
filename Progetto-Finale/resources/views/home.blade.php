@@ -15,8 +15,8 @@
             <h2 class="d-flex mt-5 align-item-center justify-content-center fs-2 BackGroundcolor "> Categorie </h2>
             <div>
                 <div class="row d-flex  ">
-                    <div class="col-6 col-md-12 icon-size-color d-flex  justify-content-center ">
-                        <a href=""><i class="bi bi-truck" data-aos="fade-right"></i></a>
+                    <div class="col-12  icon-size-color d-flex  justify-content-center ">
+                        <a href=""><i class="bi  bi-truck" data-aos="fade-right"></i></a>
                         <a href=""><i class="bi bi-pc-display " data-aos="fade-down"></i></a>
                         <a href=""><i class="bi bi-gear-fill" data-aos="fade-down"></i></a>
                         <a href=""><i class="bi bi-bicycle" data-aos="fade-down"></i></a>
@@ -26,7 +26,7 @@
                     </div>
 
 
-                    <div class="col-6 col-md-12 icon-size-color d-flex  justify-content-center">
+                    <div class="col-12 col-md-12 icon-size-color d-flex  justify-content-center">
                         <a href=""><i class="bi bi-phone" data-aos="fade-right"></i></a>
                         <a href=""><i class="bi bi-bag" data-aos="fade-up"></i></a>
                         <a href=""><i class="bi bi-book" data-aos="fade-up"></i></a>

@@ -4,7 +4,7 @@
     <div class="container my-5 ">
         <div class="row">
             <div class="col-6 mx-auto mt-5">
-                <div class="card p-3 background-lite-blue text-white w-100">
+                <div class="card p-3 background-green text-white w-100">
                     <form action="/login" method="POST">
                         @csrf
                         <h3 class="mt-3">Accedi</h3>
