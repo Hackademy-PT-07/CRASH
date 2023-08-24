@@ -21,7 +21,8 @@
             <a href="" class="text-white mb-3">{{ $category }}</a>
 
         </div>
-        <div> <a href="{{ $link }}" class="btn d-flex justify-content-centertext-white buttonColor">Vai all'annuncio</a>
+        <div> <a href="{{ $link }}" class="btn d-flex justify-content-center text-white buttonColor">Vai
+                all'annuncio</a>
         </div>
         <div class="text-center my-3">
             <p>{{$date}}</p>
