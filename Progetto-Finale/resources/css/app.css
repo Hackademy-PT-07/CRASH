@@ -147,3 +147,9 @@ header {
         transform: scale(1.05);
     }
 }
+.hide {
+    display: hide;
+}
+.rejected .toRevisioned {
+    
+}
