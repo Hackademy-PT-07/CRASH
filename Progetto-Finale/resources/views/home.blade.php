@@ -113,7 +113,7 @@
                 <div class="row mt-5">
 
                     @foreach($insertions as $insertion)
-                    <div class="col-12 col-md-3 " data-aos="zoom-out-up">
+                    <div class="col-12 col-md-3 " data-aos="zoom-out-up" data-aos-duration="1000">
 
                         <x-card :title="$insertion->title" :category="$insertion->category->name"
                             :price="$insertion->price" :description="$insertion->description" :body="$insertion->body"
