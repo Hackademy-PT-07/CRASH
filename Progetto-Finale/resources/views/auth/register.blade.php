@@ -1,9 +1,10 @@
 <x-main>
+    <x-navbar />
     <x-slot:title>Registrati</x-slot:title>
     <div class="container  mt-5">
         <div class="row">
             <div class="col-6 mx-auto mt-5 ">
-                <div class="card p-3 text-white BackGroundcolor ">
+                <div class="card p-3 text-white background-lite-blue ">
                     <form action="/register" method="POST">
                         @csrf
                         <h3 class="mt-3">Registrati</h3>
@@ -35,7 +36,7 @@
                             </p> @enderror
                         </div>
                         <div class="col-12 my-3">
-                            <button type="submit" class="btn buttonColor">Registrati</button>
+                            <button type="submit" class="btn text-white buttonColor">Registrati</button>
                         </div>
                     </form>
                 </div>
