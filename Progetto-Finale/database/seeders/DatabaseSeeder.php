@@ -108,15 +108,47 @@ class DatabaseSeeder extends Seeder
 
     private function categories()
     {
-        \App\Models\Category::create(['name' => 'Auto e Moto']);
-        \App\Models\Category::create(['name' => 'Elettronica e Informatica']);
-        \App\Models\Category::create(['name' => 'Elettrodomestici']);
-        \App\Models\Category::create(['name' => 'Sport']);
-        \App\Models\Category::create(['name' => 'Arredamento e mobili']);
-        \App\Models\Category::create(['name' => 'Telefonia']);
-        \App\Models\Category::create(['name' => 'Abbigliamento e accessori']);
-        \App\Models\Category::create(['name' => 'Libri e fumetti']);
-        \App\Models\Category::create(['name' => 'Animali e accessori']);
-        \App\Models\Category::create(['name' => 'Collezionismo']);
+        \App\Models\Category::create([
+            'name' => 'Auto e Moto',
+            'icon'=> 'bi  bi-truck'
+        ]);
+
+        \App\Models\Category::create([
+            'name' => 'Elettronica e Informatica',
+            'icon'=> 'bi bi-pc-display'
+        ]);
+        \App\Models\Category::create([
+            'name' => 'Elettrodomestici',
+            'icon'=> 'bi bi-gear-fill'
+        ]);
+
+        \App\Models\Category::create([
+            'name' => 'Sport',
+            'icon'=> 'bi bi-bicycle'
+        ]);
+        \App\Models\Category::create([
+            'name' => 'Arredamento e mobili',
+            'icon'=> 'bi bi-house'
+        ]);
+        \App\Models\Category::create([
+            'name' => 'Telefonia',
+            'icon'=> 'bi bi-phone'
+        ]);
+        \App\Models\Category::create([
+            'name' => 'Abbigliamento e accessori',
+            'icon'=> 'bi bi-bag'
+        ]);
+        \App\Models\Category::create([
+            'name' => 'Libri e fumetti',
+            'icon'=> 'bi bi-book'
+        ]);
+        \App\Models\Category::create([
+            'name' => 'Animali e accessori',
+            'icon'=> 'bi bi-github'
+        ]);
+        \App\Models\Category::create([
+            'name' => 'Collezionismo',
+            'icon'=> 'bi bi-coin'
+        ]);
     }
 };
