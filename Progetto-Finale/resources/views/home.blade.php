@@ -9,12 +9,13 @@
 
 
     <section class="mt-3">
-        <h2 class="d-flex justify-content-center fs-1"> Categorie </h2>
-        <div>
 
-            <div class="container ">
+
+        <div class="container ">
+            <h2 class="d-flex mt-5 align-item-center justify-content-center fs-2 BackGroundcolor "> Categorie </h2>
+            <div>
                 <div class="row d-flex  ">
-                    <div class="col-12 icon-size-color d-flex  justify-content-center ">
+                    <div class="col-6 col-md-12 icon-size-color d-flex  justify-content-center ">
                         <a href=""><i class="bi bi-truck" data-aos="fade-right"></i></a>
                         <a href=""><i class="bi bi-pc-display " data-aos="fade-down"></i></a>
                         <a href=""><i class="bi bi-gear-fill" data-aos="fade-down"></i></a>
@@ -25,7 +26,7 @@
                     </div>
 
 
-                    <div class="col-12 icon-size-color d-flex  justify-content-center">
+                    <div class="col-6 col-md-12 icon-size-color d-flex  justify-content-center">
                         <a href=""><i class="bi bi-phone" data-aos="fade-right"></i></a>
                         <a href=""><i class="bi bi-bag" data-aos="fade-up"></i></a>
                         <a href=""><i class="bi bi-book" data-aos="fade-up"></i></a>
@@ -99,16 +100,14 @@
 
             <section class="container mt-5">
                 <div class="row my-5 d-flex">
-                    <div class="col-6 justify-content-end">
+                    <div class="col-6 justify-content-end BackGroundcolor">
 
                         <h2>Annunci piu recenti</h2>
 
                     </div>
                     <div class="col-6 ">
-                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white   btn ">Vai
-                            a
-                            tutti gli annunci
-                        </a>
+                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white   btn "> Vaia tutti gli
+                            annunci</a>
                     </div>
                 </div>
                 <div class="row mt-5">
