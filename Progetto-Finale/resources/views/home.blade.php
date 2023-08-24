@@ -117,9 +117,8 @@
 
                         <x-card :title="$insertion->title" :category="$insertion->category->name"
                             :price="$insertion->price" :description="$insertion->description" :body="$insertion->body"
-                            :date="$insertion->created_at->diffForHumans()"
-                            :link="route('insertions.show', $insertion)" 
-                            :isAccepted="$insertion->is_accepted"/>
+                            :date="$insertion->created_at->diffForHumans()" :link="route('insertions.show', $insertion)"
+                            :isAccepted="$insertion->is_accepted" />
 
                     </div>
                     @endforeach
