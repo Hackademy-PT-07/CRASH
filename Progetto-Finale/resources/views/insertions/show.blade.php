@@ -33,7 +33,7 @@
 
     </div class="row">
     <div class="col-12 my-5 d-flex justify-content-center   ">
-        <div class="card w-50 bg-transparent  text-white ">
+        <div class="card w-50 bg-transparent">
 
             <div class="card-body w-100 rounded blurBackGround">
                 <h3 class="card-title ">{{$insertion->title}} <p class="fs-6 mt-1">({{$insertion->category->name}})</p>
