@@ -1,5 +1,17 @@
 <div class="card my-3 border border-dark">
-    <img src="https://picsum.photos/200/100" class="card-img-top ">
+  <div class="position-relative">
+        @if($isAccepted === 0)
+        <span class="position-absolute top-0 end-0 rejected">riufiutato</span>
+        @elseif($isAccepted === null)
+        <span class="position-absolute top-0 end-0 toRevisioned">da revisionare</span>
+        @else
+        <div class="hide"></div>
+        @endif
+
+        <img src="https://picsum.photos/200/100" class="card-img-top ">
+  </div>
+
+
     <div class="card-body BackGroundcolor  text-white ">
         <h4 class="card-title">{{ $title }}</h4>
         <h6 class="card-subtitle mb-2  text-white ">{{ \App\Custom\Currency::formatEuro($price) }}</h6>
