@@ -1,0 +1,197 @@
+@import "bootstrap";
+@import "bootstrap-icons";
+
+body {
+    background-color: #f4f2de;
+}
+
+header {
+    padding: 30px;
+    width: auto;
+    height: 20vw;
+    text-align: center;
+    border-bottom: solid grey 1px;
+}
+
+.newAddBtn,
+.loginLinkBtn,
+.registerLinkBtn {
+    padding: 5px;
+    margin: 5px;
+    border: solid black 1px;
+    background-color: azure;
+    text-decoration: none;
+    color: black;
+}
+
+.slider {
+    height: 250px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+}
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 9));
+    }
+}
+
+.slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+.slide > img {
+    width: 100%;
+    height: 150px;
+    transition: transform 1s;
+}
+.slide > img:hover {
+    transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after {
+    background: linear-gradient(
+        to right,
+        rgb(244, 242, 222, 1) 0%,
+        rgb(244, 242, 222, 0) 100%
+    );
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider::after {
+    left: 0;
+    top: 0;
+    transform: rotateZ("angle") (180deg);
+}
+.background-green {
+    background-color: #7c9d96;
+}
+
+.colorNavbarButton {
+    background-color: #7c9d96;
+    &:hover {
+        background-color: #6c8882;
+    }
+}
+
+.BackGroundcolor {
+    color: #a1ccd1;
+}
+
+.buttonColor {
+    background-color: #e9b384;
+    color: white;
+    &:hover {
+        background-color: #c29772;
+        color: white;
+    }
+}
+.background-lite-blue {
+    background-color: #a1ccd1;
+}
+
+.BackGroundIllustration {
+    box-shadow: rgba(233, 179, 132, 0.4) 5px 5px,
+        rgba(233, 179, 132, 0.3) 10px 10px, rgba(233, 179, 132, 0.2) 15px 15px,
+        rgba(233, 179, 132, 0.1) 20px 20px, rgba(233, 179, 132, 0.05) 25px 25px;
+}
+
+.BackGroundIllustrationReverse {
+    box-shadow: rgba(233, 179, 132, 0.4) -5px 5px,
+        rgba(233, 179, 132, 0.3) -10px 10px, rgba(233, 179, 132, 0.2) -15px 15px,
+        rgba(233, 179, 132, 0.1) -20px 20px,
+        rgba(233, 179, 132, 0.05) -25px 25px;
+}
+
+.icon-size-color > a {
+    color: #f4f2de;
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    font-size: 90px;
+    background-color: #7c9d96;
+    border-radius: 5%;
+    margin: 3%;
+    box-shadow: rgba(233, 179, 132, 0.4) 0px 5px,
+        rgba(233, 179, 132, 0.3) 0px 10px, rgba(233, 179, 132, 0.2) 0px 15px,
+        rgba(233, 179, 132, 0.1) 0px 20px, rgba(233, 179, 132, 0.05) 0px 25px;
+    transition: transform 1s ease;
+    transition: color 0.5s ease;
+    &:hover {
+        color: #e9b384;
+        transform: scale(1.05);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .icon-size-color > a {
+        color: #f4f2de;
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        font-size: 20px;
+        background-color: #7c9d96;
+        border-radius: 5%;
+        margin: 3%;
+        box-shadow: rgba(233, 179, 132, 0.4) 0px 5px,
+            rgba(233, 179, 132, 0.3) 0px 10px, rgba(233, 179, 132, 0.2) 0px 15px,
+            rgba(233, 179, 132, 0.1) 0px 20px,
+            rgba(233, 179, 132, 0.05) 0px 25px;
+        transition: transform 1s ease;
+        transition: color 0.5s ease;
+        &:hover {
+            color: #e9b384;
+            transform: scale(1.05);
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .icon-size-color > a {
+        color: #f4f2de;
+        display: flex;
+        justify-content: center;
+        width: 15%;
+        font-size: 20px;
+        background-color: #7c9d96;
+        border-radius: 5%;
+        margin: 3%;
+        box-shadow: rgba(233, 179, 132, 0.4) 0px 5px,
+            rgba(233, 179, 132, 0.3) 0px 10px, rgba(233, 179, 132, 0.2) 0px 15px,
+            rgba(233, 179, 132, 0.1) 0px 20px,
+            rgba(233, 179, 132, 0.05) 0px 25px;
+        transition: transform 1s ease;
+        transition: color 0.5s ease;
+        &:hover {
+            color: #e9b384;
+            transform: scale(1.05);
+        }
+    }
+}
