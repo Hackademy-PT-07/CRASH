@@ -1,9 +1,9 @@
 <x-main>
     <x-slot:title>Presto.it</x-slot:title>
     <x-navbar />
-    <div class="container-fluid">
+    <div class="container">
         <div class="row m-5">
-            <div class="col-12 ">
+            <div class="col-12 col-md-6 mb-3">
                 <h2>Cerca annuncio</h2>
                 <form action="{{ route('insertions.search') }}" method="GET" class="d-flex">
                     <input name="searched" class="form-control me-2" type="search" placeholder="Search"
@@ -12,12 +12,12 @@
                 </form>
             </div>
 
-            <div class="col-12 ">
+            <div class="col-12mt-4">
                 <h2>Tutti gli annunci</h2>
             </div>
 
             @forelse($insertions as $insertion)
-            <div class="col-12 col-md-3 ">
+            <div class="col-12 col-md-4 col-lg-3">
 
                 <x-card :title="$insertion->title" :category="$insertion->category->name" :price="$insertion->price"
                     :description="$insertion->description" :body="$insertion->body"

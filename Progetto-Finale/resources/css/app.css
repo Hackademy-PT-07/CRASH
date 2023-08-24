@@ -197,9 +197,15 @@ header {
 }
 
 .review {
-    background-color: rgb(208, 176, 62);
+    padding: 5px; 
+    border-radius: 5%;
+    background-color: rgb(162, 205, 210);
+    color: white;
 }
 
 .rejected-color {
-    background-color: rgb(208, 84, 62);
+    padding: 5px; 
+    border-radius: 5%;
+    background-color: rgb(220, 53, 69);
+    color: white;
 }

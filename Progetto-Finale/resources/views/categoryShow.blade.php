@@ -2,7 +2,7 @@
     <x-navbar />
     <div class="container text-center text-white my-5  rounded-3 ">
         <div class="row">
-            <h4 class="background-green rounded-3">Tutti gli annunci della categoria {{$category->name }}</h4>
+            <h4 class="p-2 background-green rounded-3">Tutti gli annunci della categoria {{$category->name }}</h4>
             @forelse($category->insertions as $insertion)
             <div class="col-12 col-md-3">
                 <x-card :title="$insertion->title" :category="$insertion->category->name" :price="$insertion->price"

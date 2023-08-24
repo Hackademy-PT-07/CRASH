@@ -12,7 +12,7 @@
 
 
         <div class="container ">
-            <h2 class="d-flex mt-5 align-item-center justify-content-center fs-2 BackGroundcolor "> Categorie </h2>
+            <h2 class="d-flex mt-5 align-item-center justify-content-center fs-2"> Categorie </h2>
             <div>
                 <div class="row d-flex  ">
                     <div class="col-12  icon-size-color d-flex  justify-content-center ">
@@ -20,7 +20,7 @@
                         <a href=""><i class="bi bi-pc-display " data-aos="fade-down"></i></a>
                         <a href=""><i class="bi bi-gear-fill" data-aos="fade-down"></i></a>
                         <a href=""><i class="bi bi-bicycle" data-aos="fade-down"></i></a>
-                        <a href=""><i class="bi bi-house" data-aos="fade-right"></i></a>
+                        <a href=""><i class="bi bi-house" data-aos="fade-left"></i></a>
 
 
                     </div>
@@ -31,7 +31,7 @@
                         <a href=""><i class="bi bi-bag" data-aos="fade-up"></i></a>
                         <a href=""><i class="bi bi-book" data-aos="fade-up"></i></a>
                         <a href=""><i class="bi bi-github" data-aos="fade-up"></i></a>
-                        <a href=""><i class="bi bi-coin" data-aos="fade-right"></i></a>
+                        <a href=""><i class="bi bi-coin" data-aos="fade-left"></i></a>
 
 
 
@@ -51,7 +51,7 @@
                         src="https://hbswk.hbs.edu/PublishingImages/norton-shake.jpg" alt="">
                 </div>
                 <div class="col-12 col-md-6 my-5   fs-3 ">
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Illo perspiciatis
                         amet
                         dolor quasi a consequatur, eius distinctio modi ratione. Modi esse ab labore, consectetur
@@ -59,9 +59,9 @@
                         fuga animi? Rerum, dicta eaque!</p>
                 </div>
             </div>
-            <div class="row  my-5  BackGroundIllustrationReverse" data-aos="fade-right" data-aos-duration="3000">
+            <div class="row  my-5  BackGroundIllustrationReverse" data-aos="fade-left" data-aos-duration="3000">
                 <div class="col-12 col-md-6 my-5  r fs-3 ">
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Illo perspiciatis
                         amet
                         dolor quasi a consequatur, eius distinctio modi ratione. Modi esse ab labore, consectetur
@@ -81,7 +81,7 @@
                         src="https://www.gemius.com/files/GL/content/online%20shopping.JPG" alt="">
                 </div>
                 <div class="col-12 col-md-6 my-5  r fs-3 ">
-                    <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing
                         elit. Illo perspiciatis
                         amet
                         dolor quasi a consequatur, eius distinctio modi ratione. Modi esse ab labore, consectetur
