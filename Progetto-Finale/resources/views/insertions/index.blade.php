@@ -11,8 +11,20 @@
                     <button class="btn buttonColor" type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
-            <div class="col-12 BackGroundcolor ">
+
+            <div class="col-12 BackGroundcolor">
                 <h2>Tutti gli annunci</h2>
+            </div>
+
+            @forelse($insertions as $insertion)
+            <div class="col-12 col-md-3">
+
+                <x-card :title="$insertion->title" :category="$insertion->category->name" :price="$insertion->price"
+                    :description="$insertion->description" :body="$insertion->body"
+                    :date="$insertion->created_at->diffForHumans()" :link="route('insertions.show', $insertion)"
+                    :isAccepted="$insertion->is_accepted" />
+
+                >>>>>>> 7c9cdd38cbc11d28804e9b9a60f73d2a314e944c
             </div>
 
             @forelse($insertions as $insertion)

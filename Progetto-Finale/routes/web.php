@@ -4,6 +4,9 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\InsertionsController;
 use App\Http\Controllers\RevisorController;
 use Illuminate\Support\Facades\Route;
+use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+
 
 
 
@@ -27,3 +30,27 @@ Route::middleware('isRevisor')->group(function(){
 });
 
 Route::get('/search/insertion', [InsertionsController::class, 'searchInsertions'])->name('insertions.search');
+
+Route::get('/auth/redirect', function () {
+    return Laravel\Socialite\Facades\Socialite::driver('facebook')
+    ->scopes(['read:user', 'public_repo'])
+    ->redirect();
+});
+ 
+
+Route::get('/auth/callback', function () {
+    $facebookUser = Laravel\Socialite\Facades\Socialite::driver('facebook')->user();
+ 
+    $user = User::updateOrCreate([
+        'facebook_id' => $facebookUser->id,
+    ], [
+        'name' => $facebookUser->name,
+        'email' => $facebookUser->email,
+        'facebook_token' => $facebookUser->token,
+        'facebook_refresh_token' => $facebookUser->refreshToken,
+    ]);
+ 
+    Auth::login($user);
+ 
+    return redirect('/');
+});
