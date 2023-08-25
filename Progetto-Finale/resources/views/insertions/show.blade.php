@@ -2,8 +2,14 @@
     <x-slot:title>Annuncio</x-slot:title>
     
         <x-navbar />
-    <div class="container-fluid">
+       
+        <div class="container my-5 rounded showContainer text-white">
             <div class="row ">
+                <div class="d-flex justify-content-between p-3">
+                    <h3 class="m-3">{{$insertion->title}}</h3>
+                    <p class="m-3 p-2 rounded categoryBadge text-white">{{$insertion->category->name}}</p>
+                </div>
+            
                 <div class="col-12 mt-5">
                     <div id="carouselExampleInterval" class="carousel slide  mx-auto w-50  " data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -28,22 +34,19 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-12 text-center my-5">
-                    <h3 class="card-title ">{{$insertion->title}}
-                        <p class="fs-6 mt-1">({{$insertion->category->name}})</p>
-                    </h3>
-                    <h4>{{ \App\Custom\Currency::formatEuro($insertion->price)}}</h4>
-                    <p class="card-text">{{$insertion->description}}</p>
+           
+            <div class="row mt-3">
+               
+                <div class="col-12  m-5">
+                    <div class="pe-5 d-flex justify-content-between">
+                         <h4>{{ \App\Custom\Currency::formatEuro($insertion->price)}}</h4>
+                         <p class="pe-5">{{$insertion->created_at->diffForHumans()}}</p>
+                    </div>
+                    <p class="mt-2">{{$insertion->description}}</p>
 
                 </div>
             </div>
         </div>
-            </section>
 
 </x-main>
 <x-footer />

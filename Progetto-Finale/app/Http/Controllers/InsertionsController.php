@@ -40,8 +40,8 @@ class InsertionsController extends Controller
      */
     public function show(Insertions $insertion)
     {
-        
-        return view('insertions.show', compact('insertion'));
+        $categories = \App\Models\Category::all();
+        return view('insertions.show', compact('insertion','categories'));
     }
 
     /**

@@ -11,15 +11,17 @@ use Illuminate\Support\Facades\Auth;
 
 
 Route::get('/', [PageController::class, 'home'])->name('home');
-
 Route::get('categories/{category}', [PageController::class, 'categoryShow'])->name('categoryShow');
 
-Route::middleware('auth')->group(function (){
-    Route::resource('insertions', InsertionsController::class);
 
+Route::middleware('auth')->group(function (){
+    Route::get('insertions/create', [InsertionsController::class, 'create'])->name('insertions.create');
     Route::get('request/revisor',[RevisorController::class, 'becomeRevisor'])->name('become.revisor');
     Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 });
+Route::get('insertions', [InsertionsController::class, 'index'])->name('insertions.index');
+Route::get('/search/insertion', [InsertionsController::class, 'searchInsertions'])->name('insertions.search');
+Route::get('insertions/{insertion}', [InsertionsController::class, 'show'])->name('insertions.show');
 
 
 
@@ -29,7 +31,7 @@ Route::middleware('isRevisor')->group(function(){
     Route::patch('reject/insertion/{insertion}',[RevisorController::class, 'rejectInsertion'])->name('revisor.reject_insertion');
 });
 
-Route::get('/search/insertion', [InsertionsController::class, 'searchInsertions'])->name('insertions.search');
+
 
 Route::get('/auth/redirect', function () {
     return Laravel\Socialite\Facades\Socialite::driver('facebook')

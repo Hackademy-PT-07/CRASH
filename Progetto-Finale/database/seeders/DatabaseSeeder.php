@@ -127,7 +127,7 @@ class DatabaseSeeder extends Seeder
             'icon'=> 'bi bi-bicycle'
         ]);
         \App\Models\Category::create([
-            'name' => 'Arredamento e mobili',
+            'name' => 'Arredamento e Casalinghi',
             'icon'=> 'bi bi-house'
         ]);
         \App\Models\Category::create([
@@ -135,20 +135,28 @@ class DatabaseSeeder extends Seeder
             'icon'=> 'bi bi-phone'
         ]);
         \App\Models\Category::create([
-            'name' => 'Abbigliamento e accessori',
+            'name' => 'Abbigliamento e Accessori',
             'icon'=> 'bi bi-bag'
         ]);
         \App\Models\Category::create([
-            'name' => 'Libri e fumetti',
+            'name' => 'Libri e Riviste',
             'icon'=> 'bi bi-book'
         ]);
         \App\Models\Category::create([
-            'name' => 'Animali e accessori',
+            'name' => 'Animali e Accessori',
             'icon'=> 'bi bi-github'
         ]);
         \App\Models\Category::create([
             'name' => 'Collezionismo',
             'icon'=> 'bi bi-coin'
+        ]);
+        \App\Models\Category::create([
+            'name' => 'Giardinaggio',
+            'icon'=> 'bi bi-flower3'
+        ]);
+        \App\Models\Category::create([
+            'name' => 'Musica e Film',
+            'icon'=> 'bi bi-music-note-beamed'
         ]);
     }
 };

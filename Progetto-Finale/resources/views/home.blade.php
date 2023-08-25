@@ -6,41 +6,28 @@
         <x-navbar />
     </header>
 
+    <div class="container p-0">
+        <div class="row m-5 p-0">
+            
 
-
-    <section class="mt-3">
-
-
-        <div class="container ">
-            <h2 class="d-flex mt-5 align-item-center justify-content-center fs-2"> Categorie </h2>
-            <div>
-                <div class="row d-flex  ">
-                    <div class="col-12  icon-size-color d-flex  justify-content-center ">
-                        <a href=""><i class="bi  bi-truck" data-aos="fade-right"></i></a>
-                        <a href=""><i class="bi bi-pc-display " data-aos="fade-down"></i></a>
-                        <a href=""><i class="bi bi-gear-fill" data-aos="fade-down"></i></a>
-                        <a href=""><i class="bi bi-bicycle" data-aos="fade-down"></i></a>
-                        <a href=""><i class="bi bi-house" data-aos="fade-left"></i></a>
-
-
-                    </div>
-
-
-                    <div class="col-12 col-md-12 icon-size-color d-flex  justify-content-center">
-                        <a href=""><i class="bi bi-phone" data-aos="fade-right"></i></a>
-                        <a href=""><i class="bi bi-bag" data-aos="fade-up"></i></a>
-                        <a href=""><i class="bi bi-book" data-aos="fade-up"></i></a>
-                        <a href=""><i class="bi bi-github" data-aos="fade-up"></i></a>
-                        <a href=""><i class="bi bi-coin" data-aos="fade-left"></i></a>
-
-
-
-                    </div>
-                </div>
-
+            <div class="col-12 mt-4">
+                <h2 class="d-flex justify-content-center">Categorie</h2>
             </div>
+            @foreach($categories as $category)
+            <div class="col-4 col-md-3 col-lg-2">
+                <div class="d-flex flex-column justify-content-center align-items-center py-3">
+                <a href="{{route('categoryShow', compact('category'))}}"><i class="{{ $category->icon }} icon px-4 rounded"></i></a>
+                <h5 class="mt-3 text-center">{{$category->name}}</h5>
+                </div>
+            </div>
+            @endforeach
+        </div>
 
-    </section>
+    </div>
+
+
+
+
 
 
     <div>
@@ -99,21 +86,19 @@
 
 
             <section class="container mt-5">
-                <div class="row my-5 d-flex">
-                    <div class="col-6 justify-content-end BackGroundcolor">
-
+                <div class="row ">
+                    <div class="p-4 d-flex justify-content-between">
                         <h2>Annunci piu recenti</h2>
+                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white text-end  btn "> Vai a tutti gli
+                            annunci</a>
 
                     </div>
-                    <div class="col-6 ">
-                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white   btn "> Vaia tutti gli
-                            annunci</a>
-                    </div>
+    
                 </div>
-                <div class="row mt-5">
+                <div class="row mt-4">
 
                     @foreach($insertions as $insertion)
-                    <div class="col-12 col-md-3 " data-aos="zoom-out-up" data-aos-duration="1000">
+                    <div class="col-12  col-sm-6 col-md-4 " data-aos="zoom-out-up" data-aos-duration="1000">
 
                         <x-card :title="$insertion->title" :category="$insertion->category->name"
                             :price="$insertion->price" :description="$insertion->description" :body="$insertion->body"
@@ -126,4 +111,3 @@
             </section>
 
 </x-main>
-<x-footer />

@@ -35,7 +35,4 @@
         </div>
 
     </div>
-
-
 </x-main>
-<x-footer />
