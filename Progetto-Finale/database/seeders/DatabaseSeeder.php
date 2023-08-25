@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'admin',
             'email' => 'admin@email.com',
             'password' => '12345678',
+            'is_revisor' => '1'
         ]); 
         \App\Models\User::create([
             'name' => 'Linda',
@@ -40,6 +41,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Pablo',
             'email' => 'pablo@email.com',
             'password' => '12345678',
+            'is_revisor' => '1'
         ]); 
     }
     private function insertions()
@@ -50,6 +52,7 @@ class DatabaseSeeder extends Seeder
             'price' => 500,
             'description' => 'Iphone X come nuovo del 2021',
             'user_id' => 2,
+            'is_accepted' => '1'
         ]); 
         \App\Models\Insertions::create([
             'title' => 'TV Samsung',
@@ -57,6 +60,7 @@ class DatabaseSeeder extends Seeder
             'price' => 300,
             'description' => 'TV del 2018 con telecomando',
             'user_id' => 3,
+            'is_accepted' => '1'
         ]); 
 
         \App\Models\Insertions::create([
@@ -65,6 +69,7 @@ class DatabaseSeeder extends Seeder
             'price' => 10,
             'description' => 'Fumetto della Marvel del 2002',
             'user_id' => 2,
+            'is_accepted' => '1'
         ]); 
         \App\Models\Insertions::create([
             'title' => 'Divano',
@@ -72,6 +77,7 @@ class DatabaseSeeder extends Seeder
             'price' => 100,
             'description' => 'Divano blu in tessuto tre posti',
             'user_id' => 3,
+            'is_accepted' => '1'
     
         ]); 
         \App\Models\Insertions::create([
@@ -80,6 +86,7 @@ class DatabaseSeeder extends Seeder
             'price' => 3000,
             'description' => 'Fiat 500 benzina Rossa del 2014',
             'user_id' => 2,
+            'is_accepted' => '1'
         ]); 
         \App\Models\Insertions::create([
             'title' => 'Borsa Louis Vuitton',
@@ -87,6 +94,7 @@ class DatabaseSeeder extends Seeder
             'price' => 30,
             'description' => 'Borsa marrone come nuova',
             'user_id' => 3,
+            'is_accepted' => '1'
         ]); 
         \App\Models\Insertions::create([
             'title' => 'Computer MSI',
