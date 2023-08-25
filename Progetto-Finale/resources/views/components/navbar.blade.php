@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg w-100  border-bottom border-body background-green sticky-top" data-bs-theme="dark">
+<nav class="navbar navbar-expand-lg   border-bottom border-body background-green sticky-top" data-bs-theme="dark">
     <div class="container-fluid">
-        <a class="navbar-brand d-flex align-middle" href="{{ route('home') }}">Presto.it</a>
+        <a class="navbar-brand d-flex align-middle " href="{{ route('home') }}">Presto.it</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 

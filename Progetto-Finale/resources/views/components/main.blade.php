@@ -14,9 +14,7 @@
 
 <body class="backgroundMain img-fluid  ">
 
-    <div class="sticky-top">
 
-    </div>
     <div>
         <div>
             {{ $slot }}

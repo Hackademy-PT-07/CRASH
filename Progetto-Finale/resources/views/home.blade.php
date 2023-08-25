@@ -3,12 +3,12 @@
 
     <header class="p-0">
         <img class="img-fluid" src="\images\header3.jpg" alt="">
-        <x-navbar />
-    </header>
 
+    </header>
+    <x-navbar />
     <div class="container p-0">
         <div class="row m-5 p-0">
-            
+
 
             <div class="col-12 mt-4">
                 <h2 class="d-flex justify-content-center">Categorie</h2>
@@ -16,8 +16,9 @@
             @foreach($categories as $category)
             <div class="col-4 col-md-3 col-lg-2">
                 <div class="d-flex flex-column justify-content-center align-items-center py-3">
-                <a href="{{route('categoryShow', compact('category'))}}"><i class="{{ $category->icon }} icon px-4 rounded"></i></a>
-                <h5 class="mt-3 text-center">{{$category->name}}</h5>
+                    <a href="{{route('categoryShow', compact('category'))}}"><i
+                            class="{{ $category->icon }} icon px-4 rounded"></i></a>
+                    <h5 class="mt-3 text-center">{{$category->name}}</h5>
                 </div>
             </div>
             @endforeach
@@ -89,16 +90,17 @@
                 <div class="row ">
                     <div class="p-4 d-flex justify-content-between">
                         <h2>Annunci piu recenti</h2>
-                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white text-end  btn "> Vai a tutti gli
+                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white text-end  btn "> Vai a
+                            tutti gli
                             annunci</a>
 
                     </div>
-    
+
                 </div>
                 <div class="row mt-4">
 
                     @foreach($insertions as $insertion)
-                    <div class="col-12  col-sm-6 col-md-4 " data-aos="zoom-out-up" data-aos-duration="1000">
+                    <div class="col-12  col-sm-6 col-md-4 ">
 
                         <x-card :title="$insertion->title" :category="$insertion->category->name"
                             :price="$insertion->price" :description="$insertion->description" :body="$insertion->body"
