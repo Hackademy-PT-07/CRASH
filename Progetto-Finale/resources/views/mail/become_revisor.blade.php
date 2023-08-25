@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    <x-navbar />
     <h2>Un utente ha richiesto di lavorare con noi!</h2>
     <p>Ecco i suoi dati;</p>
     <p>Nome: {{$user->name}}</p>
