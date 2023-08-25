@@ -105,6 +105,10 @@ header {
     color: #a1ccd1;
 }
 
+.categoryBadge {
+    background-color: #e9b384;
+}
+
 .buttonColor {
     background-color: #e9b384;
     color: white;
