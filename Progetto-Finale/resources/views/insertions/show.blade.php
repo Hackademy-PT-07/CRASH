@@ -49,4 +49,3 @@
         </div>
 
 </x-main>
-<x-footer />
