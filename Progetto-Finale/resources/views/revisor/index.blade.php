@@ -1,8 +1,8 @@
 <x-main>
     <x-navbar />
-    <div class="container my-4">
-        <div class="row">
-            <div class="col-12 mt-3">
+    <div class="container h-100 my-4">
+        <div class="row h-100">
+            <div class="col-12 my-3">
                 <h2>{{ $insertionToCheck ? "Ecco l'annuncio da revisionare:" : "Non ci sono annunci da revisionare"}}
                 </h2>
             </div>
