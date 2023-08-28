@@ -33,6 +33,7 @@
                         @endforeach
                     </ul>
                 </li>
+
                 @auth
                 @if (Auth::user()->is_revisor)
                 <li>
@@ -65,16 +66,19 @@
             <a href="/login" class="btn buttonColor text-white m-1">Accedi</a>
             <a href="/register" class="btn buttonColor text-white">Registrati</a>
             @endauth
+
+            <div class="btn-group">
+                <button type="button" class="btn mx-1 buttonColor dropdown-toggle" data-bs-toggle="dropdown"
+                    data-bs-display="static" aria-expanded="false">
+                    <i class="bi bi-flag-fill  text-white"></i>
+                </button>
+                <ul
+                    class="dropdown-menu background-green border border-white dropdown-menu-start dropdown-menu-lg-end W-25">
+                    <li><button class="dropdown-item colorNavbarButton" type="button">ENG</button></li>
+                    <li><button class="dropdown-item colorNavbarButton" type="button">IT</button></li>
+                    <li><button class="dropdown-item colorNavbarButton" type="button">ES</button></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="nav-item dropdown dropdown-center mx-3 ">
-            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-flag-fill"></i>
-            </a>
-            <ul class="dropdown-menu pl-5 ">
-                <li><a class=" dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-        </div>
-    </div>
 </nav>
