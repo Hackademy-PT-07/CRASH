@@ -1,6 +1,6 @@
 <form action="{{ route('set_language_locale' , $lang )}}" method="POST">
 @csrf
-    <button type="submit" class="nav-link">
-        <span class="flag-icon flag-icon-{{ $nation }}"></span>
+    <button type="submit" class="bg-transparent border-0">
+        <span class="fi fi-{{ $nation }}"></span>
     </button>
 </form>
