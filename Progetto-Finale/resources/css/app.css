@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "bootstrap-icons";
+@import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 body {
     background-color: #f4f2de;
