@@ -3,10 +3,14 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class InsertionCreateForm extends Component
 {
+    use WithFileUploads;
     public $insertion;
+    public $temporary_images;
+    public $images = [];
 
     protected $messages = [
         'insertion.title.required' => 'Il campo nome del prodotto non può essere vuoto.',
