@@ -18,7 +18,7 @@
                 <div class="d-flex flex-column justify-content-center align-items-center py-3">
                     <a href="{{route('categoryShow', compact('category'))}}"><i
                             class="{{ $category->icon }} icon px-4 rounded"></i></a>
-                    <h5 class="mt-3 text-center">{{$category->name}}</h5>
+                    <h5 class="mt-3 text-center">{{__('ui.category_'.$category->id)}}</h5>
                 </div>
             </div>
             @endforeach

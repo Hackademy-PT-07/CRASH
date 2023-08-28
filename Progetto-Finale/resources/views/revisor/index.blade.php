@@ -73,5 +73,5 @@
     </div>
     @endif
 
-    <x-footer />
+
 </x-main>
