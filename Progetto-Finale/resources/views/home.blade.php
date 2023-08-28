@@ -3,7 +3,6 @@
 
     <header class="p-0">
         <img class="img-fluid" src="\images\header3.jpg" alt="">
-
     </header>
     <x-navbar />
     <div class="container p-0">
