@@ -72,11 +72,17 @@
                     data-bs-display="static" aria-expanded="false">
                     <i class="bi bi-flag-fill  text-white"></i>
                 </button>
-                <ul
-                    class="dropdown-menu background-green border border-white dropdown-menu-start dropdown-menu-lg-end W-25">
-                    <li><button class="dropdown-item colorNavbarButton" type="button">ENG</button></li>
-                    <li><button class="dropdown-item colorNavbarButton" type="button">IT</button></li>
-                    <li><button class="dropdown-item colorNavbarButton" type="button">ES</button></li>
+                <ul class="dropdown-menu background-green border border-white dropdown-menu-start dropdown-menu-lg-end W-25">
+                    <li class="dropdown-item">                    
+                            <x-language lang="it" nation="it"/> 
+                       
+                    </li>
+                    <li class="dropdown-item">
+                        <x-language lang="en" nation="gb"/>
+                    </li>
+                    <li class="dropdown-item">
+                        <x-language lang="es" nation="es"/>
+                    </li>
                 </ul>
             </div>
 
