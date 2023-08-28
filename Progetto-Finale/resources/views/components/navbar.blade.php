@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg   border-bottom border-body background-green sticky-top" data-bs-theme="dark">
     <div class="container-fluid">
         <a class="navbar-brand d-flex align-middle " href="{{ route('home') }}">Presto.it</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler buttonColor" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
 
         </button>
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -64,6 +65,16 @@
             <a href="/login" class="btn buttonColor text-white m-1">Accedi</a>
             <a href="/register" class="btn buttonColor text-white">Registrati</a>
             @endauth
+        </div>
+        <div class="nav-item dropdown dropdown-center mx-3 ">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-flag-fill"></i>
+            </a>
+            <ul class="dropdown-menu pl-5 ">
+                <li><a class=" dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
         </div>
     </div>
 </nav>
