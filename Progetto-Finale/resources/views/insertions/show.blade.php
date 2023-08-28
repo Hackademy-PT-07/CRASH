@@ -7,8 +7,38 @@
 
      <div class="container">
          <div class="row">
-             <div class="col-12"></div>
-             <div class="col-12"></div>
+             <div class="col-12">
+                 <div class="col-12 text-center z-index-100 w-100">
+                     <h3 class="m-3">{{$insertion->title}}</h3>
+                     <p class="m-3 p-2 rounded categoryBadge text-white">{{$insertion->category->name}}</p>
+                 </div>
+             </div>
+             <div class="col-12 mt-md-5">
+                 <div id="carouselExampleAutoplaying" class="carousel slide d-flex justify-content-center w-100"
+                     data-bs-ride="carousel">
+                     <div class="carousel-inner">
+                         <div class="carousel-item active">
+                             <img src="https://picsum.photos/800/400?grayscale" class="d-block w-100" alt="...">
+                         </div>
+                         <div class="carousel-item">
+                             <img src="https://picsum.photos/800/400?grayscale" class="d-block w-100" alt="...">
+                         </div>
+                         <div class="carousel-item">
+                             <img src="https://picsum.photos/800/400?grayscale" class="d-block w-100" alt="...">
+                         </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                         data-bs-slide="prev">
+                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                         data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                     </button>
+                 </div>
+             </div>
              <div class="col-12"></div>
          </div>
      </div>
@@ -25,7 +55,7 @@
 
 
             <div class="col-12 ">
-                <div class="col-12 d-flex justify-content-between mt-5 background-green rounded p-3">
+                <div class="col-12 text-center mt-5 rounded p-3">
                     <h3 class="m-3">{{$insertion->title}}</h3>
                     <p class="m-3 p-2 rounded categoryBadge text-white">{{$insertion->category->name}}</p>
                 </div>

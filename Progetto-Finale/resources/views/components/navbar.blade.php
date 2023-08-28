@@ -66,5 +66,15 @@
             <a href="/register" class="btn buttonColor text-white">Registrati</a>
             @endauth
         </div>
+        <div class="nav-item dropdown dropdown-center mx-3 ">
+            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-flag-fill"></i>
+            </a>
+            <ul class="dropdown-menu pl-5 ">
+                <li><a class=" dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
     </div>
 </nav>
