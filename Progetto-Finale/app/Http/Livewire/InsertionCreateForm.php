@@ -28,6 +28,7 @@ class InsertionCreateForm extends Component
             'insertion.category_id' => 'required',
             'insertion.price' => 'required',
             'insertion.description' => 'required',
+            'temporary_images.*' => 'image|max:1024'
     
         ];
     }
