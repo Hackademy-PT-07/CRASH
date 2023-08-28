@@ -31,6 +31,7 @@ Route::middleware('isRevisor')->group(function(){
     Route::patch('reject/insertion/{insertion}',[RevisorController::class, 'rejectInsertion'])->name('revisor.reject_insertion');
 });
 
+Route::post('language/{lang}', [PageController::class, 'setLanguage'])->name('set_language_locale');
 
 
 Route::get('/auth/redirect', function () {
