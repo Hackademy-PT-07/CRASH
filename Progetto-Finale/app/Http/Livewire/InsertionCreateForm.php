@@ -21,7 +21,7 @@ class InsertionCreateForm extends Component
         'temporary_images.*.max' => 'l\'immagine deve essere massimo di 1 Mb',
     ];
 
-    public function updateTemporaryImages()
+    public function updatedTemporaryImages()
     {
         if ($this->validate([
             'temporary_images.*' => 'image|max:1024',
@@ -61,14 +61,14 @@ class InsertionCreateForm extends Component
     {   
         $this->validate();
         $this->insertion->user_id = auth()->user()->id;
-        $this->insertion->save();
+        
         
         if (count($this->images)) {
             foreach ($this->images as $image) {
                 $this->insertion->images()->create(['path' => $image->store('images', 'public')]);
             }
         }
-
+        $this->insertion->save();
         session()->flash('success', 'Annuncio creato correttamente, sarà pubblicato dopo la revisione.');
         $this->newInsertion();
         $this->emitTo('insertion-list', 'loadInsertions');
