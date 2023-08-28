@@ -12,19 +12,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="backgroundMain   ">
+<body>
 
 
-    <div>
+    <div class="main-layout-container">
         <div>
-            {{ $slot }}
+            <div>
+                {{ $slot }}
+            </div>
         </div>
+
+        @livewireScripts
+
+
+        @if(!Route::currentRouteName()=="home")
+        <x-footer />
+        @endif
     </div>
-
-    @livewireScripts
-
-
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
