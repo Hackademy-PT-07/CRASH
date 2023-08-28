@@ -39,6 +39,13 @@
                         {{ $message }}
                     </p> @enderror
                 </div>
+                <div class="mb3">
+                    <input wire-model="temporary_images" type="file" name="images" multiple 
+                    class="form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img">
+                    @error('temporary_images.*')
+                        <p class="text-danger mt-2">{{ $message }}</p>
+                    @enderror
+                </div>
                     <div class="mt-2 col-12">
                         <button type="submit" class="btn buttonColor  w-100">Salva annuncio</button>
                     </div>
