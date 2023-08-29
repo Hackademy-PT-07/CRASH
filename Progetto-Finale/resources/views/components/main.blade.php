@@ -15,7 +15,7 @@
 <body>
 
 
-    <div class="main-layout-container">
+    <div class="main-layout-container ">
         <div>
             <div>
                 {{ $slot }}
@@ -29,7 +29,10 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    @if(!request()->routeIs('login','register','categoryShow'))
 
+    <x-footer />
+    @endif
 </body>
 
 </html>

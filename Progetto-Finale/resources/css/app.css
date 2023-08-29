@@ -220,3 +220,9 @@ header {
 .rejected-color {
     background-color: rgb(208, 84, 62);
 }
+
+.img-preview {
+    height: 250px;
+
+    width: 250px;
+}
