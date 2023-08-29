@@ -20,7 +20,7 @@
             <div class="col-12 col-md-4 col-lg-3">
 
                 <x-card :title="$insertion->title" :category="$insertion->category->name" :price="$insertion->price"
-                    :description="$insertion->description" :body="$insertion->body"
+                    :description="$insertion->description" :body="$insertion->body" :categoryid="$insertion->category->id"
                     :date="$insertion->created_at->diffForHumans()" :link="route('insertions.show', $insertion)"
                     :isAccepted="$insertion->is_accepted" />
 
