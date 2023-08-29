@@ -4,16 +4,16 @@
     <div class="container">
         <div class="row m-5">
             <div class="col-12 col-md-6 mb-3">
-                <h2>Cerca annuncio</h2>
+                <h2>{{__('ui.searchInsertion')}}</h2>
                 <form action="{{ route('insertions.search') }}" method="GET" class="d-flex">
-                    <input name="searched" class="form-control me-2" type="search" placeholder="Search"
-                        aria-label="Search">
+                    <input name="searched" class="form-control me-2" type="search" placeholder="{{__('ui.search')}}"
+                        aria-label="search">
                     <button class="btn buttonColor" type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
 
             <div class="col-12mt-4">
-                <h2>Tutti gli annunci</h2>
+                <h2>{{__('ui.allInsertions')}}</h2>
             </div>
 
             @forelse($insertions as $insertion)
