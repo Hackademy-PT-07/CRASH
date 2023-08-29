@@ -14,12 +14,14 @@ return  [
     'addInsertion' => 'Create insertion',
     'insertionsToBeReview' => 'Review insertions',
 //insertions
+    'search' => 'Search',
     'searchInsertion' => 'Search insertion',
-    'reviewInsertion' => 'Insertion to review',
+    'reviewInsertion' => 'Insertion to review:',
     'allYourInsertions' => 'All your insertions',
     'goToAllInsertions' => 'See all the insertions',
     'lastestInsertions' => 'Lastest insertions',
     'showInsertion' => "Go to the insertion",
+    'noInsertionsToReview' => 'There are not insertions to review',
 //Categories
     'categories' => 'Categories',
     'category_1'=> 'Cars & Motorcycles',
@@ -43,6 +45,9 @@ return  [
     'price' => 'Price',
     'description' => 'Description',
     'save' => 'Save',
+//status
+    'rejected' => 'Rejected',
+    'toReview' => 'To review',
 //btns
     'accept' => 'Accept',
     'reject' => 'Reject',

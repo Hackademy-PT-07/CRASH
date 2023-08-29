@@ -14,12 +14,14 @@ return  [
     'addInsertion' => 'Crear anuncio',
     'insertionsToBeReview' => 'Revisar anuncios',
 //insertions
+    'search' => 'Busca',
     'searchInsertion' => 'Buscar annuncio',
     'reviewInsertion' => "Anuncio para revisar:",
     'allYourInsertions' => 'Todos tus anuncios',
     'goToAllInsertions' => 'A todos los anuncios',
     'lastestInsertions' => 'Anuncios más recientes',
     'showInsertion' => "Ir al anuncio",
+    'noInsertionsToReview' => 'No hay anuncios para revisar',
 //Categories
     'categories' => 'Categorias',
     'category_1'=> 'Choches y motos',
@@ -43,6 +45,9 @@ return  [
     'price' => 'Precio',
     'description' => 'Descripción',
     'save' => 'Guardar anuncio',
+//status
+    'rejected' => 'Rechazado',
+    'toReview' => 'Pendiente de revisión',
 //btns
     'accept' => 'Acepta',
     'reject' => 'Rechaza',
