@@ -13,7 +13,7 @@ class Image extends Model
 
     protected $fillable = ['path'];
 
-    public function insertion()
+    public function insertions()
     {
         return $this->belongsTo(Insertions::class);
     }
@@ -29,7 +29,7 @@ class Image extends Model
         return Storage::url($file);
     }
 
-    public function getUtl ($w =null, $h = null){
+    public function getUrl ($w =null, $h = null){
         return Image::getUrlByFilePath($this->path, $w, $h);
     }
 }

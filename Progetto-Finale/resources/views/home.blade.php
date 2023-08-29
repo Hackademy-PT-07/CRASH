@@ -87,7 +87,8 @@
                 <div class="row ">
                     <div class="p-4 d-flex justify-content-between">
                         <h2>{{__('ui.lastestInsertions')}}</h2>
-                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white text-end  btn "> {{__('ui.goToAllInsertions') }}</a>
+                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white text-end  btn ">
+                            {{__('ui.goToAllInsertions') }}</a>
 
                     </div>
 
@@ -97,8 +98,8 @@
                     @foreach($insertions as $insertion)
                     <div class="col-12  col-sm-6 col-md-4 ">
 
-                        <x-card :title="$insertion->title" :category="$insertion->category->name"
-                            :price="$insertion->price" :description="$insertion->description" :body="$insertion->body"
+                        <x-card :title="$insertion->title" :category="$insertion->category->name"           :categoryid="$insertion->category->id"
+                            :price="$insertion->price" :description="$insertion->description"  :body="$insertion->body"
                             :date="$insertion->created_at->diffForHumans()" :link="route('insertions.show', $insertion)"
                             :isAccepted="$insertion->is_accepted" />
 

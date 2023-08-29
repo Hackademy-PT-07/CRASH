@@ -14,12 +14,14 @@ return  [
     'addInsertion' => 'Inserisci annuncio',
     'insertionsToBeReview' => 'Revisione annunci',
     //insertions
+    'search' => 'Cerca',
     'searchInsertion' => 'Cerca annuncio',
-    'reviewInsertion' => "Ecco l'annuncio da revisionare",
+    'reviewInsertion' => "Ecco l'annuncio da revisionare:",
     'allYourInsertions' => 'Tutti i tuoi annunci',
     'goToAllInsertions' => 'Vai a tutti gli annunci',
     'lastestInsertions' => 'Annunci piu recenti',
     'showInsertion' => "Vai all'annuncio",
+    'noInsertionsToReview' => 'Non ci sono annunci da revisionare',
 //Categories
     'categories' => 'Categorie',
     'category_1'=> 'Auto e moto',
@@ -35,12 +37,17 @@ return  [
     'category_11'=> 'Giardinaggio',
     'category_12'=> 'Musica e Film',
     'allInsertionsfrom' => 'Tutti gli annunci della categoria', 
+    'notInsertionsfor' => 'Non ci sono annunci della categoria:',
+    'newforCategoryInsertion' => 'Publicane uno:',
 //createForm 
     'productName' => 'Nome del prodotto',
     'category' => 'Categoria',
     'price' => 'Prezzo',
     'description' => 'Descrizione',
     'save' => 'Salva annuncio',
+//status
+    'rejected' => 'Rifiutato',
+    'toReviw' => 'Da revisionare',
 //btns
     'accept' => 'Accetta',
     'reject' => 'Rifiuta',

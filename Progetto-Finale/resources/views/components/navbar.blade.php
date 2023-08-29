@@ -27,7 +27,8 @@
                     <ul class="dropdown-menu dropDownMenuBg colorNavbar background-green text-white">
                         @foreach(App\Models\Category::all() as $category)
                         <li><a class="dropdown-item text-effect colorNavbarButton  text-white"
-                                href="{{route('categoryShow', compact('category'))}}">{{__('ui.category_' . $category->id)}}</a></li>
+                                href="{{route('categoryShow', compact('category'))}}">{{__('ui.category_' . $category->id)}}</a>
+                        </li>
                         @endforeach
                     </ul>
                 </li>
@@ -36,7 +37,8 @@
                 @if (Auth::user()->is_revisor)
                 <li>
                     <form action="\revisor\home">
-                        <button type="submit" class="btn buttonColor text-white">{{ __('ui.insertionsToBeReview')}}</button>
+                        <button type="submit"
+                            class="btn buttonColor text-white">{{ __('ui.insertionsToBeReview')}}</button>
                         <span class="position absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             {{App\Models\Insertions::toBeRevisionedCount()}}</span>
                     </form>
@@ -56,7 +58,7 @@
                 <li>
                     <form action="/logout" method="POST">
                         @csrf
-                        <button type="submit" class="btn">{{ __('ui.logout')}}</button>
+                        <button type="submit" class="btn px-0">{{ __('ui.logout')}}</button>
                     </form>
                 </li>
             </ul>
@@ -65,24 +67,26 @@
             <a href="/register" class="btn buttonColor text-white">{{ __('ui.register')}}</a>
             @endauth
 
-            <div class="btn-group">
-                <button type="button" class="btn mx-1 buttonColor dropdown-toggle" data-bs-toggle="dropdown"
-                    data-bs-display="static" aria-expanded="false">
+            <div class="btn-group mx-2">
+                <div class=" dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
                     <i class="bi bi-flag-fill  text-white"></i>
-                </button>
-                <ul class="dropdown-menu background-green border border-white dropdown-menu-start dropdown-menu-lg-end W-25">
-                    <li class="dropdown-item">                    
-                            <x-language lang="it" nation="it"/> 
-                       
+                </div>
+                <ul
+                    class="dropdown-menu background-green border mt-4 border-white dropdown-menu-start dropdown-menu-lg-end W-25">
+                    <li class="dropdown-item d-flex colorNavbarButton">
+                        <x-language lang="it" nation="it" />
+                        <p class="mx-1">IT</p>
                     </li>
-                    <li class="dropdown-item">
-                        <x-language lang="en" nation="gb"/>
+                    <li class="dropdown-item d-flex colorNavbarButton">
+                        <x-language lang="en" nation="gb" />
+                        <p class="mx-1">EN</p>
                     </li>
-                    <li class="dropdown-item">
-                        <x-language lang="es" nation="es"/>
+                    <li class="dropdown-item d-flex colorNavbarButton">
+                        <x-language lang="es" nation="es" />
+                        <p class="mx-1">ES</p>
                     </li>
                 </ul>
-            </div>
+                </>
 
-        </div>
+            </div>
 </nav>
