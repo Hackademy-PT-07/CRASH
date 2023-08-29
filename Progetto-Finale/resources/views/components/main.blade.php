@@ -29,7 +29,7 @@
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    @if(!request()->routeIs('login','register','categoryShow'))
+    @if(!request()->routeIs('login','register','categoryShow','views/insertion/show'))
 
     <x-footer />
     @endif
