@@ -1,7 +1,7 @@
 <?php
 return  [
 //auth
-    'logIn' => 'Iniciar sesión',
+    'logIn' => 'Inicia sesión',
     'register' => 'Regístrate',
     'email' => 'Correo electronico',
     'password' => 'Contraseña',
@@ -14,12 +14,14 @@ return  [
     'addInsertion' => 'Crear anuncio',
     'insertionsToBeReview' => 'Revisar anuncios',
 //insertions
+    'search' => 'Busca',
     'searchInsertion' => 'Buscar annuncio',
     'reviewInsertion' => "Anuncio para revisar:",
     'allYourInsertions' => 'Todos tus anuncios',
     'goToAllInsertions' => 'A todos los anuncios',
     'lastestInsertions' => 'Anuncios más recientes',
     'showInsertion' => "Ir al anuncio",
+    'noInsertionsToReview' => 'No hay anuncios para revisar',
 //Categories
     'categories' => 'Categorias',
     'category_1'=> 'Choches y motos',
@@ -34,13 +36,18 @@ return  [
     'category_10'=> 'Coleccionismo',
     'category_11'=> 'Jardinería',
     'category_12'=> 'Musica y Cine',
-    'allInsertionsfrom' => 'Todos los anuncios de la categoria', 
+    'allInsertionsfrom' => 'Todos los anuncios de la categoria:', 
+    'notInsertionsfor' => 'No hay anuncios de la categoria:',
+    'newforCategoryInsertion' => 'Publica un nuevo anuncio:',
 //createForm 
     'productName' => 'Nombre del producto',
     'category' => 'Categoria',
     'price' => 'Precio',
     'description' => 'Descripción',
     'save' => 'Guardar anuncio',
+//status
+    'rejected' => 'Rechazado',
+    'toReview' => 'Pendiente de revisión',
 //btns
     'accept' => 'Acepta',
     'reject' => 'Rechaza',

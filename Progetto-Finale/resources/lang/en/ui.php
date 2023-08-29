@@ -14,15 +14,17 @@ return  [
     'addInsertion' => 'Create insertion',
     'insertionsToBeReview' => 'Review insertions',
 //insertions
+    'search' => 'Search',
     'searchInsertion' => 'Search insertion',
-    'reviewInsertion' => 'Insertion to review',
+    'reviewInsertion' => 'Insertion to review:',
     'allYourInsertions' => 'All your insertions',
     'goToAllInsertions' => 'See all the insertions',
     'lastestInsertions' => 'Lastest insertions',
     'showInsertion' => "Go to the insertion",
+    'noInsertionsToReview' => 'There are not insertions to review',
 //Categories
     'categories' => 'Categories',
-    'category_1'=> 'cars & Motorcycles',
+    'category_1'=> 'Cars & Motorcycles',
     'category_2'=> 'Electronics & IT',
     'category_3'=> 'Home appliances',
     'category_4'=> 'Sport',
@@ -35,12 +37,17 @@ return  [
     'category_11'=> 'Gardening',
     'category_12'=> 'Music & Cinema',
     'allInsertionsfrom' => 'All the insertions for', 
+    'notInsertionsfor' => 'There are not insertions for',
+    'newforCategoryInsertion' => 'Add a new insertion:',
 //createForm 
     'productName' => 'Product name',
     'category' => 'Category',
     'price' => 'Price',
     'description' => 'Description',
     'save' => 'Save',
+//status
+    'rejected' => 'Rejected',
+    'toReview' => 'To review',
 //btns
     'accept' => 'Accept',
     'reject' => 'Reject',

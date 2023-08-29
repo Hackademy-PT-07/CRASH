@@ -3,7 +3,7 @@
     <div class="container h-100  my-4">
         <div class="row h-100 ">
             <div class="col-12 my-3">
-                <h2>{{ $insertionToCheck ? "Ecco l'annuncio da revisionare:" : "Non ci sono annunci da revisionare"}}
+                <h2>{{ $insertionToCheck ? __('ui.reviewInsertion')  : __('ui.noInsertionsToReview')}}
                 </h2>
             </div>
         </div>
@@ -57,7 +57,7 @@
                 <form action="{{route('revisor.accept_insertion', ['insertion'=>$insertionToCheck])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button type="submit" class="btn btn-success">Accetta</button>
+                    <button type="submit" class="btn btn-success">{{__('ui.accept' )}}</button>
                 </form>
 
             </div>
@@ -65,7 +65,7 @@
                 <form action="{{route('revisor.reject_insertion', ['insertion'=>$insertionToCheck])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button type="submit" class="btn btn-danger">Rifiuta</button>
+                    <button type="submit" class="btn btn-danger">{{__('ui.reject' )}}</button>
                 </form>
             </div>
         </div>
