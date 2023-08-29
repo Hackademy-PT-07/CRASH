@@ -1,23 +1,21 @@
 <x-main>
     <x-slot:title>Presto.it</x-slot:title>
 
-    <header class="p-0">
+    <div class="p-0">
         <img class="img-fluid" src="\images\header3.jpg" alt="">
-    </header>
+    </div>
     <x-navbar />
     <div class="container p-0">
         <div class="row m-5 p-0">
-
-
             <div class="col-12 mt-4">
-                <h2 class="d-flex justify-content-center">Categorie</h2>
+                <h2 class="d-flex justify-content-center">{{__('ui.categories')}}</h2>
             </div>
             @foreach($categories as $category)
             <div class="col-4 col-md-3 col-lg-2">
                 <div class="d-flex flex-column justify-content-center align-items-center py-3">
                     <a href="{{route('categoryShow', compact('category'))}}"><i
                             class="{{ $category->icon }} icon px-4 rounded"></i></a>
-                    <h5 class="mt-3 text-center">{{__('ui.category_'.$category->id)}}</h5>
+                    <h5 class="mt-3 text-center">{{__('ui.category_' . $category->id)}}</h5>
                 </div>
             </div>
             @endforeach
@@ -88,10 +86,8 @@
             <section class="container mt-5">
                 <div class="row ">
                     <div class="p-4 d-flex justify-content-between">
-                        <h2>Annunci piu recenti</h2>
-                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white text-end  btn "> Vai a
-                            tutti gli
-                            annunci</a>
+                        <h2>{{__('ui.lastestInsertions')}}</h2>
+                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white text-end  btn "> {{__('ui.goToAllInsertions') }}</a>
 
                     </div>
 

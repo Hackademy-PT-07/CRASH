@@ -8,16 +8,17 @@ return  [
     'confirmPassword' => 'Conferma Password',
     'name' => 'Nome',
     'notRegister' => 'Non si ancora registrato? Registrati',
-    'Logout' => 'Esci',
+    'logout' => 'Esci',
 //navbar
     'allInsertions' => 'Tutti gli annunci',
     'addInsertion' => 'Inserisci annuncio',
     'insertionsToBeReview' => 'Revisione annunci',
+    //insertions
+    'searchInsertion' => 'Cerca annuncio',
     'reviewInsertion' => "Ecco l'annuncio da revisionare",
-//insertions
     'allYourInsertions' => 'Tutti i tuoi annunci',
     'goToAllInsertions' => 'Vai a tutti gli annunci',
-    'newestInsertions' => 'Annunci piu recenti',
+    'lastestInsertions' => 'Annunci piu recenti',
     'showInsertion' => "Vai all'annuncio",
 //Categories
     'categories' => 'Categorie',
