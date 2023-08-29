@@ -18,13 +18,13 @@ class InsertionCreateForm extends Component
         'insertion.price.required' => 'Il campo prezzo del prodotto non può essere vuoto.',
         'insertion.description.required' => 'Il campo descrizione del prodotto non può essere vuoto.',
         'temporary_images.*.image' => 'I file devono essere immagini',
-        'temporary_images.*.max' => 'l\'immagine deve essere massimo di 1 Mb',
+        'temporary_images.*.max' => 'l\'immagine deve essere massimo di 4 Mb',
     ];
 
     public function updatedTemporaryImages()
     {
         if ($this->validate([
-            'temporary_images.*' => 'image|max:1024',
+            'temporary_images.*' => 'image|max:4096',
         ])) {
             foreach ($this->temporary_images as $image) {
                 $this->images[] = $image;
@@ -46,7 +46,7 @@ class InsertionCreateForm extends Component
             'insertion.category_id' => 'required',
             'insertion.price' => 'required',
             'insertion.description' => 'required',
-            'temporary_images.*' => 'image|max:1024'
+            'temporary_images.*' => 'image|max:4096'
     
         ];
     }
