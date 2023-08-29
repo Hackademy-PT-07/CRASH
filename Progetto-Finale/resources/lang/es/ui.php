@@ -1,7 +1,7 @@
 <?php
 return  [
 //auth
-    'logIn' => 'Iniciar sesión',
+    'logIn' => 'Inicia sesión',
     'register' => 'Regístrate',
     'email' => 'Correo electronico',
     'password' => 'Contraseña',
@@ -34,7 +34,9 @@ return  [
     'category_10'=> 'Coleccionismo',
     'category_11'=> 'Jardinería',
     'category_12'=> 'Musica y Cine',
-    'allInsertionsfrom' => 'Todos los anuncios de la categoria', 
+    'allInsertionsfrom' => 'Todos los anuncios de la categoria:', 
+    'notInsertionsfor' => 'No hay anuncios de la categoria:',
+    'newforCategoryInsertion' => 'Publica un nuevo anuncio:',
 //createForm 
     'productName' => 'Nombre del producto',
     'category' => 'Categoria',

@@ -35,6 +35,8 @@ return  [
     'category_11'=> 'Giardinaggio',
     'category_12'=> 'Musica e Film',
     'allInsertionsfrom' => 'Tutti gli annunci della categoria', 
+    'notInsertionsfor' => 'Non ci sono annunci della categoria:',
+    'newforCategoryInsertion' => 'Publicane uno:',
 //createForm 
     'productName' => 'Nome del prodotto',
     'category' => 'Categoria',

@@ -22,7 +22,7 @@ return  [
     'showInsertion' => "Go to the insertion",
 //Categories
     'categories' => 'Categories',
-    'category_1'=> 'cars & Motorcycles',
+    'category_1'=> 'Cars & Motorcycles',
     'category_2'=> 'Electronics & IT',
     'category_3'=> 'Home appliances',
     'category_4'=> 'Sport',
@@ -35,6 +35,8 @@ return  [
     'category_11'=> 'Gardening',
     'category_12'=> 'Music & Cinema',
     'allInsertionsfrom' => 'All the insertions for', 
+    'notInsertionsfor' => 'There are not insertions for',
+    'newforCategoryInsertion' => 'Add a new insertion:',
 //createForm 
     'productName' => 'Product name',
     'category' => 'Category',

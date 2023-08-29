@@ -7,26 +7,26 @@
                 <div class="card p-3 background-green text-white w-100">
                     <form action="/login" method="POST">
                         @csrf
-                        <h3 class="mt-3">Accedi</h3>
+                        <h3 class="mt-3">{{__('ui.logIn')}}</h3>
                         <div class="col-12 mt-3">
-                            <label for="email">Email</label>
+                            <label for="email">{{__('ui.email')}}</label>
                             <input class="form-control focus-ring focus-ring-danger" type="email" name="email"
                                 id="email">
                             @error('email')<p class="small rounded my-2 errorBackground text-danger">{{ $message }}
                             </p> @enderror
                         </div>
                         <div class="col-12 mt-3">
-                            <label for="password">Password</label>
+                            <label for="password">{{__('ui.password')}}</label>
                             <input class="form-control focus-ring focus-ring-danger" type="password" name="password"
                                 id="password">
                             @error('password')<p class="small rounded my-2 errorBackground text-danger">{{ $message }}
                             </p> @enderror
                         </div>
                         <div class="col-12 mt-3">
-                            <a href="/register" class="text-white">Non sei ancora registrato? Registrati</a>
+                            <a href="/register" class="text-white">{{__('ui.notRegister')}}</a>
                         </div>
                         <div class="col-12 my-3">
-                            <button type="submit" class="btn buttonColor">Accedi</button>
+                            <button type="submit" class="btn buttonColor">{{__('ui.logIn')}}</button>
                         </div>
                     </form>
                 </div>
