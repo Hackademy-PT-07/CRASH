@@ -10,26 +10,24 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link active colorNavbarButton" aria-current="page"
-                        href="{{ route('insertions.index') }}">Tutti gli
-                        annunci</a>
+                        href="{{ route('insertions.index') }}">{{ __('ui.allInsertions')}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active colorNavbarButton" aria-current="page"
-                        href="{{ route('insertions.create') }}">Inserisci
-                        annuncio</a>
+                        href="{{ route('insertions.create') }}">{{ __('ui.addInsertion')}}</a>
                 </li>
 
                 <li class="nav-item dropdown ">
                     <a class="nav-link active dropdown-toggle colorNavbarButton" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
-                        Categorie
+                        {{ __('ui.categories')}}
                     </a>
 
 
                     <ul class="dropdown-menu dropDownMenuBg colorNavbar background-green text-white">
                         @foreach(App\Models\Category::all() as $category)
                         <li><a class="dropdown-item text-effect colorNavbarButton  text-white"
-                                href="{{route('categoryShow', compact('category'))}}">{{ $category->name }}</a></li>
+                                href="{{route('categoryShow', compact('category'))}}">{{__('ui.category_' . $category->id)}}</a></li>
                         @endforeach
                     </ul>
                 </li>
@@ -38,7 +36,7 @@
                 @if (Auth::user()->is_revisor)
                 <li>
                     <form action="\revisor\home">
-                        <button type="submit" class="btn buttonColor text-white">Revisione annunci</button>
+                        <button type="submit" class="btn buttonColor text-white">{{ __('ui.insertionsToBeReview')}}</button>
                         <span class="position absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             {{App\Models\Insertions::toBeRevisionedCount()}}</span>
                     </form>
@@ -58,13 +56,13 @@
                 <li>
                     <form action="/logout" method="POST">
                         @csrf
-                        <button type="submit" class="btn">Esci</button>
+                        <button type="submit" class="btn">{{ __('ui.logout')}}</button>
                     </form>
                 </li>
             </ul>
             @else
-            <a href="/login" class="btn buttonColor text-white m-1">Accedi</a>
-            <a href="/register" class="btn buttonColor text-white">Registrati</a>
+            <a href="/login" class="btn buttonColor text-white m-1">{{ __('ui.logIn')}}</a>
+            <a href="/register" class="btn buttonColor text-white">{{ __('ui.register')}}</a>
             @endauth
 
             <div class="btn-group">
