@@ -1,9 +1,9 @@
 <x-main>
     <x-slot:title>Presto.it</x-slot:title>
 
-    <header class="p-0">
+    <div class="p-0">
         <img class="img-fluid" src="\images\header3.jpg" alt="">
-    </header>
+    </div>
     <x-navbar />
     <div class="container p-0">
         <div class="row m-5 p-0">
@@ -17,7 +17,7 @@
                 <div class="d-flex flex-column justify-content-center align-items-center py-3">
                     <a href="{{route('categoryShow', compact('category'))}}"><i
                             class="{{ $category->icon }} icon px-4 rounded"></i></a>
-                    <h5 class="mt-3 text-center">{{__('ui.category_'.$category->id)}}</h5>
+                    <h5 class="mt-3 text-center">{{$category->name}}</h5>
                 </div>
             </div>
             @endforeach
@@ -110,5 +110,5 @@
                     @endforeach
                 </div>
             </section>
-
+            <x-footer />
 </x-main>
