@@ -190,13 +190,13 @@ header {
     }
 }
 
-@media only screen and (max-width: 992px) {
-    .icon-size-color > a {
+@media only screen and (max-width: 576px) {
+    .icon > a {
         color: #f4f2de;
         display: flex;
         justify-content: center;
-        width: 15%;
-        font-size: 20px;
+        width: 10%;
+        font-size: 15px;
         background-color: #7c9d96;
         border-radius: 5%;
         margin: 3%;
@@ -223,6 +223,11 @@ header {
 
 .img-preview {
     height: 250px;
-
     width: 250px;
+}
+
+.max-line {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }

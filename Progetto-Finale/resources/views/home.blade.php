@@ -87,7 +87,8 @@
                 <div class="row ">
                     <div class="p-4 d-flex justify-content-between">
                         <h2>{{__('ui.lastestInsertions')}}</h2>
-                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white text-end  btn "> {{__('ui.goToAllInsertions') }}</a>
+                        <a href="{{ route('insertions.index') }}" class=" buttonColor text-white text-end  btn ">
+                            {{__('ui.goToAllInsertions') }}</a>
 
                     </div>
 
