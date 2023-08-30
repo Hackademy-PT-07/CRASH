@@ -9,7 +9,7 @@
         @endif
 
 
-        <img src="https://picsum.photos/200/100" class="card-img-top ">
+        <img src="{{!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/200/100'}}" class="card-img-top ">
     </div>
 
 
