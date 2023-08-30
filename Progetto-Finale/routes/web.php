@@ -23,7 +23,7 @@ Route::get('insertions', [InsertionsController::class, 'index'])->name('insertio
 Route::get('/search/insertion', [InsertionsController::class, 'searchInsertions'])->name('insertions.search');
 Route::get('insertions/{insertion}', [InsertionsController::class, 'show'])->name('insertions.show');
 Route::get('/search/categories/insertions', [InsertionsController::class, 'update'])
-->name('categories.insertions.show');
+->name('searchByCategories');
 
 
 
