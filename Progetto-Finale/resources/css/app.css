@@ -227,7 +227,20 @@ header {
 }
 
 .max-line {
-    text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+/* #main {
+    height: 100vh;
+} */
+/* 
+#navbar {
+    height: 3vh;
+}
+
+#footer {
+    height: 13vh;
+}
+ */
