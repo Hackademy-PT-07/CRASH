@@ -3,7 +3,9 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
+use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
+use Illuminate\Support\Facades\File;
 
 class InsertionCreateForm extends Component
 {
@@ -61,18 +63,28 @@ class InsertionCreateForm extends Component
     {   
         $this->validate();
         $this->insertion->user_id = auth()->user()->id;
-        
+        $this->insertion->save();
         
         if (count($this->images)) {
             foreach ($this->images as $image) {
-                $this->insertion->images()->create(['path' => $image->store('images', 'public')]);
+               // $this->insertion->images()->create(['path' => $image->store('images', 'public')]);
+                
+                $newFileName = "insertions/{$this->insertion->id}";
+                $newImage = $this->insertion->images()->create(['path' => $image->store($newFileName, 'public')]);
+
+                dispatch(new ResizeImage($newImage->path, 300, 300));
+
             }
+
+            File::deleteDirectory(storage_path('/app/livewire-tm'));
+            
         }
-        $this->insertion->save();
+        
+        
         session()->flash('success', 'Annuncio creato correttamente, sarà pubblicato dopo la revisione.');
         $this->newInsertion();
         $this->emitTo('insertion-list', 'loadInsertions');
-
+    
     }
 
     public function newInsertion()

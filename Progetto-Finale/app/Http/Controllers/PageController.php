@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Insertions;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -16,6 +17,7 @@ class PageController extends Controller
 
     public function categoryShow(Category $category)
     {
+        //$reviewedInsertions = Insertions::where('is_accepted', true)->get()->sortByDesc('created_at');
         return view('categoryShow', compact('category'));
     }
     public function setLanguage($lang)
