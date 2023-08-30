@@ -57,7 +57,9 @@ class InsertionsController extends Controller
      */
     public function update(Request $request, insertions $insertions)
     {
-        //
+        $categories = \App\Models\Category::all();
+        $insertion = Insertions::search($request->searched)->where('is_accepted', true)->paginate(16);
+        return view('insertions.show', compact('insertion','categories'));
     }
 
     /**
