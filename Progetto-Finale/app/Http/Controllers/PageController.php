@@ -17,8 +17,8 @@ class PageController extends Controller
 
     public function categoryShow(Category $category)
     {
-        //$reviewedInsertions = Insertions::where('is_accepted', true)->get()->sortByDesc('created_at');
-        return view('categoryShow', compact('category'));
+       $insertions = $category->insertions()->where('is_accepted', true)->get();
+        return view('categoryShow', compact('category', 'insertions'));
     }
     public function setLanguage($lang)
     {

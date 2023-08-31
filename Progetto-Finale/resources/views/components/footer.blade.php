@@ -19,6 +19,7 @@
         </section>
         <!-- Section: Social media -->
 
+      @if(!auth()->user()->is_revisor)
         <!-- Section: Form -->
         <section class="">
             <form action="">
@@ -45,6 +46,7 @@
                 <!--Grid row-->
             </form>
         </section>
+        @endif
         <!-- Section: Form -->
 
         <!-- Section: Text -->
