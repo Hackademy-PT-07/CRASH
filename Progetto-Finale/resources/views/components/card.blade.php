@@ -14,14 +14,15 @@
 
 
     <div class="card-body background-green  text-white ">
-        <h4 class="card-title max-line">{{ $title }}</h4>
+        <h4 class="card-title max-line ">{{ $title }}</h4>
         <h6 class="card-subtitle mb-2  text-white  ">{{ \App\Custom\Currency::formatEuro($price) }}</h6>
-        <p class="card-text max-line  ">{{ $description }}</p>
+        <p class="card-text max-line   ">{{ $description }}</p>
         <div class="d-flex justify-content-center ">
             <a href="" class="text-white mb-3 max-line">{{__('ui.category_' . $categoryid)}}</a>
 
         </div>
-        <div> <a href="{{ $link }}" class="btn d-flex justify-content-center text-white buttonColor">{{__('ui.showInsertion')}}</a>
+        <div> <a href="{{ $link }}"
+                class="btn d-flex justify-content-center text-white buttonColor">{{__('ui.showInsertion')}}</a>
         </div>
         <div class="text-center my-3">
             <p>{{$date}}</p>
