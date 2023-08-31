@@ -51,7 +51,7 @@ return  [
    
 //status
     'rejected' => 'Rifiutato',
-    'toReviw' => 'Da revisionare',
+    'toReview' => 'Da revisionare',
 //btns
     'accept' => 'Accetta',
     'reject' => 'Rifiuta',

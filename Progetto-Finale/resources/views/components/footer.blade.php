@@ -18,8 +18,9 @@
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-github"></i></a>
         </section>
         <!-- Section: Social media -->
-
-      @if(!auth()->user()->is_revisor)
+        @auth
+    
+        @if (!Auth::user()->is_revisor)
         <!-- Section: Form -->
         <section class="">
             <form action="">
@@ -47,6 +48,9 @@
             </form>
         </section>
         @endif
+        
+        @endauth
+        
         <!-- Section: Form -->
 
         <!-- Section: Text -->

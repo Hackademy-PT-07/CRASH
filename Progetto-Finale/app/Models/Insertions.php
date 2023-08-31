@@ -6,6 +6,7 @@ use App\Models\Image;
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\Auth;
 
 class Insertions extends Model
 {
@@ -42,7 +43,7 @@ class Insertions extends Model
 
     public static function toBeRevisionedCount()
     {
-        return Insertions::where('is_accepted', null)->count();
+        return Insertions::where('is_accepted', null)->where('user_id','!=', Auth::id())->count();
     }
     
     public function images()

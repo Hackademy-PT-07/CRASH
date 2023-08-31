@@ -1,9 +1,9 @@
 <div class="card my-3 border h-1075 border-dark">
     <div class="position-relative">
         @if($isAccepted === 0)
-        <span class="position-absolute top-0 end-0 rejected rejected-color">rifiutato</span>
+        <span class="position-absolute top-0 end-0 rejected rejected-color">{{__('ui.rejected')}}</span>
         @elseif($isAccepted === null)
-        <span class="position-absolute top-0 end-0 toRevisioned review">da revisionare</span>
+        <span class="position-absolute top-0 end-0 toRevisioned review">{{__('ui.toReview')}}</span>
         @else
         <div class="hide"></div>
         @endif
