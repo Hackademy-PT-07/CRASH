@@ -8,8 +8,11 @@
         <div class="hide"></div>
         @endif
 
-
-        <img src="https://picsum.photos/200/100" class="card-img-top ">
+        @if(isset($image))
+        <img src="{{ $image }}" class="card-img-top ">
+        @else
+        <img src="https://picsum.photos/300" class="card-img-top">
+        @endif
     </div>
 
 

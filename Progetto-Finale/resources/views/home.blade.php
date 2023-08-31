@@ -96,6 +96,7 @@
                     <div class="col-12  col-sm-6 col-md-4 ">
 
                         <x-card :title="$insertion->title" :category="$insertion->category->name"
+                        :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/300'" 
                             :categoryid="$insertion->category->id" :price="$insertion->price"
                             :description="$insertion->description" :body="$insertion->body"
                             :date="$insertion->created_at->diffForHumans()" :link="route('insertions.show', $insertion)"
