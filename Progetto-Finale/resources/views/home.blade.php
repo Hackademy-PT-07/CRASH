@@ -28,13 +28,15 @@
 
 
 
-    <div class="container my-5">
-        <div class="row d-flex BackGroundIllustration  " data-aos="fade-right" data-aos-duration="3000">
-            <div class="col-12 col-md-6   ">
-                <img class=" img-fluid " src="https://hbswk.hbs.edu/PublishingImages/norton-shake.jpg" alt="">
+    <div class="container  my-5">
+        <div class="row d-flex BackGroundIllustration  ">
+            <div class="col-12 col-md-6 d-flex align-middle ">
+                <img class=" img-fluid d-flex justify-content-start "
+                    src="https://hbswk.hbs.edu/PublishingImages/norton-shake.jpg" alt="">
             </div>
             <div class="col-12 col-md-6 my-5   fs-3 ">
-                <p class="p-3 ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                <p class="p-3 " data-aos="fade-right" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
                     elit. Illo perspiciatis
                     amet
                     dolor quasi a consequatur, eius distinctio modi ratione. Modi esse ab labore, consectetur
@@ -42,9 +44,10 @@
                     fuga animi? Rerum, dicta eaque!</p>
             </div>
         </div>
-        <div class="row  my-5  BackGroundIllustrationReverse" data-aos="fade-left" data-aos-duration="3000">
+        <div class="row  my-5  BackGroundIllustrationReverse">
             <div class="col-12 col-md-6 my-5  r fs-3 ">
-                <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing
+                <p class="p-3" data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing
                     elit. Illo perspiciatis
                     amet
                     dolor quasi a consequatur, eius distinctio modi ratione. Modi esse ab labore, consectetur
@@ -58,19 +61,7 @@
             </div>
         </div>
 
-        <div class="row d-flex BackGroundIllustration" data-aos="fade-right" data-aos-duration="3000">
-            <div class="col-12 col-md-6  ">
-                <img class="img-fluid" src="https://www.gemius.com/files/GL/content/online%20shopping.JPG" alt="">
-            </div>
-            <div class="col-12 col-md-6 my-5  r fs-3 ">
-                <p class="p-3">Lorem ipsum dolor sit amet, consectetur adipisicing
-                    elit. Illo perspiciatis
-                    amet
-                    dolor quasi a consequatur, eius distinctio modi ratione. Modi esse ab labore, consectetur
-                    laboriosam
-                    fuga animi? Rerum, dicta eaque!</p>
-            </div>
-        </div>
+
 
 
     </div>
@@ -96,7 +87,7 @@
                     <div class="col-12  col-sm-6 col-md-4 ">
 
                         <x-card :title="$insertion->title" :category="$insertion->category->name"
-                        :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/300'" 
+                            :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/300'"
                             :categoryid="$insertion->category->id" :price="$insertion->price"
                             :description="$insertion->description" :body="$insertion->body"
                             :date="$insertion->created_at->diffForHumans()" :link="route('insertions.show', $insertion)"

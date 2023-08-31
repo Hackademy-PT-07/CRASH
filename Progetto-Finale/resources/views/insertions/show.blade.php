@@ -17,7 +17,8 @@
                  <div id="carouselExampleInterval" class="carousel slide my-5 mx-auto  w-50 " data-bs-ride="carousel">
                      <div class="carousel-inner rounded ">
                          <div class="carousel-item active" data-bs-interval="10000">
-                             <img src="{{!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(800,400) : 'https://picsum.photos/300/300'}}" class=" w-100" alt="...">
+                             <img src="{{!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(800,400) : 'https://picsum.photos/800/400'}}"
+                                 class=" w-100" alt="...">
                          </div>
                          <div class="carousel-item" data-bs-interval="2000">
                              <img src="https://picsum.photos/800/400?grayscale" class=" w-100" alt="...">
