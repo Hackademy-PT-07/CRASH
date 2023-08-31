@@ -42,8 +42,10 @@ return  [
 //createForm 
     'productName' => 'Product name',
     'category' => 'Category',
+    'chooseCategory' => 'Choose category',
     'price' => 'Price',
     'description' => 'Description',
+    'ChooseFile' => 'Choose files',
     'save' => 'Save',
 //status
     'rejected' => 'Rejected',

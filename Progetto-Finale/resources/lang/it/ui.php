@@ -42,6 +42,7 @@ return  [
 //createForm 
     'productName' => 'Nome del prodotto',
     'category' => 'Categoria',
+    'chooseCategory' => 'Scegli una categoria',
     'price' => 'Prezzo',
     'description' => 'Descrizione',
     'save' => 'Salva annuncio',
