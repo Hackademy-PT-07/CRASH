@@ -38,7 +38,7 @@ return  [
     'category_12'=> 'Musica e Film',
     'allInsertionsfrom' => 'Tutti gli annunci della categoria', 
     'notInsertionsfor' => 'Non ci sono annunci della categoria:',
-    'newforCategoryInsertion' => 'Publicane uno:',
+    'newforCategoryInsertion' => 'Pubblicane uno:',
 //createForm 
     'productName' => 'Nome del prodotto',
     'category' => 'Categoria',

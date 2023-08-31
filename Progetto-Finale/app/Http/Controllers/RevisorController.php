@@ -15,7 +15,7 @@ class RevisorController extends Controller
 {
     public function index()
     {
-        $insertionToCheck = Insertions::where('is_accepted', null)->first();
+        $insertionToCheck = Insertions::where('is_accepted', null)->where('user_id','!=', Auth::id())->first();
         return view('revisor.index', compact('insertionToCheck'));
     }
     public function acceptInsertion(Insertions $insertion)
