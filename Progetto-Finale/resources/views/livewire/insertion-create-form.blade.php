@@ -1,5 +1,5 @@
 <div class="container mt-5  text-white background-green rounded">
-    <h4 class="pt-3">Inserisci annuncio</h4>
+    <h4 class="pt-3">{{__('ui.addInsertion')}}</h4>
     <x-success />
     <div class="row">
         <form wire:submit.prevent="store" class="py-3">
@@ -47,7 +47,7 @@
                 @if (!empty($images))
                 <div class="row">
                     <div class="col-12">
-                        <p>Photo preview:</p>
+                        <p>{{__('ui.imgPreview')}}</p>
                         <div class="row  border-0 rounded  py-4">
                             @foreach ($images as $key => $image)
                             <div class="col my-3">
@@ -57,7 +57,7 @@
                                 </div>
                                 <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto"
                                     wire:click="removeImage({{$key}})">
-                                    Cancella</button>
+                                    {{__('ui.delete')}}</button>
                             </div>
                             @endforeach
                         </div>
@@ -65,7 +65,7 @@
                 </div>
                 @endif
                 <div class="mt-2 col-12">
-                    <button type="submit" class="btn buttonColor  w-100">Salva annuncio</button>
+                    <button type="submit" class="btn buttonColor  w-100">{{__('ui.save')}}</button>
                 </div>
             </div>
         </form>

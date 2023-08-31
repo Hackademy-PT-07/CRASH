@@ -45,8 +45,10 @@ return  [
     'chooseCategory' => 'Choose category',
     'price' => 'Price',
     'description' => 'Description',
-    'ChooseFile' => 'Choose files',
+    'chooseFile' => 'Choose files',
+    'imgPreview' => 'Photo preview:',
     'save' => 'Save',
+    'delete' => 'Delete',
 //status
     'rejected' => 'Rejected',
     'toReview' => 'To review',
