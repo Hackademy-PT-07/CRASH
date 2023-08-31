@@ -69,8 +69,9 @@
             @endauth
 
             <div class="btn-group mx-2">
-                <div class=" dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-
+                <div class=" dropdown-toggle text-white" data-bs-toggle="dropdown" data-bs-display="static"
+                    aria-expanded="false">
+                    <i class="bi bi-flag-fill "></i>
                 </div>
                 <ul
                     class="dropdown-menu background-green border mt-4 border-white dropdown-menu-start dropdown-menu-lg-end W-25">

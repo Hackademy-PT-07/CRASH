@@ -39,7 +39,7 @@
                 </div>
                 <div class="mb-3 mt-3">
                     <input wire:model="temporary_images" type="file" multiple
-                        class="form-control shadow @error('temporary_images.*') is-invalid @enderror" placeholder="Img">
+                        class="form-control shadow @error('temporary_images.*') is-invalid @enderror">
                     @error('temporary_images.*')
                     <p class="text-danger mt-2">{{ $message }}</p>
                     @enderror
