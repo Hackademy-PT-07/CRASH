@@ -24,72 +24,6 @@ header {
     color: black;
 }
 
-.slider {
-    height: 250px;
-    width: 70%;
-    margin: auto;
-    display: grid;
-    place-items: center;
-}
-
-.slide-track {
-    display: flex;
-    width: calc(250px * 18);
-    animation: scroll 40s linear infinite;
-}
-.slide-track:hover {
-    animation-play-state: paused;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-250px * 9));
-    }
-}
-
-.slide {
-    height: 200px;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    perspective: 100px;
-}
-.slide > img {
-    width: 100%;
-    height: 150px;
-    transition: transform 1s;
-}
-.slide > img:hover {
-    transform: translateZ(20px);
-}
-
-.slider::before,
-.slider::after {
-    background: linear-gradient(
-        to right,
-        rgb(244, 242, 222, 1) 0%,
-        rgb(244, 242, 222, 0) 100%
-    );
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 15%;
-    z-index: 2;
-}
-
-.slider::before {
-    left: 0;
-    top: 0;
-}
-.slider::after {
-    left: 0;
-    top: 0;
-    transform: rotateZ("angle") (180deg);
-}
 .background-green {
     background-color: #7c9d96;
 }
@@ -189,30 +123,9 @@ header {
         }
     }
 }
-
-@media only screen and (max-width: 576px) {
-    .icon > a {
-        color: #f4f2de;
-        display: flex;
-        justify-content: center;
-        width: 10%;
-        font-size: 15px;
-        background-color: #7c9d96;
-        border-radius: 5%;
-        margin: 3%;
-        box-shadow: rgba(233, 179, 132, 0.4) 0px 5px,
-            rgba(233, 179, 132, 0.3) 0px 10px, rgba(233, 179, 132, 0.2) 0px 15px,
-            rgba(233, 179, 132, 0.1) 0px 20px,
-            rgba(233, 179, 132, 0.05) 0px 25px;
-        transition: transform 1s ease;
-        transition: color 0.5s ease;
-        &:hover {
-            color: #e9b384;
-            transform: scale(1.05);
-        }
-    }
+.border-orange {
+    border: solid 1px #e9b384;
 }
-
 .review {
     background-color: rgb(208, 176, 62);
 }
@@ -230,4 +143,9 @@ header {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.Size {
+    height: 200px;
+    width: auto;
 }
