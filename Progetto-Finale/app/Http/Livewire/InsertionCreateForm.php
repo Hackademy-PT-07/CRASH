@@ -73,6 +73,7 @@ class InsertionCreateForm extends Component
                 $newImage = $this->insertion->images()->create(['path' => $image->store($newFileName, 'public')]);
 
                 dispatch(new ResizeImage($newImage->path, 300, 300));
+                dispatch(new ResizeImage($newImage->path, 800, 400));
 
             }
 

@@ -20,7 +20,8 @@
         
             @forelse($insertions as $insertion)
             <div class="col-12 col-md-3">
-                <x-card :title="$insertion->title" :category="$insertion->category->name" :price="$insertion->price"
+                <x-card :title="$insertion->title" :category="$insertion->category->name" 
+                :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/300'" :price="$insertion->price"
                     :description="$insertion->description" :body="$insertion->body"
                     :categoryid="$insertion->category->id" :date="$insertion->created_at->diffForHumans()"
                     :link="route('insertions.show', $insertion)" :isAccepted="$insertion->is_accepted" />
