@@ -25,7 +25,7 @@ return  [
 //Categories
     'categories' => 'Categorias',
     'category_1'=> 'Choches y motos',
-    'category_2'=> 'Electronica e Informática',
+    'category_2'=> 'Electrónica e Informática',
     'category_3'=> 'Electromésticos',
     'category_4'=> 'Deporte',
     'category_5'=> 'Decoración y Muebles',
@@ -42,9 +42,12 @@ return  [
 //createForm 
     'productName' => 'Nombre del producto',
     'category' => 'Categoria',
+    'chooseCategory' => 'Elige una categoria',
     'price' => 'Precio',
     'description' => 'Descripción',
-    'save' => 'Guardar anuncio',
+    'imgPreview' => 'Previsualiza imagenes:',
+    'save' => 'Guarda anuncio',
+    'delete' => 'Elimina',
 //status
     'rejected' => 'Rechazado',
     'toReview' => 'Pendiente de revisión',

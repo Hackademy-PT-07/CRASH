@@ -1,5 +1,5 @@
 <div class="container my-5">
-    <h4 class=" my-5 w-100 rounded d-flex justify-content-center">Tutti i tuoi annunci</h4>
+    <h4 class=" my-5 w-100 rounded d-flex justify-content-center">{{__('ui.allYourInsertions')}}</h4>
     <div class="row">
         @foreach($insertions as $insertion)
         <div class="col-12 col-md-3">

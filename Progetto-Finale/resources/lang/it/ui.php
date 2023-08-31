@@ -42,9 +42,13 @@ return  [
 //createForm 
     'productName' => 'Nome del prodotto',
     'category' => 'Categoria',
+    'chooseCategory' => 'Scegli una categoria',
     'price' => 'Prezzo',
     'description' => 'Descrizione',
+    'imgPreview' => 'Visualizza immagini:',
     'save' => 'Salva annuncio',
+    'delete' => 'Cancella',
+   
 //status
     'rejected' => 'Rifiutato',
     'toReviw' => 'Da revisionare',

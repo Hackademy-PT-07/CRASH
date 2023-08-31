@@ -42,9 +42,13 @@ return  [
 //createForm 
     'productName' => 'Product name',
     'category' => 'Category',
+    'chooseCategory' => 'Choose category',
     'price' => 'Price',
     'description' => 'Description',
+    'chooseFile' => 'Choose files',
+    'imgPreview' => 'Photo preview:',
     'save' => 'Save',
+    'delete' => 'Delete',
 //status
     'rejected' => 'Rejected',
     'toReview' => 'To review',
