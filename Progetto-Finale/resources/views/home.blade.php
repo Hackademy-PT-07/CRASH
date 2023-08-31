@@ -31,11 +31,10 @@
     <div class="container  my-5">
         <div class="row d-flex BackGroundIllustration  ">
             <div class="col-12 col-md-6 d-flex align-middle ">
-                <img class=" img-fluid d-flex justify-content-start "
-                    src="https://hbswk.hbs.edu/PublishingImages/norton-shake.jpg" alt="">
+                <img class=" img-fluid d-flex justify-content-start " src="\images\norton-shake.jpg" alt="">
             </div>
             <div class="col-12 col-md-6 my-5   fs-3 ">
-                <p class="p-3 " data-aos="fade-right" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur
+                <p class="p-3 " data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur
                     adipisicing
                     elit. Illo perspiciatis
                     amet
@@ -46,7 +45,7 @@
         </div>
         <div class="row  my-5  BackGroundIllustrationReverse">
             <div class="col-12 col-md-6 my-5  r fs-3 ">
-                <p class="p-3" data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur
+                <p class="p-3" data-aos="fade-right" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur
                     adipisicing
                     elit. Illo perspiciatis
                     amet
@@ -55,9 +54,7 @@
                     fuga animi? Rerum, dicta eaque!</p>
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-end ">
-                <img class="img-fluid"
-                    src="https://economiacircolare.com/wp-content/uploads/2021/01/vestiti-abiti-clothes-1068x712.jpg"
-                    alt="">
+                <img class="img-fluid" src="\images\vestiti-abiti-clothes-1068x712 (1).jpg" alt="">
             </div>
         </div>
 

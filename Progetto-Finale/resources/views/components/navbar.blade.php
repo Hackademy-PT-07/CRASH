@@ -71,21 +71,21 @@
             <div class="btn-group mx-2">
                 <div class=" dropdown-toggle text-white" data-bs-toggle="dropdown" data-bs-display="static"
                     aria-expanded="false">
-                    <i class="bi bi-flag-fill "></i>
+                    <span class="fi fi-{{Session::get('locale')}}"></span>
                 </div>
                 <ul
-                    class="dropdown-menu background-green border mt-4 border-white dropdown-menu-start dropdown-menu-lg-end W-25">
-                    <li class="dropdown-item d-flex colorNavbarButton">
+                    class="dropdown-menu background-green border mt-4 border-white dropdown-menu-start dropdown-menu-lg-end">
+                    <li class="dropdown-item d-flex colorNavbarButton justify-content-center ">
                         <x-language lang="it" nation="it" />
-                        <p class="mx-1">IT</p>
+
                     </li>
-                    <li class="dropdown-item d-flex colorNavbarButton">
-                        <x-language lang="en" nation="gb" />
-                        <p class="mx-1">EN</p>
+                    <li class="dropdown-item d-flex colorNavbarButton justify-content-center">
+                        <x-language lang="gb" nation="gb" />
+
                     </li>
-                    <li class="dropdown-item d-flex colorNavbarButton">
+                    <li class="dropdown-item d-flex colorNavbarButton justify-content-center">
                         <x-language lang="es" nation="es" />
-                        <p class="mx-1">ES</p>
+
                     </li>
                 </ul>
                 </>
