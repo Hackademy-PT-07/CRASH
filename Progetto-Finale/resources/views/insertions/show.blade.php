@@ -41,7 +41,7 @@
              </div>
          </div>
 
-         <div class="row mt-5 background-green text-white rounded">
+         <div class="row mt-5 background-green text-white px-5  rounded">
 
              <div class="col-12  mt-2">
                  <div class=" d-flex justify-content-between">
