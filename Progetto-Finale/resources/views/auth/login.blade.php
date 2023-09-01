@@ -2,6 +2,7 @@
     <x-navbar />
     <x-slot:title>Login</x-slot:title>
     <div class="container ">
+
         <div class="row  ">
             <div class="col-6 mx-auto my-5">
                 <div class="card p-3 background-green text-white w-100">

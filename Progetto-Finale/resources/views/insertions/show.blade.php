@@ -16,25 +16,17 @@
 
                  <div id="carouselExampleInterval" class="carousel slide my-5 mx-auto  w-50 " data-bs-ride="carousel">
                      <div class="carousel-inner rounded ">
-                        @if (!$insertion->images()->get()->isEmpty())
-                            @foreach ($images as $image)
-                            
-                        
                          <div class="carousel-item active" data-bs-interval="10000">
-                             <img src="{{ $image->getUrl(800,400) }}"
+                             <img src="{{!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(800,400) : 'https://picsum.photos/800/400'}}"
                                  class=" w-100" alt="...">
                          </div>
-                         @endforeach
-                         
-                             
-                         @else
-                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="https://picsum.photos/800/400"
-                                class=" w-100" alt="...">
-                            </div>
-                         @endif
-                         
-                     
+                         <div class="carousel-item" data-bs-interval="2000">
+                             <img src="https://picsum.photos/800/400?grayscale" class=" w-100" alt="...">
+                         </div>
+                         <div class="carousel-item">
+                             <img src="https://picsum.photos/800/400?grayscale" class=" w-100" alt="...">
+                         </div>
+                     </div>
                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                          data-bs-slide="prev">
                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -49,7 +41,7 @@
              </div>
          </div>
 
-         <div class="row mt-5 background-green text-white px-5 rounded">
+         <div class="row mt-5 background-green text-white rounded">
 
              <div class="col-12  mt-2">
                  <div class=" d-flex justify-content-between">
@@ -57,8 +49,6 @@
                      <p class=" d-flex justify-content-end">{{$insertion->created_at->diffForHumans()}}</p>
                  </div>
                  <p class="mt-2">{{$insertion->description}}</p>
-
-
              </div>
          </div>
      </div>

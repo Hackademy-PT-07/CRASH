@@ -11,9 +11,10 @@
                 <h2 class="d-flex justify-content-center">{{__('ui.categories')}}</h2>
             </div>
             @foreach($categories as $category)
-            <div class="col-4 col-md-3 col-lg-2">
-                <div class="d-flex flex-column justify-content-center align-items-center py-3">
-                    <a href="{{route('categoryShow', compact('category'))}}"><i
+            <div class="col-4 col-md-3  col-lg-2">
+                <div class="d-flex flex-column justify-content-center align-items-center py-3 ">
+                    <a data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                        data-aos-duration="500" href="{{route('categoryShow', compact('category'))}}"><i
                             class="{{ $category->icon }} icon px-4 rounded"></i></a>
                     <h5 class="mt-3 text-center">{{__('ui.category_' . $category->id)}}</h5>
                 </div>
@@ -33,8 +34,9 @@
             <div class="col-12 col-md-6 d-flex align-middle ">
                 <img class=" img-fluid d-flex justify-content-start " src="\images\norton-shake.jpg" alt="">
             </div>
-            <div class="col-12 col-md-6 my-5   fs-3 ">
-                <p class="p-3 " data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur
+            <div class="col-12 col-md-6 my-5 overflow-hidden  fs-3 ">
+                <p class="p-3 " data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet,
+                    consectetur
                     adipisicing
                     elit. Illo perspiciatis
                     amet
@@ -44,8 +46,9 @@
             </div>
         </div>
         <div class="row  my-5  BackGroundIllustrationReverse">
-            <div class="col-12 col-md-6 my-5  r fs-3 ">
-                <p class="p-3" data-aos="fade-right" data-aos-duration="3000">Lorem ipsum dolor sit amet, consectetur
+            <div class="col-12 col-md-6 my-5 overflow-hidden r fs-3 ">
+                <p class="p-3 " data-aos="fade-right" data-aos-duration="3000">Lorem ipsum dolor sit
+                    amet, consectetur
                     adipisicing
                     elit. Illo perspiciatis
                     amet
