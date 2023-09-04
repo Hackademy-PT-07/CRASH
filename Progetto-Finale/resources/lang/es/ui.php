@@ -22,6 +22,7 @@ return  [
     'lastestInsertions' => 'Anuncios más recientes',
     'showInsertion' => "Ir al anuncio",
     'noInsertionsToReview' => 'No hay anuncios para revisar',
+    'editInsertion' => 'Modifica anuncio',
 //Categories
     'categories' => 'Categorias',
     'category_1'=> 'Choches y motos',

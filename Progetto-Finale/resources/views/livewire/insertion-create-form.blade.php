@@ -5,7 +5,7 @@
             <div class="row text-white ">
                 <div class="mt-1 col-12 col-md-5">
                     <label for="title">{{__('ui.productName')}}</label>
-                    <input type="text" class="form-control" wire:model="insertion.title">
+                    <input type="text" class="form-control" wire:model="{{old('insertion.title', 'insertion.title')}}">
                     @error('insertion.title') <p class="small rounded my-2 errorBackground text-danger">{{ $message }}
                     </p> @enderror
                 </div>

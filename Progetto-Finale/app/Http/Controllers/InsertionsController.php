@@ -48,9 +48,15 @@ class InsertionsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(insertions $insertions)
+    public function edit(insertions $insertion)
     {
-        return view('insertions.edit');
+        return view('insertions.edit', compact('insertion'));
+    }
+    public function modifyInsertion(Request $request, insertions $insertions)
+    {
+        $categories = \App\Models\Category::all();
+        $insertion = Insertions::search($request->searched)->where('is_accepted', true)->paginate(16);
+        return view('categoryShow', compact('insertion','categories'));
     }
 
     /**
@@ -66,8 +72,11 @@ class InsertionsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(insertions $insertions)
+    public function destroy(insertions $insertion)
     {
-        //
+    
+        $insertion->delete();
+
+        return redirect()->route('insertions.create')->with(['success' => 'Annuncio eliminato correttamente.']);
     }
 }
