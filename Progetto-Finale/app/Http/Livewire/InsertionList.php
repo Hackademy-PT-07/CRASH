@@ -19,7 +19,7 @@ class InsertionList extends Component
 
     public function loadInsertions()
     {
-        $this->insertions = auth()->user()->insertions;
+        $this->insertions = auth()->user()->insertions->sortByDesc('created_at');
     }
     public function render()
     { 

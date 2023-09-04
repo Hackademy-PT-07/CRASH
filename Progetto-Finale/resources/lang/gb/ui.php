@@ -22,6 +22,7 @@ return  [
     'lastestInsertions' => 'Lastest insertions',
     'showInsertion' => "Go to the insertion",
     'noInsertionsToReview' => 'There are not insertions to review',
+    'editInsertion' => 'Edit insertion',
 //Categories
     'categories' => 'Categories',
     'category_1'=> 'Cars & Motorcycles',

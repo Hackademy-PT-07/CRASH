@@ -22,6 +22,7 @@ return  [
     'lastestInsertions' => 'Annunci piu recenti',
     'showInsertion' => "Vai all'annuncio",
     'noInsertionsToReview' => 'Non ci sono annunci da revisionare',
+    'editInsertion' => 'Modifica annuncio',
 //Categories
     'categories' => 'Categorie',
     'category_1'=> 'Auto e moto',

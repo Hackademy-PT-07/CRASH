@@ -12,6 +12,17 @@
 
      <div class="container my-3 showContainer BackGroundIllustration border-orange rounded ">
          <div class="row ">
+            <div class="mt-2 d-flex flex-row-reverse">
+                <form action="{{route('insertions.destroy' , $insertion )}}" method="POST"> 
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger mt-1 me-1" type="submit"> <i class="bi bi-trash-fill"></i></button>
+                </form>
+                <a href="{{ route('insertions.edit' , $insertion)}}" class="btn btn-success mt-1 me-1"><i class="bi bi-pencil-fill"></i></a>
+               
+            </div>
+            
+           
 
              <div class="col-12 text-center al rounded p-3">
                  <h3 class="m-3">{{$insertion->title}}</h3>
