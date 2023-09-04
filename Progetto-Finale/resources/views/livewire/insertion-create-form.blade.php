@@ -1,6 +1,5 @@
 <div class="container mt-5  text-white background-green rounded">
     <h4 class="pt-3">{{__('ui.addInsertion')}}</h4>
-    <x-success />
     <div class="row">
         <form wire:submit.prevent="store" class="py-3">
             <div class="row text-white ">
@@ -16,7 +15,7 @@
                         value=" ">
                         <option value="">{{__('ui.chooseCategory')}}</option>
                         @foreach(App\Models\Category::all() as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <option value="{{ $category->id }}">{{__('ui.category_' . $category->id)}}</option>
                         @endforeach
                     </select>
                     @error('insertion.category_id') <p class="small rounded my-2 errorBackground text-danger">
@@ -50,7 +49,7 @@
                         <p>{{__('ui.imgPreview')}}</p>
                         <div class="row  border-0 rounded  py-4">
                             @foreach ($images as $key => $image)
-                            <div class="col my-3">
+                            <div class="col my-3 img-fluid">
                                 <div class="mx-auto shadow img-fluid d-flex justify-content-center rounded"
                                     placeholder="carica immagine">
                                     <img class="img-preview my-2 img-fluid rounded" src="{{$image->temporaryUrl()}}"
