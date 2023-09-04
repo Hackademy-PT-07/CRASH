@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Jobs\GoogleVisionSafeSearch;
 use Livewire\Component;
 use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
@@ -75,6 +76,7 @@ class InsertionCreateForm extends Component
                 dispatch(new ResizeImage($newImage->path, 300, 300));
                 dispatch(new ResizeImage($newImage->path, 800, 400));
 
+                dispatch(new GoogleVisionSafeSearch($newImage->id));
             }
 
             File::deleteDirectory(storage_path('/app/livewire-tm'));

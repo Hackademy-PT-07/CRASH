@@ -3,6 +3,11 @@
      <x-slot:title>Annuncio</x-slot:title>
 
      <x-navbar />
+     <div class="container mt-4">
+        <x-success/>
+        <x-error/>
+    </div>
+
 
 
      <div class="container my-3 showContainer BackGroundIllustration border-orange rounded ">

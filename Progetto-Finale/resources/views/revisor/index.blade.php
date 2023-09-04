@@ -1,5 +1,9 @@
 <x-main>
     <x-navbar />
+    <div class="container mt-4">
+        <x-success/>
+        <x-error/>
+    </div>
     <div class="container h-100  my-4">
         <div class="row h-100 ">
             <div class="col-12 my-3">

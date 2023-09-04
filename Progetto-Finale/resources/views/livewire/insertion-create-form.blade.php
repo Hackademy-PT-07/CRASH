@@ -1,6 +1,5 @@
 <div class="container mt-5  text-white background-green rounded">
     <h4 class="pt-3">{{__('ui.addInsertion')}}</h4>
-    <x-success />
     <div class="row">
         <form wire:submit.prevent="store" class="py-3">
             <div class="row text-white ">
@@ -16,7 +15,7 @@
                         value=" ">
                         <option value="">{{__('ui.chooseCategory')}}</option>
                         @foreach(App\Models\Category::all() as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        <option value="{{ $category->id }}">{{__('ui.category_' . $category->id)}}</option>
                         @endforeach
                     </select>
                     @error('insertion.category_id') <p class="small rounded my-2 errorBackground text-danger">
