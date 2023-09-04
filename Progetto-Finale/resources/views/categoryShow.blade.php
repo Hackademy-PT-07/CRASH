@@ -1,5 +1,11 @@
 <x-main>
     <x-navbar />
+
+    <div class="container mt-4">
+        <x-success/>
+        <x-error/>
+    </div>
+
     <div class="container text-center text-white my-5   rounded-3 ">
         <div class="row">
            

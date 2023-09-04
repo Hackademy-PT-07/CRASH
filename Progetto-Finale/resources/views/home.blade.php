@@ -5,6 +5,11 @@
         <img class="img-fluid" src="\images\header3.jpg" alt="">
     </div>
     <x-navbar />
+    <div class="container mt-4">
+        <x-success/>
+        <x-error/>
+    </div>
+
     <div class="container p-0">
         <div class="row m-5 p-0">
             <div class="col-12 mt-4">

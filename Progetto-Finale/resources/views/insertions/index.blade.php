@@ -1,6 +1,10 @@
 <x-main>
     <x-slot:title>Presto.it</x-slot:title>
     <x-navbar />
+    <div class="container mt-4">
+        <x-success/>
+        <x-error/>
+    </div>
     <div class="container">
         <div class="row m-5">
             <div class="col-12 col-md-6 mb-3">
