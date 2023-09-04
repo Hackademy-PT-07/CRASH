@@ -1,9 +1,13 @@
 <nav id="navbar" class="navbar navbar-expand-lg   border-bottom border-body background-green sticky-top"
     data-bs-theme="dark">
     <div class="container-fluid">
-        <a class=" navbar-brand d-flex align-middle logo-navbar" href="{{ route('home') }}"><img
-                src="/images/logo_presto-it.png" alt=""></a>
-        <a class="navbar-brand d-flex align-middle" href="{{ route('home') }}"> Presto.it</a>
+
+
+
+        <a class="navbar-brand logo-navbar d-flex inline  " href="{{ route('home') }}"> <img class=" img-fluid  "
+                src="/images/logo_presto-it.png" alt="">
+            <p class="mx-2  my-0 d-flex align-items-center">Presto.it</p>
+        </a>
         <button class="navbar-toggler buttonColor" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
