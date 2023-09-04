@@ -4,6 +4,9 @@
 body {
     background-color: #f4f2de;
 }
+.logo-navbar > img {
+    width: 40px;
+}
 
 header {
     padding: 30px;
@@ -11,10 +14,6 @@ header {
     height: 20vw;
     text-align: center;
     border-bottom: solid grey 1px;
-}
-
-.logo-navbar > img {
-    width: 10%;
 }
 
 .newAddBtn,
