@@ -18,40 +18,34 @@
                      <div class="carousel-inner rounded ">
                         @if (!$insertion->images()->get()->isEmpty())
                             @foreach ($images as $image)
-                            
-                        
-                         <div class="carousel-item active" data-bs-interval="10000">
-                             <img src="{{ $image->getUrl(800,400) }}"
-                                 class=" w-100" alt="...">
-                         </div>
-                         @endforeach
-                         
-                             
-                         @else
-                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="https://picsum.photos/800/400"
-                                class=" w-100" alt="...">
+                                <div class="carousel-item active" data-bs-interval="10000">
+                                    <img src="{{ $image->getUrl(800,400) }}"
+                                        class=" w-100" alt="...">
+                                </div>
+                            @endforeach
+                        @else
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <img src="https://picsum.photos/800/400"
+                                    class=" w-100" alt="...">
                             </div>
                          @endif
-                         
-                     
-                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                         data-bs-slide="prev">
-                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                         <span class="visually-hidden">Previous</span>
-                     </button>
-                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                         data-bs-slide="next">
-                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                         <span class="visually-hidden">Next</span>
-                     </button>
-                 </div>
-             </div>
-         </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-         <div class="row mt-5 background-green text-white px-5 rounded">
+            <div class="row mt-5 background-green text-white px-5 rounded">
 
-             <div class="col-12  mt-2">
+            <div class="col-12  mt-2">
                  <div class=" d-flex justify-content-between">
                      <h4>{{ \App\Custom\Currency::formatEuro($insertion->price)}}</h4>
                      <p class=" d-flex justify-content-end">{{$insertion->created_at->diffForHumans()}}</p>
