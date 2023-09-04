@@ -4,9 +4,9 @@
 
      <x-navbar />
      <div class="container mt-4">
-        <x-success/>
-        <x-error/>
-    </div>
+         <x-success />
+         <x-error />
+     </div>
 
 
 
@@ -32,6 +32,7 @@
                              <img src="https://picsum.photos/800/400" class=" w-100" alt="...">
                          </div>
                          @endif
+
                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                              data-bs-slide="prev">
                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
