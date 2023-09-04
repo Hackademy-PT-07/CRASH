@@ -1,5 +1,5 @@
 @if(session()->has('error'))
-    <div class="alert alert-danger">
+    <div class="error-message">
         {{ session('error') }}
     </div>
 @endif
