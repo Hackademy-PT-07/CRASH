@@ -51,8 +51,6 @@
                      <p class=" d-flex justify-content-end">{{$insertion->created_at->diffForHumans()}}</p>
                  </div>
                  <p class="mt-2">{{$insertion->description}}</p>
-
-
              </div>
          </div>
      </div>
