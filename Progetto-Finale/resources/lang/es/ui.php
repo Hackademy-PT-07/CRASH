@@ -40,6 +40,7 @@ return  [
     'allInsertionsfrom' => 'Todos los anuncios de la categoria:', 
     'notInsertionsfor' => 'No hay anuncios de la categoria:',
     'newforCategoryInsertion' => 'Publica un nuevo anuncio:',
+    'noInsertions' => 'Aun no has subido ningun anunico',
 //createForm 
     'productName' => 'Nombre del producto',
     'category' => 'Categoria',
