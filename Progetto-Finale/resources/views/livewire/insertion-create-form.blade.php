@@ -45,7 +45,7 @@
                 </div>
                 @if (!empty($images))
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 my-5">
                         <p>{{__('ui.imgPreview')}}</p>
                         <div class="row  border-0 rounded  py-4">
                             @foreach ($images as $key => $image)
@@ -65,7 +65,8 @@
                 </div>
                 @endif
                 <div class="mt-2 col-12">
-                    <button type="submit" wire:loading.attr="disabled" class="btn buttonColor  w-100">{{__('ui.save')}}</button>
+                    <button type="submit" wire:loading.attr="disabled"
+                        class="btn buttonColor  w-100">{{__('ui.save')}}</button>
                 </div>
             </div>
         </form>
