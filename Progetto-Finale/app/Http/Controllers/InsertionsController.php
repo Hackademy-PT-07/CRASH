@@ -74,7 +74,7 @@ class InsertionsController extends Controller
      */
     public function destroy(insertions $insertion)
     {
-    
+        $insertion->images()->detach();
         $insertion->delete();
 
         return redirect()->route('insertions.create')->with(['success' => 'Annuncio eliminato correttamente.']);

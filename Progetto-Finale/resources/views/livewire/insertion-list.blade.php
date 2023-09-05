@@ -3,7 +3,7 @@
     <div class="row">
         
         @foreach($insertions as $insertion)
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-6 col-lg-3">
             <x-card :title="$insertion->title" :category="$insertion->category->name" :price="$insertion->price"
                 :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/300'" :description="$insertion->description" :body="$insertion->body" :categoryid="$insertion->category->id"
                 :link="route('insertions.show', $insertion)" :date="$insertion->created_at->diffForHumans()"
