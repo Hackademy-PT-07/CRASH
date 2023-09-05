@@ -19,14 +19,16 @@
                 <h3 class="m-3">{{$insertionToCheck->title}}</h3>
                 <p class="m-3 p-2 rounded categoryBadge text-white">{{$insertionToCheck->category->name}}</p>
             </div>
-
-            
+        </div>
+        
+            <div id="carouselExampleInterval" class="carousel slide my-5 w-100 " data-bs-ride="carousel">
+                <div class="carousel-inner rounded w-100">
+                    
                        @forelse ($insertionToCheck->images as $image)
-                       <div id="carouselExampleInterval" class="carousel slide my-5 mx-auto  w-100 " data-bs-ride="carousel">
-                        <div class="carousel-inner rounded w-100">
-                           <div class="row carousel-item  @if ($loop->first) active @endif " data-bs-interval="10000">
+                            <div class="carousel-item  @if ($loop->first) active @endif " data-bs-interval="10000">
+                                <div class="row">
                                 <div class="col-md-4">
-                               <img src="{{ $image->getUrl(800,400) }}"
+                                <img src="{{ $image->getUrl(800,400) }}"
                                    class=" w-100" alt="...">
                                 </div>
                                    <div class="col-md-4 border-end">
@@ -38,8 +40,8 @@
                                             @endforeach
                                         @endif
                                     </div>
-                               </div>
-                               <div class="col-md-4">
+                                </div>
+                                <div class="col-md-4">
                                     <div class="card-body">
                                         <h5 class="tc-accent">Revisione Immagini</h5>
                                         <p>Adulti: <span class="{{ $image->adult }}"></span></p>
@@ -49,30 +51,28 @@
                                         <p>Contenuto Razzista: <span class="{{ $image->racy }}"></span></p>
                                     </div>
                                </div>
-                           </div>
+                            </div> 
                         </div>
-                    </div>
-                           
                        @empty
                        <div class="carousel-item active" data-bs-interval="10000">
                            <img src="https://picsum.photos/800/400"
                                class=" w-100" alt="...">
                        </div>
-                    @endforelse
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                        @endforelse
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                 </div>
             </div>
-        </div>
-
+        
+    
         <div class="row mt-3">
             <div class="col-12  mt-5 ms-5 me-5 ">
                 <div class="pe-5 d-flex justify-content-between">
@@ -99,7 +99,6 @@
                 </form>
             </div>
         </div>
-    </div>
     </div>
     @endif
 
