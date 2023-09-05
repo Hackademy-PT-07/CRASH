@@ -77,11 +77,11 @@ class InsertionCreateForm extends Component
                 $newImage = $this->insertion->images()->create(['path' => $image->store($newFileName, 'public')]);
 
                 RemoveFace::withChain([
+                    new AddMarkFidelity($newImage->id),
                     new ResizeImage($newImage->path, 300, 300),
                     new ResizeImage($newImage->path, 800, 400),
                     new GoogleVisionSafeSearch($newImage->id),
                     new GoogleVisionLabelImage($newImage->id),
-                    new AddMarkFidelity($newImage->id)
                 ])->dispatch($newImage->id);
             
             }
