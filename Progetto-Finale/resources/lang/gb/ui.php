@@ -23,6 +23,7 @@ return  [
     'showInsertion' => "Go to the insertion",
     'noInsertionsToReview' => 'There are not insertions to review',
     'editInsertion' => 'Edit insertion',
+    'noInsertions' => 'You have not insertions yet',
 //Categories
     'categories' => 'Categories',
     'category_1'=> 'Cars & Motorcycles',
