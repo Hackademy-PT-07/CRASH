@@ -29,7 +29,7 @@
                                    class=" w-100" alt="...">
                                 </div>
                                    <div class="col-md-4 border-end">
-                                    <h5 class="tc-accent mt-3">Allarmi</h5>
+                                    <h5 class="tc-accent mt-3">Tags</h5>
                                     <div class="p-2">
                                         @if ($image->labels)
                                             @foreach ($image->labels as $label)
