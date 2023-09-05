@@ -23,6 +23,7 @@ return  [
     'showInsertion' => "Vai all'annuncio",
     'noInsertionsToReview' => 'Non ci sono annunci da revisionare',
     'editInsertion' => 'Modifica annuncio',
+    'noInsertions' => 'Ancora non ci sono annunci',
 //Categories
     'categories' => 'Categorie',
     'category_1'=> 'Auto e moto',
