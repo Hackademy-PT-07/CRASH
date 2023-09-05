@@ -2,12 +2,13 @@
 
 namespace App\Http\Livewire;
 
+use Livewire\Component;
+use App\Jobs\RemoveFace;
+use App\Jobs\ResizeImage;
+use App\Jobs\AddMarkFidelity;
+use Livewire\WithFileUploads;
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
-use App\Jobs\RemoveFace;
-use Livewire\Component;
-use App\Jobs\ResizeImage;
-use Livewire\WithFileUploads;
 use Illuminate\Support\Facades\File;
 
 class InsertionCreateForm extends Component
@@ -79,7 +80,8 @@ class InsertionCreateForm extends Component
                     new ResizeImage($newImage->path, 300, 300),
                     new ResizeImage($newImage->path, 800, 400),
                     new GoogleVisionSafeSearch($newImage->id),
-                    new GoogleVisionLabelImage($newImage->id)
+                    new GoogleVisionLabelImage($newImage->id),
+                    new AddMarkFidelity($newImage->id)
                 ])->dispatch($newImage->id);
             
             }
