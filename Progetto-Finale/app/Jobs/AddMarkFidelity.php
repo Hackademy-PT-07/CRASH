@@ -45,10 +45,10 @@ class addMarkFidelity implements ShouldQueue
 
         $image->watermark(base_path('public/images/logo_presto-it.png'))
             ->watermarkPosition('top-left')
-            ->watermarkWidth($image->getWidth()*0.1, Manipulations::UNIT_PIXELS)
-            ->watermarkHeight($image->getHeight()*0.1, Manipulations::UNIT_PIXELS)
+            ->watermarkWidth($image->getWidth()*0.2, Manipulations::UNIT_PIXELS)
+            ->watermarkHeight($image->getHeight()*0.2, Manipulations::UNIT_PIXELS)
             ->watermarkFit(Manipulations::FIT_STRETCH)
-            ->watermarkOpacity(50);
+            ->watermarkOpacity(75);
 
         $image->save($srcPath);
     
