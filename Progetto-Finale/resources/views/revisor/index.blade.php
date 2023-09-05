@@ -53,43 +53,6 @@
                     <div class="carousel-item active" data-bs-interval="10000">
                         <img src="https://picsum.photos/800/400" class=" w-100" alt="...">
                     </div>
-
-                    @forelse ($insertionToCheck->images as $image)
-                    <div id="carouselExampleInterval" class="carousel slide my-5 mx-auto  w-100 "
-                        data-bs-ride="carousel">
-                        <div class="carousel-inner rounded w-100">
-                            <div class="row carousel-item  @if ($loop->first) active @endif " data-bs-interval="10000">
-                                <div class="col-md-4">
-                                    <img src="{{ $image->getUrl(800,400) }}" class=" w-100" alt="...">
-                                </div>
-                                <div class="col-md-4 border-end">
-                                    <h5 class="tc-accent mt-3">Tags</h5>
-                                    <div class="p-2">
-                                        @if ($image->labels)
-                                        @foreach ($image->labels as $label)
-                                        <p class="d-inline">{{ $label }}</p>
-                                        @endforeach
-                                        @endif
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card-body">
-                                        <h5 class="tc-accent">Revisione Immagini</h5>
-                                        <p>Adulti: <span class="{{ $image->adult }}"></span></p>
-                                        <p>Satira: <span class="{{ $image->spoof }}"></span></p>
-                                        <p>Medicina: <span class="{{ $image->medical }}"></span></p>
-                                        <p>Violenza: <span class="{{ $image->violence }}"></span></p>
-                                        <p>Contenuto Razzista: <span class="{{ $image->racy }}"></span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    @empty
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="https://picsum.photos/800/400" class=" w-100" alt="...">
-                    </div>
                     @endforelse
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                         data-bs-slide="prev">
