@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer id="footer" class="background-green text-center  text-white">
+<footer id="footer" class="background-green text-center mt-5 text-white">
     <!-- Grid container -->
     <div class="container p-4">
         <!-- Section: Social media -->
@@ -19,7 +19,7 @@
         </section>
         <!-- Section: Social media -->
         @auth
-    
+
         @if (!Auth::user()->is_revisor)
         <!-- Section: Form -->
         <section class="">
@@ -48,9 +48,9 @@
             </form>
         </section>
         @endif
-        
+
         @endauth
-        
+
         <!-- Section: Form -->
 
         <!-- Section: Text -->
