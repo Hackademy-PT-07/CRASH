@@ -45,11 +45,11 @@ class addMarkFidelity implements ShouldQueue
 
         $image = SpatieImage::load($srcPath);
 
-        $image->watermark(base_path('public/images/logo.jpg'))
+        $image->watermark(base_path('public/images/logo_presto-it.png'))
             ->watermarkPosition('top-left')
-            ->watermarkPadding(, )
-            ->watermarkWidth(, Manipulations::UNIT_PIXELS)
-            ->watermarkHeight(, Manipulations::UNIT_PIXELS)
+            ->watermarkPadding(400, 200)
+            ->watermarkWidth(100, Manipulations::UNIT_PIXELS)
+            ->watermarkHeight(100, Manipulations::UNIT_PIXELS)
             ->watermarkFit(Manipulations::FIT_STRETCH);
 
         $image->save($srcPath);
