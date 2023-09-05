@@ -6,8 +6,8 @@
     </div>
     <x-navbar />
     <div class="container mt-4">
-        <x-success/>
-        <x-error/>
+        <x-success />
+        <x-error />
     </div>
 
     <div class="container p-0">
@@ -21,7 +21,8 @@
                     <a data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
                         data-aos-duration="500" href="{{route('categoryShow', compact('category'))}}"><i
                             class="{{ $category->icon }} icon px-4 rounded"></i></a>
-                    <h5 class="mt-3 text-center">{{__('ui.category_' . $category->id)}}</h5>
+                    <h5 data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500"
+                        data-aos-duration="500" class="mt-3 text-center">{{__('ui.category_' . $category->id)}}</h5>
                 </div>
             </div>
             @endforeach

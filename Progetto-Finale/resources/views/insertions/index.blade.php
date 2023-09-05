@@ -2,8 +2,8 @@
     <x-slot:title>Presto.it</x-slot:title>
     <x-navbar />
     <div class="container mt-4">
-        <x-success/>
-        <x-error/>
+        <x-success />
+        <x-error />
     </div>
     <div class="container">
         <div class="row m-5">
@@ -24,16 +24,16 @@
             <div class="col-12 col-md-4 col-lg-3">
 
                 <x-card :title="$insertion->title" :category="$insertion->category->name" :price="$insertion->price"
-                :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/300'"
-                :description="$insertion->description" :body="$insertion->body" :categoryid="$insertion->category->id"
-                :date="$insertion->created_at->diffForHumans()" :link="route('insertions.show', $insertion)"
-                :isAccepted="$insertion->is_accepted" />
+                    :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/300'"
+                    :description="$insertion->description" :body="$insertion->body"
+                    :categoryid="$insertion->category->id" :date="$insertion->created_at->diffForHumans()"
+                    :link="route('insertions.show', $insertion)" :isAccepted="$insertion->is_accepted" />
 
             </div>
             @empty
             <div class="col-12">
-                <div class="alert alert-warning py-3 shadow">
-                    <p class="lead">Non ci sono annunci per questa ricerca</p>
+                <div class=" py-3 shadow">
+                    <p class="">Non ci sono annunci per questa ricerca</p>
                 </div>
             </div>
             @endforelse

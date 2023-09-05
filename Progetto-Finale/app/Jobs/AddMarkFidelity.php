@@ -39,23 +39,20 @@ class addMarkFidelity implements ShouldQueue
         $srcPath = storage_path('app/public/' . $i->path);
         $image = file_get_contents($srcPath);
 
-        putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
         
-        $imageAnnotator = new ImageAnnotatorClient();
 
         $image = SpatieImage::load($srcPath);
 
         $image->watermark(base_path('public/images/logo_presto-it.png'))
             ->watermarkPosition('top-left')
-            ->watermarkPadding(400, 200)
-            ->watermarkWidth(100, Manipulations::UNIT_PIXELS)
-            ->watermarkHeight(100, Manipulations::UNIT_PIXELS)
-            ->watermarkFit(Manipulations::FIT_STRETCH);
+            ->watermarkWidth($image->getWidth()*0.1, Manipulations::UNIT_PIXELS)
+            ->watermarkHeight($image->getHeight()*0.1, Manipulations::UNIT_PIXELS)
+            ->watermarkFit(Manipulations::FIT_STRETCH)
+            ->watermarkOpacity(50);
 
         $image->save($srcPath);
     
 
-        $imageAnnotator->close();
     }
 
 }
