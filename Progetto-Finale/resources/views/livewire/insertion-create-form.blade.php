@@ -45,14 +45,14 @@
                 </div>
                 @if (!empty($images))
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12 my-5">
                         <p>{{__('ui.imgPreview')}}</p>
                         <div class="row  border-0 rounded  py-4">
                             @foreach ($images as $key => $image)
                             <div class="col my-3 img-fluid">
-                                <div class="mx-auto shadow img-fluid d-flex justify-content-center rounded"
+                                <div class="mx-auto shadow  img-fluid d-flex justify-content-center rounded"
                                     placeholder="carica immagine">
-                                    <img class="img-preview my-2 img-fluid rounded" src="{{$image->temporaryUrl()}}"
+                                    <img class="img-preview my-2 img-fluid  rounded" src="{{$image->temporaryUrl()}}"
                                         alt="">
                                 </div>
                                 <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto"
@@ -65,7 +65,8 @@
                 </div>
                 @endif
                 <div class="mt-2 col-12">
-                    <button type="submit" wire:loading.attr="disabled" class="btn buttonColor  w-100">{{__('ui.save')}}</button>
+                    <button type="submit" wire:loading.attr="disabled"
+                        class="btn buttonColor  w-100">{{__('ui.save')}}</button>
                 </div>
             </div>
         </form>

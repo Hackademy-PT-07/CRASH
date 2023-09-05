@@ -18,14 +18,17 @@ class InsertionCreateForm extends Component
     public $temporary_images;
     public $images = [];
 
-    protected $messages = [
-        'insertion.title.required' => 'Il campo nome del prodotto non può essere vuoto.',
-        'insertion.category_id.required' => 'Il campo categoria del prodotto non può essere vuoto.',
-        'insertion.price.required' => 'Il campo prezzo del prodotto non può essere vuoto.',
-        'insertion.description.required' => 'Il campo descrizione del prodotto non può essere vuoto.',
-        'temporary_images.*.image' => 'I file devono essere immagini',
-        'temporary_images.*.max' => 'l\'immagine deve essere massimo di 4 Mb',
-    ];
+    public function messages(){
+        return [
+            'insertion.title.required' => __('errors.insertion_title_required'),
+            'insertion.category_id.required' => __('errors.category_id_required'),
+            'insertion.price.required' => __('errors.insertion_price_required'),
+            'insertion.description.required' => __('errors.insertion_description_required'),
+            'temporary_images.*.image' => __('errors.temporary_images_*_image'),
+            'temporary_images.*.max' =>  __('errors.temporary_images_*_max'),
+        ];
+
+    }
 
     public function updatedTemporaryImages()
     {
@@ -60,6 +63,7 @@ class InsertionCreateForm extends Component
     public function mount()
     {
         $this->newInsertion();
+       
     }
 
 
