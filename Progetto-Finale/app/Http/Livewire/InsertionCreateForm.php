@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
+use App\Jobs\RemoveFace;
 use Livewire\Component;
 use App\Jobs\ResizeImage;
 use Livewire\WithFileUploads;
@@ -74,13 +75,13 @@ class InsertionCreateForm extends Component
                 $newFileName = "insertions/{$this->insertion->id}";
                 $newImage = $this->insertion->images()->create(['path' => $image->store($newFileName, 'public')]);
 
-                dispatch(new ResizeImage($newImage->path, 300, 300));
-                dispatch(new ResizeImage($newImage->path, 800, 400));
-
-                dispatch(new GoogleVisionSafeSearch($newImage->id));
-                dispatch(new GoogleVisionLabelImage($newImage->id));
-
-                
+                RemoveFace::withChain([
+                    new ResizeImage($newImage->path, 300, 300),
+                    new ResizeImage($newImage->path, 800, 400),
+                    new GoogleVisionSafeSearch($newImage->id),
+                    new GoogleVisionLabelImage($newImage->id)
+                ])->dispatch($newImage->id);
+            
             }
 
             File::deleteDirectory(storage_path('/app/livewire-tm'));
