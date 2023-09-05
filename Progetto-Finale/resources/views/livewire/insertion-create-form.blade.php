@@ -65,7 +65,7 @@
                 </div>
                 @endif
                 <div class="mt-2 col-12">
-                    <button type="submit" class="btn buttonColor  w-100">{{__('ui.save')}}</button>
+                    <button type="submit" wire:loading.attr="disabled" class="btn buttonColor  w-100">{{__('ui.save')}}</button>
                 </div>
             </div>
         </form>
