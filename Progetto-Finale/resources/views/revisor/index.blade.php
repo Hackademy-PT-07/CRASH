@@ -20,9 +20,10 @@
                 <p class="m-3 p-2 rounded categoryBadge text-white">{{$insertionToCheck->category->name}}</p>
             </div>
 
-            <div id="carouselExampleInterval" class="carousel slide my-5 mx-auto  w-50 " data-bs-ride="carousel">
-                <div class="carousel-inner rounded w-100">
+            
                        @forelse ($insertionToCheck->images as $image)
+                       <div id="carouselExampleInterval" class="carousel slide my-5 mx-auto  w-100 " data-bs-ride="carousel">
+                        <div class="carousel-inner rounded w-100">
                            <div class="row carousel-item  @if ($loop->first) active @endif " data-bs-interval="10000">
                                 <div class="col-md-4">
                                <img src="{{ $image->getUrl(800,400) }}"
@@ -49,6 +50,8 @@
                                     </div>
                                </div>
                            </div>
+                        </div>
+                    </div>
                            
                        @empty
                        <div class="carousel-item active" data-bs-interval="10000">
