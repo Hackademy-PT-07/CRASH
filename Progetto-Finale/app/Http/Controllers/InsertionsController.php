@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Image;
 use App\Models\Insertions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -51,7 +52,10 @@ class InsertionsController extends Controller
      */
     public function edit(insertions $insertion)
     {
-        return view('insertions.edit', compact('insertion'));
+        
+       // $images = \App\Models\Image::search($insertion->searched);
+ 
+    return view('insertions.edit', compact('insertion'/*, 'images'*/));
     }
     public function modifyInsertion(Request $request, insertions $insertions)
     {

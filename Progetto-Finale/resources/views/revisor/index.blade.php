@@ -43,12 +43,12 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="card-body">
-                                        <h5 class="tc-accent">Revisione Immagini</h5>
-                                        <p>Adulti: <span class="{{ $image->adult }}"></span></p>
-                                        <p>Satira: <span class="{{ $image->spoof }}"></span></p>
-                                        <p>Medicina: <span class="{{ $image->medical }}"></span></p>
-                                        <p>Violenza: <span class="{{ $image->violence }}"></span></p>
-                                        <p>Contenuto Razzista: <span class="{{ $image->racy }}"></span></p>
+                                        <h5 class="tc-accent">{{__('ui.imagesReview')}}</h5>
+                                        <p>{{__('ui.adults')}}<span class="{{ $image->adult }}"></span></p>
+                                        <p>{{__('ui.satire')}}<span class="{{ $image->spoof }}"></span></p>
+                                        <p>{{__('ui.medicine')}}<span class="{{ $image->medical }}"></span></p>
+                                        <p>{{__('ui.violence')}}<span class="{{ $image->violence }}"></span></p>
+                                        <p>{{__('ui.racism')}}<span class="{{ $image->racy }}"></span></p>
                                     </div>
                                </div>
                             </div> 

@@ -41,6 +41,13 @@ return  [
     'allInsertionsfrom' => 'All the insertions for', 
     'notInsertionsfor' => 'There are not insertions for',
     'newforCategoryInsertion' => 'Add a new insertion:',
+ //images 
+    'imagesReview' => 'Images Review:',
+    'adults' => 'Adults',
+    'satire' => 'Satire',
+    'medicine' => 'Medicine',
+    'violence' => 'Violence',
+    'racism' => 'Racism',
 //createForm 
     'productName' => 'Product name',
     'category' => 'Category',

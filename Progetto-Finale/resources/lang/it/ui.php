@@ -50,6 +50,13 @@ return  [
     'imgPreview' => 'Visualizza immagini:',
     'save' => 'Salva annuncio',
     'delete' => 'Cancella',
+//images 
+    'imagesReview' => 'Revisione Immagini:',
+    'adults' => 'Adulti',
+    'satire' => 'Satira',
+    'medicine' => 'Medicina',
+    'violence' => 'Violenza',
+    'racism' => 'Razzismo',
    
 //status
     'rejected' => 'Rifiutato',

@@ -9,6 +9,7 @@ use App\Jobs\AddMarkFidelity;
 use Livewire\WithFileUploads;
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
+use App\Models\Insertions;
 use Illuminate\Support\Facades\File;
 
 class InsertionCreateForm extends Component
@@ -17,6 +18,7 @@ class InsertionCreateForm extends Component
     public $insertion;
     public $temporary_images;
     public $images = [];
+    public $dbimages;
 
     public function messages(){
         return [
@@ -60,12 +62,11 @@ class InsertionCreateForm extends Component
         ];
     }
 
-    public function mount()
+    public function mount(Insertions $insertion)
     {
-        $this->newInsertion();
-       
+        $this->insertion =$insertion;
+        $this->dbimages = $insertion->images()->get();
     }
-
 
     public function store()
     {   
