@@ -11,7 +11,7 @@
         @if(isset($image))
         <img src="{{ $image }}" class="card-img-top img-fluid img-size-card ">
         @else
-        <img src="https://picsum.photos/300" class="card-img-top img-fluid">
+        <img src="/images/img-presto.jpg" class="card-img-top img-fluid">
         @endif
     </div>
 

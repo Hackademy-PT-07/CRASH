@@ -44,7 +44,7 @@
                          @endforeach
                          @else
                          <div class="carousel-item active" data-bs-interval="10000">
-                             <img src="https://picsum.photos/800/400" class=" w-100" alt="...">
+                             <img src="/images/img-presto.jpg" class=" w-100" alt="...">
                          </div>
                          @endif
 

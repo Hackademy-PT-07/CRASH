@@ -40,27 +40,27 @@
             <div class="col-12 col-md-6 d-flex align-middle ">
                 <img class=" img-fluid d-flex justify-content-start " src="\images\norton-shake.jpg" alt="">
             </div>
-            <div class="col-12 col-md-6 my-5 overflow-hidden  fs-3 ">
-                <p class="p-3 " data-aos="fade-left" data-aos-duration="3000">Lorem ipsum dolor sit amet,
-                    consectetur
-                    adipisicing
-                    elit. Illo perspiciatis
-                    amet
-                    dolor quasi a consequatur, eius distinctio modi ratione. Modi esse ab labore, consectetur
-                    laboriosam
-                    fuga animi? Rerum, dicta eaque!</p>
+            <div class="col-12 col-md-6 my-3 overflow-hidden  fs-3 ">
+                <div class="p-3 " data-aos="fade-left" data-aos-duration="3000">
+                    <h3 class="text-center mb-4">Compra e vendi oggetti usati online</h3>
+
+                    <p> Questo servizio ti permette di vendere gli oggetti che non usi più e di acquistare oggetti usati
+                        di
+                        qualità a prezzi convenienti. Il servizio è sicuro e conveniente, grazie a un sistema di
+                        pagamento
+                        protetto e a un processo di consegna semplice e veloce.</p>
+                </div>
             </div>
         </div>
         <div class="row  my-5  BackGroundIllustrationReverse">
             <div class="col-12 col-md-6 my-5 overflow-hidden r fs-3 ">
-                <p class="p-3 " data-aos="fade-right" data-aos-duration="3000">Lorem ipsum dolor sit
-                    amet, consectetur
-                    adipisicing
-                    elit. Illo perspiciatis
-                    amet
-                    dolor quasi a consequatur, eius distinctio modi ratione. Modi esse ab labore, consectetur
-                    laboriosam
-                    fuga animi? Rerum, dicta eaque!</p>
+                <div class="p-3 " data-aos="fade-right" data-aos-duration="3000">
+                    <h3 class="text-center mb-4">Compra e vendi oggetti usati online</h3>
+                    <p> Nel nostro sito puoi trovare una vasta gamma di oggetti usati, tra cui:
+                        abbigliamento, mobili, elettrodomestici, elettronica, libri, giocattoli e molto altro ancora
+                        Tutti gli oggetti sono selezionati con cura e in buone condizioni. I prezzi sono convenienti e
+                        competitivi.</p>
+                </div>
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-end ">
                 <img class="img-fluid" src="\images\vestiti-abiti-clothes-1068x712 (1).jpg" alt="">
@@ -93,7 +93,7 @@
                     <div class="col-12  col-sm-6 col-md-4 ">
 
                         <x-card :title="$insertion->title" :category="$insertion->category->name"
-                            :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/300'"
+                            :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : '/images/img-presto.jpg'"
                             :categoryid="$insertion->category->id" :price="$insertion->price"
                             :description="$insertion->description" :body="$insertion->body"
                             :date="$insertion->created_at->diffForHumans()" :link="route('insertions.show', $insertion)"
