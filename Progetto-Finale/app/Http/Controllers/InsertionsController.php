@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Insertions;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class InsertionsController extends Controller
 {
@@ -74,9 +75,16 @@ class InsertionsController extends Controller
      */
     public function destroy(insertions $insertion)
     {
-        $insertion->images()->detach();
-        $insertion->delete();
+        if (!Auth::user()->is_revisor) {
 
-        return redirect()->route('insertions.create')->with(['success' => 'Annuncio eliminato correttamente.']);
+            return redirect()->back()->with(['error' => 'Non puoi cancellare questo annuncio']);
+
+        } else {
+
+            //$insertion->images()->detach();
+            $insertion->delete();
+
+            return redirect()->route('insertions.create')->with(['success' => 'Annuncio eliminato correttamente.']);
+        }
     }
 }
