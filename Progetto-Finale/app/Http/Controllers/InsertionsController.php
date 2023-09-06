@@ -42,8 +42,7 @@ class InsertionsController extends Controller
     public function show(Insertions $insertion)
     {
         $categories = \App\Models\Category::all();
-        $images = \App\Models\Image::all();
-        return view('insertions.show', compact('insertion','categories','images'));
+        return view('insertions.show', compact('insertion','categories'));
     }
 
     /**
