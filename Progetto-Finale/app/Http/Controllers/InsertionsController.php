@@ -42,8 +42,7 @@ class InsertionsController extends Controller
     public function show(Insertions $insertion)
     {
         $categories = \App\Models\Category::all();
-        $images = \App\Models\Image::all();
-        return view('insertions.show', compact('insertion','categories','images'));
+        return view('insertions.show', compact('insertion','categories'));
     }
 
     /**
@@ -74,14 +73,13 @@ class InsertionsController extends Controller
      * Remove the specified resource from storage.
      */
     public function destroy(insertions $insertion)
-    {
-        if (!Auth::user()->is_revisor) {
+    {   
+        if (!Auth::user()->is_revisor && Auth::user()->id !== $insertion->user_id) {
 
             return redirect()->back()->with(['error' => 'Non puoi cancellare questo annuncio']);
 
         } else {
 
-            //$insertion->images()->detach();
             $insertion->delete();
 
             return redirect()->route('insertions.create')->with(['success' => 'Annuncio eliminato correttamente.']);

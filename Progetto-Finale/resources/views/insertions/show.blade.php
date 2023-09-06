@@ -35,9 +35,10 @@
 
                  <div id="carouselExampleInterval" class="carousel slide my-5 mx-auto  w-50 " data-bs-ride="carousel">
                      <div class="carousel-inner rounded ">
+
                          @if (!$insertion->images()->get()->isEmpty())
-                         @foreach ($images as $image)
-                         <div class="carousel-item active" data-bs-interval="10000">
+                         @foreach ($insertion->images()->get() as $image)
+                         <div class="carousel-item @if ($loop->first) active @endif" data-bs-interval="10000">
                              <img src="{{ $image->getUrl(800,400) }}" class=" w-100" alt="...">
                          </div>
                          @endforeach
