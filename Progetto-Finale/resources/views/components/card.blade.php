@@ -1,17 +1,17 @@
-<div class="card my-3 border h-1075 border-dark">
+<div class="card my-3 border   border-dark">
     <div class="position-relative">
         @if($isAccepted === 0)
         <span class="position-absolute top-0 end-0 rejected rejected-color">{{__('ui.rejected')}}</span>
         @elseif($isAccepted === null)
         <span class="position-absolute top-0 end-0 toRevisioned review">{{__('ui.toReview')}}</span>
         @else
-        <div class="hide"></div>
+        <div class="hide img-card-size "></div>
         @endif
 
         @if(isset($image))
-        <img src="{{ $image }}" class="card-img-top ">
+        <img src="{{ $image }}" class="card-img-top img-fluid img-size-card ">
         @else
-        <img src="https://picsum.photos/300" class="card-img-top">
+        <img src="https://picsum.photos/300" class="card-img-top img-fluid">
         @endif
     </div>
 
