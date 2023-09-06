@@ -17,7 +17,7 @@ Route::get('categories/{category}', [PageController::class, 'categoryShow'])->na
 Route::middleware('auth')->group(function (){
     Route::get('insertions/create', [InsertionsController::class, 'create'])->name('insertions.create');
     Route::get('insertions/{insertion}/edit', [InsertionsController::class, 'edit'])->name('insertions.edit');
-    Route::delete('categories/{category}', [InsertionsController::class , 'destroy'])->name('insertions.destroy');
+    Route::delete('insertions/{insertion}', [InsertionsController::class , 'destroy'])->name('insertions.destroy');
     Route::get('request/revisor',[RevisorController::class, 'becomeRevisor'])->name('become.revisor');
     Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
 

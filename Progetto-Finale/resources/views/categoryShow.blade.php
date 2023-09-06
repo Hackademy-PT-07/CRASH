@@ -2,14 +2,14 @@
     <x-navbar />
 
     <div class="container mt-4">
-        <x-success/>
-        <x-error/>
+        <x-success />
+        <x-error />
     </div>
 
     <div class="container text-center text-white my-5   rounded-3 ">
         <div class="row">
-           
-            @if(!$insertions->isEmpty()) 
+
+            @if(!$insertions->isEmpty())
             <h4 class="my-3 p-2 background-green rounded-3">{{__('ui.allInsertionsfrom')}}
                 "{{__('ui.category_' . $category->id)}}"</h4>
             <div class="col-12 col-md-8 mx-md-auto mb-3">
@@ -23,12 +23,12 @@
             @endif
         </div>
         <div class="row">
-        
+
             @forelse($insertions as $insertion)
             <div class="col-12 col-md-3">
-                <x-card :title="$insertion->title" :category="$insertion->category->name" 
-                :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : 'https://picsum.photos/300'" :price="$insertion->price"
-                    :description="$insertion->description" :body="$insertion->body"
+                <x-card :title="$insertion->title" :category="$insertion->category->name"
+                    :image="!$insertion->images()->get()->isEmpty() ? $insertion->images()->first()->getUrl(300,300) : '/images/img-presto.jpg'"
+                    :price="$insertion->price" :description="$insertion->description" :body="$insertion->body"
                     :categoryid="$insertion->category->id" :date="$insertion->created_at->diffForHumans()"
                     :link="route('insertions.show', $insertion)" :isAccepted="$insertion->is_accepted" />
             </div>
