@@ -16,7 +16,7 @@
                 <h2 class="d-flex justify-content-center">{{__('ui.categories')}}</h2>
             </div>
             @foreach($categories as $category)
-            <div class="col-4 col-md-3  col-lg-2">
+            <div class="col-6 col-md-3  col-lg-2">
                 <div class="d-flex flex-column justify-content-center align-items-center py-3 ">
                     <a data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
                         data-aos-duration="500" href="{{route('categoryShow', compact('category'))}}"><i
