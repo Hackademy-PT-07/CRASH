@@ -12,6 +12,18 @@ return  [
 //Page name
     'insertions' => 'Annunci',
     'insertion' => 'Dettaglio Annuncio',
+//home page
+    'title1' => 'Compra e vendi oggetti usati online',
+    'p1' => 'Questo servizio ti permette di vendere gli oggetti che non usi più e di acquistare oggetti usati
+    di
+    qualità a prezzi convenienti. Il servizio è sicuro e conveniente, grazie a un sistema di
+    pagamento
+    protetto e a un processo di consegna semplice e veloce.',
+    'title2' => 'Compra e vendi oggetti usati online',
+    'p2' => 'Nel nostro sito puoi trovare una vasta gamma di oggetti usati, tra cui:
+    abbigliamento, mobili, elettrodomestici, elettronica, libri, giocattoli e molto altro ancora
+    Tutti gli oggetti sono selezionati con cura e in buone condizioni. I prezzi sono convenienti e
+    competitivi.',
 //navbar
     'allInsertions' => 'Tutti gli annunci',
     'addInsertion' => 'Inserisci annuncio',
@@ -69,5 +81,14 @@ return  [
     'reject' => 'Rifiuta',
 //footer
     'workWithUs' => 'Lavora con noi',
-    'becomeRevisor' => 'Diventa revisore'
+    'becomeRevisor' => 'Diventa revisore',
+
+//error and success msg
+'notpossibleToRemove' => 'Non puoi cancellare questo annuncio',
+'succesfullyRemoved' => 'Annuncio eliminato correttamente.',
+'successCreated' => 'Annuncio creato correttamente, sarà pubblicato dopo la revisione.',
+'insertionAccepted' => "L'annuncio è stato accettato",
+'insertionRejected' => "L'annuncio è stato rifiutato", 
+'revisorRequest' =>'Complimenti hai richiesto di diventare revisore con successo!',
+'doneRevisor' => "Complimenti L\'utente è diventato revisore"
 ];

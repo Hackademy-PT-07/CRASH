@@ -105,7 +105,7 @@ class InsertionCreateForm extends Component
         }
         
         
-        session()->flash('success', 'Annuncio creato correttamente, sarà pubblicato dopo la revisione.');
+        session()->flash('success', __('ui.successCreated'));
         $this->newInsertion();
         $this->emitTo('insertion-list', 'loadInsertions');
     

@@ -21,23 +21,23 @@ class RevisorController extends Controller
     public function acceptInsertion(Insertions $insertion)
     {
         $insertion->setAccepted(true);
-        return redirect()->back()->with('success', "L'annuncio è stato accettato");
+        return redirect()->back()->with('success', __('ui.insertionAccepted'));
     }
     public function rejectInsertion(Insertions $insertion)
     {
         $insertion->setAccepted(false);
-        return redirect()->back()->with('error', "L'annuncio è stato rifiutato");
+        return redirect()->back()->with('error',  __('ui.insertionRejected'));
     }
 
     public function becomeRevisor()
     {
         Mail::to('admin@presto.it')->send(new BecomeRevisor(Auth::user()));
-        return redirect()->back()->with('success', 'Complimenti hai richiesto di diventare revisore con successo!');
+        return redirect()->back()->with('success', __('ui.revisorRequest'));
     }
     public function makeRevisor(User $user)
     {
         Artisan::call('presto:make-user-revisor', ["email" => $user->email]);
-        return redirect('/')->with('success', "Complimenti L\'utente è diventato revisore");
+        return redirect('/')->with('success',  __('ui.doneRevisor'));
     }
 
 };

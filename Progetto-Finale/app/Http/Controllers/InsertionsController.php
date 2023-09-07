@@ -80,13 +80,13 @@ class InsertionsController extends Controller
     {   
         if (!Auth::user()->is_revisor && Auth::user()->id !== $insertion->user_id) {
 
-            return redirect()->back()->with(['error' => 'Non puoi cancellare questo annuncio']);
+            return redirect()->back()->with(['error' => __('ui.notpossibleToRemove')]);
 
         } else {
 
             $insertion->delete();
 
-            return redirect()->route('insertions.create')->with(['success' => 'Annuncio eliminato correttamente.']);
+            return redirect()->route('insertions.create')->with(['success' => __('ui.succesfullyRemoved')]);
         }
     }
 }

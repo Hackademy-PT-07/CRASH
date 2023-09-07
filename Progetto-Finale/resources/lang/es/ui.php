@@ -13,6 +13,11 @@ return  [
     'editInsertion' => 'Modifica anuncio',
     'insertions' => 'Anuncios',
     'insertion' => 'Detalles del anuncio',
+//home page
+    'title1' => 'Compra y vende online artículos de segunda mano',
+    'p1' => 'Gracias a Presto.it podrás vender artículos que ya no utilizas. En nuestro catalogo encontrarás una gran variedad de productos de segunda mano a un precio y calidad excepcionales. Nuestro servicio es seguro y conveniente gracias a nuestro sistema de pago y a la rapida entrega de sus pedidos',
+    'title2' => 'Compra y vende online articulos de segunda mano',
+    'p2' => 'En nuestro catalogo encontrará todo tipo de productos entre: ropa, muebles, electrónica, libros y mucho más. Todos nuestros artículos han sido seleccionados cuidadosamente y se encuntran en buenas condiciones. Nuestros precios son muy competitivos',
 //navbar
     'allInsertions' => 'Todos los anuncios',
     'addInsertion' => 'Crear anuncio',
@@ -69,5 +74,13 @@ return  [
     'reject' => 'Rechaza',
 //footer
     'workWithUs' => 'Trabaja con nosotros',
-    'becomeRevisor' => 'Conviértete en revisor'
+    'becomeRevisor' => 'Conviértete en revisor',
+//error and success msg
+    'notpossibleToRemove' => 'No puedes eliminar este anuncio',
+    'succesfullyRemoved' => 'El anuncio se ha eliminado correctamente',
+    'successCreated' => 'El anuncio ha sido creado correctamente y lo publicaremos despues de revionarlo',
+    'insertionAccepted' => "El anuncio ha sido aceptado",
+    'insertionRejected' => "El anuncio ha sido rechazado", 
+    'revisorRequest' =>'¡Enhorabuena! Has solicitado convertirte en revisor',
+    'doneRevisor' => "¡Enhorabuena! El usuario ahora es un revisor"
 ];

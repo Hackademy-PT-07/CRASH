@@ -12,6 +12,11 @@ return  [
 //Page Name
     'insertions' => 'Insertions',
     'insertion' => 'Insertion Details',
+//home page
+    'title1' => 'Buy and sell used items online',
+    'p1' => 'This service allows you to sell items you no longer use and buy quality used items at affordable prices. The service is safe and convenient, thanks to a secure payment system and a quick and easy delivery process  ',
+    'title2' => 'Buy and sell used items online',
+    'p2' => 'On our site you can find a wide range of used items, including: clothing, furniture, appliances, electronics, books, toys and more All items are carefully selected and in good condition. Prices are affordable and competitive. ',
 //navbar
     'allInsertions' => 'All the insertions',
     'addInsertion' => 'Create insertion',
@@ -69,5 +74,13 @@ return  [
     'reject' => 'Reject',
 //footer
     'workWithUs' => 'Work with us',
-    'becomeRevisor' => 'Became revisor'
+    'becomeRevisor' => 'Became revisor',
+//error and success msg
+    'notpossibleToRemove' => 'You cannot remove this insertion',
+    'succesfullyRemoved' => 'Insertion has been successfully removed',
+    'successCreated' => 'Insertion has been successfully created and will pubblish after is reviewed',
+    'insertionAccepted' => "Insertion has been accepted",
+    'insertionRejected' => "Insertion has rejected", 
+    'revisorRequest' =>'Congrats you have requested to become a revisor successfully',
+    'doneRevisor' => "Congrats the user has become a revisor successfully"
 ];

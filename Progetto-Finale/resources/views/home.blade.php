@@ -42,24 +42,17 @@
             </div>
             <div class="col-12 col-md-6 my-3 overflow-hidden  fs-3 ">
                 <div class="p-3 " data-aos="fade-left" data-aos-duration="3000">
-                    <h3 class="text-center mb-4">Compra e vendi oggetti usati online</h3>
+                    <h3 class="text-center mb-4">{{__('ui.title1')}}</h3>
 
-                    <p> Questo servizio ti permette di vendere gli oggetti che non usi più e di acquistare oggetti usati
-                        di
-                        qualità a prezzi convenienti. Il servizio è sicuro e conveniente, grazie a un sistema di
-                        pagamento
-                        protetto e a un processo di consegna semplice e veloce.</p>
+                    <p> {{__('ui.p1')}}</p>
                 </div>
             </div>
         </div>
         <div class="row  my-5  BackGroundIllustrationReverse">
             <div class="col-12 col-md-6 my-5 overflow-hidden r fs-3 ">
                 <div class="p-3 " data-aos="fade-right" data-aos-duration="3000">
-                    <h3 class="text-center mb-4">Compra e vendi oggetti usati online</h3>
-                    <p> Nel nostro sito puoi trovare una vasta gamma di oggetti usati, tra cui:
-                        abbigliamento, mobili, elettrodomestici, elettronica, libri, giocattoli e molto altro ancora
-                        Tutti gli oggetti sono selezionati con cura e in buone condizioni. I prezzi sono convenienti e
-                        competitivi.</p>
+                    <h3 class="text-center mb-4">{{__('ui.title2')}}</h3>
+                    <p>{{__('ui.p2')}}</p>
                 </div>
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-end ">
