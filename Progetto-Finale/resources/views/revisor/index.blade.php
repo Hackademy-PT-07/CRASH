@@ -33,14 +33,14 @@
                             <img src="{{ $image->getUrl(800,400) }}" class=" w-100 " alt="...">
 
 
-                            <div class="">
+                            <div class="d-flex justify-content-between my-3">
 
-                                <button class="carousel-control-prev top-50 position-relative" type="button"
+                                <button class="carousel-control-prev  position-relative" type="button"
                                     data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next " type="button"
+                                <button class="carousel-control-next position-relative " type="button"
                                     data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
@@ -50,16 +50,7 @@
 
 
 
-                            <!--                             <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button> -->
+
                         </div>
                         <div class="col-md-4 border-end">
                             <h5 class="tc-accent text-center">Tags</h5>
@@ -96,8 +87,8 @@
                     </div>
                 </div>
                 @empty
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="/images/img-presto.jpg" class=" w-100" alt="...">
+                <div class="carousel-item active d-flex justify-content-center " data-bs-interval="10000">
+                    <img src="/images/img-presto.jpg" class="vh-50 rounded" alt="...">
                 </div>
                 @endforelse
 
