@@ -34,13 +34,14 @@
              <div class="col-12 ">
 
                  <div id="carouselExampleInterval" class="carousel slide my-5 mx-auto  w-50 " data-bs-ride="carousel">
-                     <div class="carousel-inner rounded d-flex   ">
+                     <div class="carousel-inner rounded  ">
                          @if (!$insertion->images()->get()->isEmpty())
                          @foreach ($insertion->images()->get() as $image)
-                         <div class="carousel-item @if ($loop->first) active @endif carusel-img-size "
+                         <div class="carousel-item @if ($loop->first) active @endif carusel-img-size  "
                              data-bs-interval="10000">
-                             <div class="d-flex justify-content-center"> <img src="{{ $image->getUrl(800,400) }}"
-                                     class="img-fluid  " alt="..."></div>
+                             <div class="d-flex justify-content-center ">
+                                 <img src="{{ $image->getUrl(800,400) }}" class="img-fluid  " alt="...">
+                             </div>
                          </div>
                          @endforeach
                          @else
@@ -49,14 +50,16 @@
                          </div>
                          @endif
 
-                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                         <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleInterval"
                              data-bs-slide="prev">
-                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                             <span class="visually-hidden">Previous</span>
+                             <span class="carousel-control-prev-icon text-light bg-dark rounded-5"
+                                 aria-hidden="true"></span>
+                             <span class="visually-hidden ">Previous</span>
                          </button>
                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
                              data-bs-slide="next">
-                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                             <span class="carousel-control-next-icon text-light bg-dark rounded-5"
+                                 aria-hidden="true"></span>
                              <span class="visually-hidden">Next</span>
                          </button>
                      </div>
@@ -71,7 +74,7 @@
                          <p class=" d-flex justify-content-end">{{$insertion->created_at->diffForHumans()}}</p>
                      </div>
                      <p class="mt-2">{{$insertion->description}}</p>
-                    
+
                      <p class="mt-2"><a href="mailto:{{$insertion->user->email}}">Contatta il venditore</a></p>
                  </div>
              </div>
