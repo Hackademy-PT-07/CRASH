@@ -70,6 +70,8 @@
                          <p class=" d-flex justify-content-end">{{$insertion->created_at->diffForHumans()}}</p>
                      </div>
                      <p class="mt-2">{{$insertion->description}}</p>
+                    
+                     <p class="mt-2"><a href="mailto:{{$insertion->user->email}}">Contatta il venditore</a></p>
                  </div>
              </div>
          </div>
