@@ -74,7 +74,7 @@
                                         alt="">
                                 </div>
                                 <button type="button" class="btn btn-danger shadow d-block text-center mt-2 mx-auto"
-                                    wire:click="removedbimage({{$key}})">
+                                    wire:click="removeDbImage({{$key}})">
                                     {{__('ui.delete')}}</button>
                             </div>
                             @endforeach
@@ -88,7 +88,6 @@
                 </div>
             </div>
         </form>
-
     </div>
 </div>
 </div>

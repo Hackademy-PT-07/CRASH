@@ -50,6 +50,15 @@ class InsertionCreateForm extends Component
         }
     }
 
+    public function removeDbImage($key)
+    {
+        if($this->dbimages->has($key)) {
+            $this->dbimages->get($key)->delete();
+            $this->dbimages->forget($key);
+            
+        }
+    }
+
     protected function rules()
     {
         return [
@@ -107,6 +116,7 @@ class InsertionCreateForm extends Component
         $this->insertion = new \App\Models\Insertions;
         $this->images = [];
         $this->temporary_images = [];
+        $this->dbimages = collect();
 
     }
 
@@ -114,4 +124,5 @@ class InsertionCreateForm extends Component
     {
         return view('livewire.insertion-create-form');
     }
+
 }
