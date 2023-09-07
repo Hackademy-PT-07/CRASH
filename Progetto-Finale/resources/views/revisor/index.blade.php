@@ -35,7 +35,7 @@
 
                             <div class="d-flex justify-content-between my-3">
 
-                                <button class="carousel-control-prev position-relative " type="button"
+                                <button class="carousel-control-prev  position-relative" type="button"
                                     data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
@@ -47,6 +47,9 @@
                                 </button>
 
                             </div>
+
+
+
 
                         </div>
                         <div class="col-md-4 border-end">
@@ -84,8 +87,8 @@
                     </div>
                 </div>
                 @empty
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="/images/img-presto.jpg" class=" w-100" alt="...">
+                <div class="carousel-item active d-flex justify-content-center " data-bs-interval="10000">
+                    <img src="/images/img-presto.jpg" class="vh-50 rounded" alt="...">
                 </div>
                 @endforelse
 

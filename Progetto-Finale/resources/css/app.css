@@ -130,13 +130,16 @@ header {
 }
 .border-orange {
     border: solid 1px #e9b384;
+    border-radius: 20%;
 }
 .review {
-    background-color: rgb(208, 176, 62);
+    background-color: rgb(255, 225, 0, 0.8);
+    border-radius: 20%;
 }
 
 .rejected-color {
-    background-color: rgb(208, 84, 62);
+    background-color: rgb(208, 84, 62, 0.8);
+    border-radius: 20%;
 }
 
 .img-preview {
@@ -177,4 +180,12 @@ header {
 
 .img-size-card {
     height: 300px;
+}
+
+.img-revisor-size {
+    width: 300px;
+}
+
+.carusel-img-size {
+    height: 350px;
 }
