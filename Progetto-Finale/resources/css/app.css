@@ -130,13 +130,16 @@ header {
 }
 .border-orange {
     border: solid 1px #e9b384;
+    border-radius: 20%;
 }
 .review {
-    background-color: rgb(208, 176, 62);
+    background-color: rgb(208, 176, 62, 0.7);
+    border-radius: 30%;
 }
 
 .rejected-color {
     background-color: rgb(208, 84, 62);
+    border-radius: 30%;
 }
 
 .img-preview {

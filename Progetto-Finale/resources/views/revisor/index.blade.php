@@ -32,14 +32,14 @@
                             <img src="{{ $image->getUrl(800,400) }}" class=" w-100 " alt="...">
 
 
-                            <div class="d-flex justify-content-between my-3">
+                            <div class="">
 
-                                <button class="carousel-control-prev position-relative " type="button"
+                                <button class="carousel-control-prev top-50 position-relative" type="button"
                                     data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Previous</span>
                                 </button>
-                                <button class="carousel-control-next position-relative " type="button"
+                                <button class="carousel-control-next " type="button"
                                     data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="visually-hidden">Next</span>
@@ -47,6 +47,18 @@
 
                             </div>
 
+
+
+                            <!--                             <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> -->
                         </div>
                         <div class="col-md-4 border-end">
                             <h5 class="tc-accent text-center">Tags</h5>
