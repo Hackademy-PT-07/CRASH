@@ -4,7 +4,7 @@
         <x-success/>
         <x-error/>
     </div>
-    <x-slot:title>Crea un annuncio</x-slot:title>
+    <x-slot:title>{{__('ui.addInsertion')}}</x-slot:title>
     <livewire:insertion-create-form />
     <livewire:insertion-list />
 

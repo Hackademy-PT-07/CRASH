@@ -1,4 +1,5 @@
 <x-main>
+    <x-slot:title>{{__('ui.category')}}</x-slot:title>
     <x-navbar />
 
     <div class="container mt-4">

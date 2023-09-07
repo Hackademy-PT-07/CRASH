@@ -29,7 +29,7 @@
                     <!--Grid column-->
                     <div class="col-auto">
                         <p class="pt-2">
-                            <strong>Lavora con noi</strong>
+                            <strong>{{__('ui.workWithUs')}}</strong>
                         </p>
                     </div>
                     <!--Grid column-->
@@ -39,7 +39,7 @@
                     <!--Grid column-->
                     <div class="col-auto">
                         <!-- Submit button -->
-                        <a href="{{ route('become.revisor')}}" class="btn btn-outline-light mb-4">Diventa revisore</a>
+                        <a href="{{ route('become.revisor')}}" class="btn btn-outline-light mb-4">{{__('ui.becomeRevisor')}}</a>
 
                     </div>
                     <!--Grid column-->

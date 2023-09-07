@@ -9,6 +9,9 @@ return  [
     'name' => 'Name',
     'notRegister' => "Don't you have an account yet? Register",
     'logout' => 'Log out',
+//Page Name
+    'insertions' => 'Insertions',
+    'insertion' => 'Insertion Details',
 //navbar
     'allInsertions' => 'All the insertions',
     'addInsertion' => 'Create insertion',

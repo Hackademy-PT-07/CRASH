@@ -9,11 +9,14 @@ return  [
     'name' => 'Nome',
     'notRegister' => 'Non si ancora registrato? Registrati',
     'logout' => 'Esci',
+//Page name
+    'insertions' => 'Annunci',
+    'insertion' => 'Dettaglio Annuncio',
 //navbar
     'allInsertions' => 'Tutti gli annunci',
     'addInsertion' => 'Inserisci annuncio',
     'insertionsToBeReview' => 'Revisione annunci',
-    //insertions
+ //insertions
     'search' => 'Cerca',
     'searchInsertion' => 'Cerca annuncio',
     'reviewInsertion' => "Ecco l'annuncio da revisionare:",
