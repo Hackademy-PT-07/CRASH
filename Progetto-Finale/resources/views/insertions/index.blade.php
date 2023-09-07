@@ -1,5 +1,5 @@
 <x-main>
-    <x-slot:title>Presto.it</x-slot:title>
+    <x-slot:title>{{__('ui.insertions')}}</x-slot:title>
     <x-navbar />
     <div class="container mt-4">
         <x-success />

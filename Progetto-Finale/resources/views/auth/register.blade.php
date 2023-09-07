@@ -1,6 +1,6 @@
 <x-main>
     <x-navbar />
-    <x-slot:title>Registrati</x-slot:title>
+    <x-slot:title>{{__('ui.register')}}</x-slot:title>
     <div class="container-fluid w-100 ">
         <div class="row">
 
@@ -35,7 +35,7 @@
                                     </p> @enderror
                                 </div>
                                 <div class="col-12 mt-3">
-                                    <label for="password">Password</label>
+                                    <label for="password">{{__('ui.password')}}</label>
                                     <input class="form-control focus-ring focus-ring-danger" type="password"
                                         name="password" id="password">
                                     @error('password')<p class="small rounded my-2 errorBackground text-danger">

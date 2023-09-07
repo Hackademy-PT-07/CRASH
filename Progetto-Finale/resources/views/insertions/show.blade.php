@@ -1,6 +1,6 @@
  <x-main>
 
-     <x-slot:title>Annuncio</x-slot:title>
+     <x-slot:title>{{__('ui.insertion')}}</x-slot:title>
 
      <x-navbar />
      <div class="container mt-4">

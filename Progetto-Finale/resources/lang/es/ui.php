@@ -9,6 +9,10 @@ return  [
     'name' => 'Nombre',
     'notRegister' => '¿Aún no estás registrado? Regístrate',
     'logout' => 'Salir',
+//Page Name
+    'editInsertion' => 'Modifica anuncio',
+    'insertions' => 'Anuncios',
+    'insertion' => 'Detalles del anuncio',
 //navbar
     'allInsertions' => 'Todos los anuncios',
     'addInsertion' => 'Crear anuncio',
@@ -22,7 +26,7 @@ return  [
     'lastestInsertions' => 'Anuncios más recientes',
     'showInsertion' => "Ir al anuncio",
     'noInsertionsToReview' => 'No hay anuncios para revisar',
-    'editInsertion' => 'Modifica anuncio',
+   
 //Categories
     'categories' => 'Categorias',
     'category_1'=> 'Choches y motos',
@@ -51,7 +55,7 @@ return  [
     'save' => 'Guarda anuncio',
     'delete' => 'Elimina',
 //images 
-    'imagesReview' => 'Revisión de imágenes:',
+    'imagesReview:' => 'Revisión de imágenes:',
     'adults' => 'Adultos',
     'satire' => 'Sátira',
     'medicine' => 'Medicina',

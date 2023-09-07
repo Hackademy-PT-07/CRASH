@@ -1,6 +1,6 @@
 <x-main>
     <x-navbar />
-    <x-slot:title>Login</x-slot:title>
+    <x-slot:title>{{__('ui.logIn')}}</x-slot:title>
     <div class="container-fluid">
 
         <div class="row d-flex justify-content-center">

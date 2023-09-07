@@ -1,4 +1,5 @@
 <x-main>
+    <x-slot:title>{{__('ui.insertionsToBeReview')}}</x-slot:title>
     <x-navbar />
     <div class="container mt-4">
         <x-success />
@@ -72,22 +73,22 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card-body container ">
-                                <h5 class="tc-accent">Revisione Immagini</h5>
+                                <h5 class="tc-accent">{{__('ui.imagesReview')}}</h5>
                                 <div class="row  w-75  ">
                                     <div class=" col-12 d-flex justify-content-between align-items-center my-3">
-                                        <span>Adulti: </span><i class="{{ $image->adult }} "></i>
+                                        <span>{{__('ui.adults')}} </span><i class="{{ $image->adult }} "></i>
                                     </div>
                                     <div class=" col-12 d-flex justify-content-between align-items-center my-3">
-                                        <span>Satira: </span><i class="{{ $image->spoof }}"></i>
+                                        <span>{{__('ui.satire')}} </span><i class="{{ $image->spoof }}"></i>
                                     </div>
                                     <div class=" col-12 d-flex justify-content-between align-items-center my-3">
-                                        <span>Medicina: </span><i class="{{ $image->medical }}"></i>
+                                        <span>{{__('ui.medicine')}} </span><i class="{{ $image->medical }}"></i>
                                     </div>
                                     <div class=" col-12 d-flex justify-content-between align-items-center my-3">
-                                        <span>Violenza: </span><i class="{{ $image->violence }}"></i>
+                                        <span>{{__('ui.violence')}} </span><i class="{{ $image->violence }}"></i>
                                     </div>
                                     <div class=" col-12 d-flex justify-content-between align-items-center my-3">
-                                        <span>Contenuto Razzista: </span><i class="{{ $image->racy }}"></i>
+                                        <span>{{__('ui.racism')}} </span><i class="{{ $image->racy }}"></i>
                                     </div>
                                 </div>
                             </div>

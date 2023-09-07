@@ -1,7 +1,7 @@
 <div class="container mt-5  text-white background-green rounded">
  
     @if($insertion->exists)
-    <h4 class="pt-3">Modifica annuncio</h4>
+    <h4 class="pt-3">{{__('ui.editInsertion')}}</h4>
     @else
     <h4 class="pt-3">{{__('ui.addInsertion')}}</h4>
     @endif
