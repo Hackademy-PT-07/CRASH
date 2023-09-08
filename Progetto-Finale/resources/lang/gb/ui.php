@@ -70,6 +70,7 @@ return  [
     'rejected' => 'Rejected',
     'toReview' => 'To review',
 //btns
+    'contactVendor' => 'Send a message to the vendor',
     'accept' => 'Accept',
     'reject' => 'Reject',
 //footer

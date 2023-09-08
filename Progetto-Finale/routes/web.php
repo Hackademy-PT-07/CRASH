@@ -20,11 +20,12 @@ Route::middleware('auth')->group(function (){
     Route::delete('insertions/{insertion}', [InsertionsController::class , 'destroy'])->name('insertions.destroy');
     Route::get('request/revisor',[RevisorController::class, 'becomeRevisor'])->name('become.revisor');
     Route::get('rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
+    Route::get('insertions/{insertion}', [InsertionsController::class, 'show'])->name('insertions.show');
 
 });
 Route::get('insertions', [InsertionsController::class, 'index'])->name('insertions.index');
 Route::get('/search/insertion', [InsertionsController::class, 'searchInsertions'])->name('insertions.search');
-Route::get('insertions/{insertion}', [InsertionsController::class, 'show'])->name('insertions.show');
+
 Route::get('/search/categories/insertions', [InsertionsController::class, 'update'])
 ->name('searchByCategories');
 

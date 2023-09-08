@@ -70,6 +70,7 @@ return  [
     'rejected' => 'Rechazado',
     'toReview' => 'Pendiente de revisión',
 //btns
+    'contactVendor' => 'Envia un mensaje al vendedor',
     'accept' => 'Acepta',
     'reject' => 'Rechaza',
 //footer

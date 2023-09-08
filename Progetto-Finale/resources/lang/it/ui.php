@@ -77,6 +77,7 @@ return  [
     'rejected' => 'Rifiutato',
     'toReview' => 'Da revisionare',
 //btns
+    'contactVendor' => 'Contatta il venditore',
     'accept' => 'Accetta',
     'reject' => 'Rifiuta',
 //footer

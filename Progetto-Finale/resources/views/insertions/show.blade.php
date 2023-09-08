@@ -76,7 +76,7 @@
                      <p class="mt-2">{{$insertion->description}}</p>
 
                      <a href="mailto:{{$insertion->user->email}}"><button type="button"
-                             class="btn buttonColor my-3">Contatta il venditore</button></a>
+                             class="btn buttonColor my-3">{{__('ui.contactVendor')}}</button></a>
                  </div>
              </div>
          </div>
